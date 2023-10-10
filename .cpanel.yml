@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home4/amberage/public_html/
-    - /usr/bin/rsync -av --exclude=.cpanel.yml --exclude=.git ./ $DEPLOYPATH
+    - /bin/rsync -av --exclude=.cpanel.yml --exclude=.git ./ $DEPLOYPATH
