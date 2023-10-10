@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/assets/images/logo.png" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Ingresar</title>
+</head>
+<body>
+  <div class="contenedorCentradoTotal">
+    <h1>Bienvenido!!</h1>
+    <div id="userDataDisplay"></div>
+
+    <!-- Botón para cerrar sesión -->
+    <button onclick="cerrarSesion()">Cerrar Sesión</button>
+
+    <script>
+        // Función para mostrar la información del usuario
+        function mostrarInformacionUsuario() {
+            const userDataCookie = getCookie("userData");
+
+            if (userDataCookie) {
+                const userDataJSON = decodeURIComponent(atob(userDataCookie));
+                const userData = JSON.parse(userDataJSON);
+
+                const userDataDisplay = document.getElementById("userDataDisplay");
+                userDataDisplay.innerHTML = `
+                    <p>ID: ${userData.id}</p>
+                    <p>Usuario: ${userData.username}</p>
+                    <p>Nombre: ${userData.nombre}</p>
+                    <p>Apellido Paterno: ${userData.aPaterno}</p>
+                    <p>Apellido Materno: ${userData.aMaterno}</p>
+                    <p>Correo: ${userData.correo}</p>
+                    <p>Tipo de usuario: ${userData.userType}</p>
+                    <p>IP: ${userData.ip}</p>
+                    <p>Fecha de Registro: ${userData.fechaRegistro}</p>
+                `;
+            } else {
+                console.log("No se encontró la cookie de userData.");
+            }
+        }
+
+        // Función para obtener el valor de una cookie por su nombre
+        function getCookie(name) {
+            const decodedCookie = decodeURIComponent(document.cookie);
+            const cookies = decodedCookie.split(';');
+
+            for (let i = 0; i < cookies.length; i++) {
+                let cookie = cookies[i];
+                while (cookie.charAt(0) === ' ') {
+                    cookie = cookie.substring(1);
+                }
+                if (cookie.indexOf(name) === 0) {
+                    return cookie.substring(name.length + 1, cookie.length);
+                }
+            }
+            return "";
+        }
+
+        // Función para eliminar la cookie y redireccionar a index.html
+        function cerrarSesion() {
+            document.cookie = "userData=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            window.location.href = "../index.html";
+        }
+
+        // Llama a la función para mostrar la información del usuario al cargar la página
+        window.onload = mostrarInformacionUsuario;
+    </script>
+  </div>
+</body>
+</html>

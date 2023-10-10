@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="/assets/images/logo.png" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <title>Registro de Usuario</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="../index.html"><img src="../assets/images/logo.png" style="height: 50px;" /></a></li>
+    </ul>
+  </nav>
+  <div class="contenedorCentradoTotal" style="margin-top: -90px;">
+    <h1>Registro de Usuario</h1>
+    <form id="registerForm" action="register.php" method="post">
+      <div class="form-group">
+        <label for="username">Usuario:</label>
+        <input type="text" id="username" name="username" pattern="[A-Za-z0-9]{3,12}" required>
+        <span class="error" id="usernameError">Ingrese un usuario valido <br> (Solo letras y números)</span>
+      </div>
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" pattern="[A-Za-záéíóúÁÉÍÓÚ\s]{3,25}" required>
+        <span class="error" id="nombreError">Ingrese un nombre valido <br> (Solo letras)</span>
+      </div>
+      <div class="form-group">
+        <label for="aPaterno">Apellido Paterno:</label>
+        <input type="text" id="aPaterno" name="aPaterno" pattern="[A-Za-záéíóúÁÉÍÓÚ\s]+" required>
+        <span class="error" id="aPaternoError">Ingrese un apellido valido <br> (Solo letras)</span>
+      </div>
+      <div class="form-group">
+        <label for="aMaterno">Apellido Materno:</label>
+        <input type="text" id="aMaterno" name="aMaterno" pattern="[A-Za-záéíóúÁÉÍÓÚ\s]*">
+        <span class="error" id="aMaternoError">Ingrese un apellido valido <br> (Solo letras)</span>
+      </div>
+      <div class="form-group">
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="@alumno.uaemex.mx" pattern="[a-zA-Z0-9]+@alumno\.uaemex\.mx" required>
+        <span class="error" id="correoError">Correo invalido el correo debe <br> terminar en @alumno.uaemex.mx</span>
+      </div>
+      <div class="form-group">
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" minlength="8" required>
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Confirmar Contraseña:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" minlength="8" required>
+        <span class="error" id="passwordError">Las contraseñas no coinciden o <br> no tienen 8 caracteres mínimos</span>
+      </div>
+      <div class="form-group" style="display: none;">
+        <label for="userType">Tipo de cuenta:</label>
+        <select id="userType" name="userType">
+          <option value="alumno" selected>Alumno</option>
+        </select>
+      </div>
+      <button type="submit">Registrarse</button>
+      <div id="mensajeRegistro" class="error" style="display: none;"></div>
+    </form>
+  </div>
+
+  <script src="../js/validarUsername.js"></script>
+
+  <script>
+    const passwordInput = document.getElementById('password');
+    const confirmPasswordInput = document.getElementById('confirmPassword');
+    const passwordError = document.getElementById('passwordError');
+
+    function showErrorMessage(input, error) {
+      error.style.display = input.validity.valid ? 'none' : 'block';
+    }
+
+    function checkPasswordMatch() {
+      const password = passwordInput.value;
+      const confirmPassword = confirmPasswordInput.value;
+
+      if (confirmPassword !== '' && password !== confirmPassword) {
+        passwordError.style.display = 'block';
+      } else {
+        passwordError.style.display = 'none';
+      }
+    }
+
+    passwordInput.addEventListener('blur', () => {
+      showErrorMessage(passwordInput, passwordError);
+      checkPasswordMatch();
+    });
+
+    confirmPasswordInput.addEventListener('blur', () => {
+      showErrorMessage(confirmPasswordInput, passwordError);
+      checkPasswordMatch();
+    });
+  </script>
+</body>
+</html>
