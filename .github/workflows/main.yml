@@ -15,4 +15,4 @@ jobs:
         username: admin@amberage.com.mx
         password: ${{ secrets.FTP_PASSWORD }}
         port: 21
-        server-dir: ./home4/amberage/public_html
+        server-dir: ./home4/amberage/public_html/
