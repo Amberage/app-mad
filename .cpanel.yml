@@ -3,4 +3,3 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home4/amberage/public_html/
     - /bin/rsync -av --exclude=.cpanel.yml --exclude=.gitignore ./ $DEPLOYPATH
-    - /bin/touch test.amber
