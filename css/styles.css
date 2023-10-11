@@ -10,13 +10,12 @@ body {
   background-size: cover;
   /*padding: 20px;*/
   width: 100%;
-
 }
 
 
 h1 {
   text-align: center;
-  padding-top: 30%;
+  padding-top: 20px;
   margin-bottom: 50px;
 }
 
@@ -132,7 +131,7 @@ button:hover {
 }
 
 .menu li {
-  width: 25%;
+  width: 20%;
   float: left; /* Hace que los elementos de la lista floten en línea */
 }
 
