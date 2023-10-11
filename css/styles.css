@@ -113,6 +113,37 @@ button:hover {
   text-align: center; /* Centra el contenido dentro del div */
 }
 
+/*Bar Menu*/
+
+.menu {
+  background-color: #333; /* Color de fondo de la barra de menú */
+  overflow: hidden;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  float: left; /* Hace que los elementos de la lista floten en línea */
+}
+
+.menu li a {
+  display: block;
+  color: white; /* Color del texto en los enlaces del menú */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Cambia el color de fondo del enlace cuando se pasa el cursor sobre él */
+.menu li a:hover {
+  background-color: #444;
+}
+
+
 /*Animaciones*/
 
 @keyframes bounce {
