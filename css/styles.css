@@ -117,6 +117,7 @@ button:hover {
 
 .menu {
   background-color: #333; /* Color de fondo de la barra de menú */
+  width: 100%; /* Ancho del contenedor */
   overflow: hidden;
 }
 
