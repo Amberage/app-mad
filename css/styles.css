@@ -19,6 +19,18 @@ h1 {
   margin-bottom: 50px;
 }
 
+h2 {
+  text-align: left;
+  text-decoration-color: #8152b8;
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-bottom: 30px;
+}
+
+p {
+  font-size: 18px;
+}
+
 label {
   display: block;
   text-align: left;
