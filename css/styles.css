@@ -19,7 +19,7 @@ h1 {
   margin-bottom: 50px;
 }
 
-h2 {
+.home h2 {
   text-align: left;
   color: #8152b8;
   padding-top: 30px;
@@ -27,14 +27,15 @@ h2 {
   padding-bottom: 30px;
 }
 
-img {
-  margin-left: 50%;
+.home img {
+  margin: 0 auto;
 }
 
 p {
   font-size: 18px;
   color: #333;
-  padding: 40px;
+  padding-left: 40px;
+  padding-top: 20px;
 }
 
 label {
