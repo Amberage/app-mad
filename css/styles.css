@@ -21,7 +21,7 @@ h1 {
 
 h2 {
   text-align: left;
-  text-decoration-color: #8152b8;
+  color: #8152b8;
   padding-top: 30px;
   padding-left: 40px;
   padding-bottom: 30px;
@@ -29,6 +29,12 @@ h2 {
 
 p {
   font-size: 18px;
+  color: #333;
+  padding: 40px;
+}
+
+img {
+  margin-left: 50%;
 }
 
 label {
