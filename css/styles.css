@@ -27,12 +27,12 @@ h2 {
   padding-bottom: 30px;
 }
 
-img {
+.img {
   margin-left: 40%;
 }
 
 p {
-  font-size: 18px;
+  font-size: medium;
   color: #333;
   padding-left: 40px;
   padding-top: 20px;
