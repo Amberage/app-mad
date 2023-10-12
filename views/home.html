@@ -8,21 +8,37 @@
     <link rel="stylesheet" href="/css/styles.css" />
     <title>Ingresar</title>
 </head>
-<body>
-  <div class="contenedorCentradoTotal">
-    <h1>Bienvenido!!</h1>
+<body>    
+ <div class="body">
     <div class="menu">
         <ul>
             <li><a href="">Inicio</a></li>
+            <li></li>
             <li><a href="">Encapsulamiento</a></li>
+            <li></li>
             <li><a href="">Herencia</a></li>
+            <li></li>
             <li><a href="">Polimorfismo</a></li>
-            <li><a onclick="cerrarSesion()">Cerrar Sesión</a></li>
+            <li></li>
+            <li><a href="../index.html">Cerrar Sesión</a></li>
         </ul>
     </div>
-    
+
+    <h1><b>¡ B I E N V E N I D O !</b></h1>
+    <h2><b>¿Qué es MAD Learning?</b></h2>
+    <p class="p">Somos un sitio dirigido a estudiantes, en dónde podrán encontrar apoyo didáctico para reforzar sus conocimientos
+        sobre temas específicos de la <b>Programación Orientada a Objetos</b>.
+        Dentro de esta web encontrarás información para lectura, vídeos, ejemplos y ejercícios sobre el <b>Encapsulamiento</b>, 
+        la <b>Herencia</b> y el <b>Polimorfismo</b>.
+    </p>
+<div style="text-align: center;">
+    <img src="/assets/images/monachina.png" alt="Imagen de monachina">
+</div>
+    <h2><b>Instrucciones</b></h2>
+    <p class="p">Sobre la barra de menú encontrarás el nombre de las 3 lecciones, al hacer click sobre ellas podrás acceder a la teoría y a la evaluación
+        de la unidad correspondiente. Al final del curso se te presentará una breve encuesta para evaluar el sitio. </p>
     <script>
-        // Función para mostrar la información del usuario
+        // Función para mostrar la información del usuario 
         function mostrarInformacionUsuario() {
             const userDataCookie = getCookie("userData");
 
