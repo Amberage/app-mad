@@ -57,6 +57,14 @@ video {
   border: 2px solid #333;
 }
 
+ol {
+  font-size: 20px;
+  color: #333;
+  padding-left: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
 /*Botones*/
 
 button {
