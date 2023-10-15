@@ -12,6 +12,11 @@ body {
   width: 100%;
 }
 
+.imag-encabezado {
+  width: 350px;
+  height: 300px;
+  margin-left: 40%;
+}
 
 h1 {
   text-align: center;
