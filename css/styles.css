@@ -24,14 +24,16 @@ h2 {
   color: #8152b8;
   padding-top: 30px;
   padding-left: 40px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
+  margin-left: 40px;
 }
 
 p {
   font-size: 20px;
   color: #333;
   padding-left: 40px;
-  padding-top: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 label {
@@ -44,6 +46,10 @@ input {
   width: 100%;
   padding: 5px;
   margin-bottom: 10px;
+}
+
+video {
+  border: 2px solid #333;
 }
 
 /*Botones*/
