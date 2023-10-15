@@ -170,6 +170,12 @@ button:hover {
   background-color: #444;
 }
 
+.menu-destacado {
+  background-color: #8152b8; /* Color de fondo */
+  color: #333; /* Color del texto */
+  font-weight: bold; /* Texto en negrita */
+}
+
 /*Animaciones*/
 
 @keyframes bounce {
