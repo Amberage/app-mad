@@ -8,7 +8,6 @@ function mostrarInformacionUsuario() {
     const userDataDisplay = document.getElementById("userDataDisplay");
     const mensajeBienvenida = `Bienvenido ${userData.nombre} ${userData.aPaterno}!!`;
     document.getElementById("mensajeBienvenida").innerHTML = mensajeBienvenida;
-    userDataDisplay.innerHTML = userDataInfo;
   } else {
     console.log("No se encontró la cookie del usuario.");
     window.location.href = "../index.html";
