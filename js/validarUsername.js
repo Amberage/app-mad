@@ -1,3 +1,5 @@
+/*Este script consulta en la BBDD si ya existe el username del usuario que desea registrarse */
+
 // Event listener para el formulario de registro
 document
   .getElementById("registerForm")

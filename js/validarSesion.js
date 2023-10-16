@@ -1,5 +1,6 @@
 /*Este script revisa si existe una cookie existente para ahorrarnos el logeo
 cada que se va al index.html */
+
 document.addEventListener('DOMContentLoaded', function() {
     // Verificar si la cookie "userData" está presente
     const userDataCookie = getCookie('userData');

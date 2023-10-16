@@ -1,3 +1,7 @@
+/*Este script recoge el username y el password del formulario de login
+para mandarlos a un PHP donde esperara la respuesta de datos validos o
+invalidos para el login
+*/
 function redirectToLogin() {
   const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;

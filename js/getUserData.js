@@ -1,3 +1,8 @@
+/*Este script hace 3 cosas:
+1. Almacena el nombre del usuario en la variable nombreUsuario
+2. Valida que existan datos en la cookie, de no existir redirigue al index
+3. Tiene un metodo para cerrar la sesión (eliminar la cookie)
+*/
 // Función para mostrar la información del usuario
 function mostrarInformacionUsuario() {
   const userDataCookie = getCookie("userData");
@@ -6,8 +11,8 @@ function mostrarInformacionUsuario() {
     const userDataJSON = decodeURIComponent(atob(userDataCookie));
     const userData = JSON.parse(userDataJSON);
     const userDataDisplay = document.getElementById("userDataDisplay");
-    const mensajeBienvenida = `Bienvenid@ ${userData.nombre} ${userData.aPaterno}!!`;
-    document.getElementById("mensajeBienvenida").innerHTML = mensajeBienvenida;
+    const nombreUsuario = `${userData.nombre}`;
+    document.getElementById("nombreUsuario").innerHTML = nombreUsuario;
   } else {
     console.log("No se encontró la cookie del usuario.");
     window.location.href = "../index.html";
