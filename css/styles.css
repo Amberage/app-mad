@@ -191,7 +191,7 @@ button:hover {
 }
 
 .contenedorBotonBack {
-  text-align: left;
+  text-align: start;
 }
 
 .contenedorBotonNext {
