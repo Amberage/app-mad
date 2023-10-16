@@ -191,12 +191,11 @@ button:hover {
 }
 
 .contenedorBotonBack, .contenedorBotonNext {
-  text-align: start;
   position: absolute;
-  top: 50px; /* Ajusta la posición vertical según tus necesidades */
-  left: 50px; /* Ajusta la posición horizontal según tus necesidades */
-  width: 100px; /* Ajusta el ancho según tus necesidades */
-  height: 100px; /* Ajusta el alto según tus necesidades */
+}
+
+.contenedorBotonBack {
+  text-align: start;
 }
 
 .contenedorBotonNext {
