@@ -39,6 +39,7 @@ p {
   padding-left: 40px;
   margin-left: 40px;
   margin-right: 40px;
+  text-align: justify
 }
 
 label {
@@ -63,8 +64,19 @@ ol {
   padding-left: 50px;
   margin-left: 40px;
   margin-right: 40px;
+  text-align: justify
 }
 
+.div-pie {
+  background-color: #333;
+}
+
+.texto-inferior-izquierda {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #ffffff
+}
 /*Botones*/
 
 button {
