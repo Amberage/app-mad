@@ -6,7 +6,7 @@ function mostrarInformacionUsuario() {
     const userDataJSON = decodeURIComponent(atob(userDataCookie));
     const userData = JSON.parse(userDataJSON);
     const userDataDisplay = document.getElementById("userDataDisplay");
-    const mensajeBienvenida = `Bienvenido ${userData.nombre} ${userData.aPaterno}!!`;
+    const mensajeBienvenida = `Bienvenid@ ${userData.nombre} ${userData.aPaterno}!!`;
     document.getElementById("mensajeBienvenida").innerHTML = mensajeBienvenida;
   } else {
     console.log("No se encontró la cookie del usuario.");
