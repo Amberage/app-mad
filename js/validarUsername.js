@@ -1,5 +1,7 @@
 // Event listener para el formulario de registro
-document.getElementById("registerForm").addEventListener("submit", async (event) => {
+document
+  .getElementById("registerForm")
+  .addEventListener("submit", async (event) => {
     event.preventDefault();
 
     const formData = new FormData(event.target);
@@ -11,7 +13,7 @@ document.getElementById("registerForm").addEventListener("submit", async (event)
 // Función para enviar datos al servidor
 async function enviarDatosAlServidor(formData) {
   try {
-    const response = await fetch("../views/register.php", {
+    const response = await fetch("../php/register.php", {
       method: "POST",
       body: formData,
     });
