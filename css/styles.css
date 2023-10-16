@@ -39,6 +39,7 @@ p {
   padding-left: 40px;
   margin-left: 40px;
   margin-right: 40px;
+  text-align: justify
 }
 
 label {
@@ -55,6 +56,24 @@ input {
 
 video {
   border: 2px solid #333;
+}
+
+ol {
+  font-size: 20px;
+  color: #333;
+  padding-left: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: justify
+}
+
+.barra-inferior {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
 }
 
 /*Botones*/
