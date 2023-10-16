@@ -70,6 +70,7 @@ ol {
 .barra-inferior {
   background-color: #333;
   color: #fff;
+  position: static;
   padding: 60px;
   text-align: right;
   bottom: 0;
