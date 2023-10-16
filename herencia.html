@@ -9,10 +9,50 @@
   <title>Herencia</title>
 </head>
 <body>
-  <div class="contenedorCentradoTotal">
-    <h1 style="padding-top: 30px;">Aquí iría la herencia</h1>
-    <p>... si la tuvieramos xd</p>
-    <img src="/assets/images/chaneke.jpg" width="200" height="150" alt="Imagen de Chaneke">
+  <div class="body">
+    <div class="menu">
+      <ul>
+          <li><a href="/views/home.html">Inicio</a></li>
+          <li></li>
+          <li><a href="../encapsulamiento.html">Encapsulamiento</a></li>
+          <li></li>
+          <li><a href="#" class="menu-destacado">Herencia</a></li>
+          <li></li>
+          <li><a href="../polimorfismo.html">Polimorfismo</a></li>
+          <li></li>
+          <li><a href="../index.html">Cerrar Sesión</a></li>
+      </ul>
+    </div>
+    <div>
+      <img style="margin-left: 40%;" src="/assets/images/Herencia.png" alt="Herencia">
+  </div>
+
+  <h2><b>¿Qué es?</b></h2>
+  <p class="p"> Es un mecanismo de la POO que permite agrupar miembros comunes entre clases, 
+    creando clases que concentren las características comunes y las compartan entre
+    otras manteniendo centralizados aquellos miembros que se repiten.
+    La herencia se utiliza cuando existen atributos o métodos que se repitan entre las clases,
+    se deberá aplicar la Herencia, para mantener en un solo lugar (clase) esos miembros comunes (atributos y métodos)
+    y heredarlos en clases más específicas sin necesidad de definirlas en su código.
+    SIEMPRE QUE SE DETECTEN ATRIBUTOS Y/O métodos repetidos entre clases, es un caso para la herencia.
+  </p>
+  <div style="text-align: center;">
+    <img height="300px" src="/assets/images/herencia-poo.jpg" alt="Imagen herencia">
+  </div>
+  <div class="yt-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/S8ayMhvF02Q?si=aYOKSak1lnYaWMFx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  <div class="contenedorBotonAct">
+    <button class="button-activities" type="button" onclick="window.location.href='/views/home.html'">Actividades</button>
+  </div>
+    <div class="navegacion">
+      <button class="button-flechas" type="button" onclick="window.location.href='/encapsulamiento.html'">Anterior</button>
+      <button class="button-flechas" type="button" onclick="window.location.href='/polimorfismo.html'">Siguiente</button>
+    </div>
+    <footer>
+      <img width="100px" src="/assets/images/logo.png">
+      <img width="200px" src="/assets/images/contacto.png">
+  </footer>
   </div>
 </body>
 </html>
