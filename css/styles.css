@@ -122,6 +122,8 @@ button:hover {
   font-size: 1.2em;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
   opacity: 95%;
+  display: block;
+  margin: 50px;
 }
 
 /*Mensajes de error*/
@@ -190,16 +192,8 @@ button:hover {
   text-align: center;
 }
 
-.contenedorBotonBack, .contenedorBotonNext {
-  position: absolute;
-}
-
-.contenedorBotonBack {
-  text-align: start;
-}
-
-.contenedorBotonNext {
-  text-align: right;
+.contenedorBotonesFlecha {
+  text-align: center;
 }
 
 /*Bar Menu*/
