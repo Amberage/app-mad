@@ -168,7 +168,7 @@ button:hover {
 .contenedorCentradoTotal {
   display: flex;
   flex-direction: column; /* Cambia la dirección del eje principal a columna */
-  align-items: center; /* Centra verticalmente */
+  align-items:start; /* Centra verticalmente */
   justify-content: center; /* Centra horizontalmente */
   height: 100vh;
   text-align: center; /* Centra el contenido dentro del div */
