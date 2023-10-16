@@ -1,9 +1,4 @@
 <?php
-$servername = "localhost";
-$username = "amberage_root";
-$password = "Q2om%)?H.sAQV(r(MD";
-$dbname = "amberage_madness";
-
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 if ($conn->connect_error) {
