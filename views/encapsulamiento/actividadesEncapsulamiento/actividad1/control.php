@@ -1,11 +1,6 @@
 <?php
 include($_SERVER['DOCUMENT_ROOT'] . '/php/config.php');
 
-$servername = "localhost";
-$username = "amberage_root";
-$password = "Q2om%)?H.sAQV(r(MD";
-$dbname = "amberage_madness";
-
 // Recuperar datos del usuario
 $alumnoID = null;
 $alumnoUsername = null;
@@ -42,13 +37,24 @@ if ($result->num_rows > 0) {
         $aciertos = $row['aciertos'];
         $actRealizada = $row['actRealizada'];
         $fechaEntrega = $row['fechaEntrega'];
-
-        // Aquí puedes hacer algo con los datos guardados en las variables
-        echo "Aciertos: $aciertos, Actividad realizada: $actRealizada, Fecha de entrega: $fechaEntrega";
     }
 } else {
     echo "No se encontraron resultados para la actividad número 1 y el usuario '$alumnoUsername'";
+    exit();
 }
 
 $conn->close();
+
+/* Variables */
+$aciertos = $aciertos;
+$actRealizada = $actRealizada;
+$fechaEntrega = $fechaEntrega;
+$alumnoID = $alumnoID;
+$alumnoUsername = $alumnoUsername;
+
+echo "Aciertos: '$aciertos'<br>";
+echo "ActRealizada: '$actRealizada'<br>";
+echo "Fecha de Entrega: '$fechaEntrega'<br>";
+echo "Alumno ID: '$alumnoID'<br>";
+echo "Alumno Username: '$alumnoUsername'<br>";
 ?>
