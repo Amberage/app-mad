@@ -1,6 +1,7 @@
 /* Para preguntas: Calificar respuestas */
 var aciertosActividad = 0;
 function calificarRespuestas() {
+  var aciertosActividad = 0;
   let todosCamposCompletos = true;
 
   const respuestasCorrectas = {
@@ -22,7 +23,6 @@ function calificarRespuestas() {
       todosCamposCompletos = false;
     } else if (respuestasCorrectas[id] === seleccion) {
       aciertosActividad += 1;
-      console.log(aciertosActividad);
     }
   });
 
