@@ -4,7 +4,7 @@ var variableJS = "Hola desde JavaScript";
 var xhr = new XMLHttpRequest();
 
 // Configurar una solicitud POST al archivo PHP
-xhr.open("POST", "tu_archivo_php.php", true);
+xhr.open("POST", "prueba.php", true);
 
 // Establecer una función que se ejecutará cuando la solicitud se complete
 xhr.onreadystatechange = function() {
