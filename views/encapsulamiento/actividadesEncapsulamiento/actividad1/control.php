@@ -1,4 +1,5 @@
 <?php
+include('../../../php/config.php');
 
 $servername = "localhost";
 $username = "amberage_root";
@@ -18,7 +19,11 @@ if (isset($_COOKIE['userData'])) {
 
     // Puedes usar estas variables como necesites en tu código
     echo "Username: " . $alumnoID . "<br>";
-    echo "ID: " . $alumnoUsername;
+    echo "Servername: " . $servername . "<br>";
+    echo "Username: " . $username . "<br>";
+    echo "Password: " . $password . "<br>";
+    echo "dbName: " . $dbname . "<br>";
+    echo "ID: " . $alumnoUsername; 
 } else {
     header("Location: /index.html");
     exit();  // Asegúrate de salir del script después de la redirección
