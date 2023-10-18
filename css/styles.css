@@ -438,3 +438,17 @@ code {
   margin-bottom: 5px;
   color: #8152b8;
 }
+
+.adminButton {
+  position: absolute;
+  top: 65px; /* Ajusta la distancia desde la parte superior según tus preferencias */
+  left: 10px; /* Ajusta la distancia desde la derecha según tus preferencias */
+  background-color: rgba(255, 0, 0, 0.5);
+  padding: 5px;
+  border: 2px dashed rgb(47,42,65);
+  border-radius: 15px;
+  height: fit-content;
+  width: fit-content;
+  opacity: 30%;
+  font-size: smaller; 
+}

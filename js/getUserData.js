@@ -16,7 +16,7 @@ function mostrarInformacionUsuario() {
     document.getElementById("nombreUsuario").innerHTML = nombreUsuario;
   } else {
     console.log("No se encontró la cookie del usuario.");
-    window.location.href = "/views/login.html";
+    //window.location.href = "/views/login.html";
   }
 }
 
