@@ -1,23 +1,26 @@
+/* Importación de fuentes y estilos externos */
 @import url("./fonts.css");
 @import url("https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css");
 @import url("https://bootswatch.com/5/sketchy/bootstrap.min.css");
-@import url("");
 
+
+/* Estilos para el cuerpo de la página */
 body {
   background-color: #ffffff;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0' gradientTransform='rotate(90,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FFEA8D'/%3E%3Cstop offset='1' stop-color='%23FF80FD'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(95,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23A36EFF'/%3E%3Cstop offset='1' stop-color='%2373FF60'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='3.3'%3E%3Cpath transform='translate(-9.1 -2.4000000000000004) rotate(-2.7 1409 581) scale(0.9779519999999999)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='1.1' transform='translate(-22 10) rotate(-1 800 450) scale(0.9969959999999999)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(-3.8 6) rotate(-14 401 736) scale(0.9969959999999999)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='1'%3E%3Cpath transform='translate(60 4) rotate(-1 150 345) scale(1.005984)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='2.2' transform='translate(4 -29) rotate(-21.6 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='translate(-15.2 0.7999999999999998) rotate(-3.5999999999999996 1400 132) scale(0.96)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   background-attachment: fixed;
   background-size: cover;
-  /*padding: 20px;*/
   width: 100%;
 }
 
+/* Estilos para la imagen del encabezado */
 .imag-encabezado {
   width: 350px;
   height: 300px;
   margin-left: 40%;
 }
 
+/* Estilos para encabezados h1 y h2 */
 h1 {
   text-align: center;
   padding-top: 20px;
@@ -33,13 +36,14 @@ h2 {
   margin-left: 40px;
 }
 
+/* Estilos para párrafos y etiquetas */
 p {
   font-size: 20px;
   color: #333;
   padding-left: 40px;
   margin-left: 40px;
   margin-right: 40px;
-  text-align: justify
+  text-align: justify;
 }
 
 label {
@@ -60,9 +64,10 @@ ol {
   padding-left: 50px;
   margin-left: 40px;
   margin-right: 40px;
-  text-align: justify
+  text-align: justify;
 }
 
+/* Estilos para el pie de página */
 footer {
   background-color: #333;
   color: #fff;
@@ -70,6 +75,7 @@ footer {
   padding: 30px;
 }
 
+/* Estilos para contenedor de YouTube */
 .yt-container {
   display: flex;
   justify-content: center;
@@ -77,8 +83,7 @@ footer {
   height: 400px;
 }
 
-/*Botones*/
-
+/* Estilos para botones */
 button {
   padding: 10px 20px;
   margin: 20px;
@@ -92,11 +97,10 @@ button {
   opacity: 95%;
 }
 
-
 button:hover {
   background-color: #8152b8;
   opacity: 100%;
-  animation: scale 1s
+  animation: scale 1s;
 }
 
 .button-activities {
@@ -113,7 +117,7 @@ button:hover {
 }
 
 .button-flechas {
-  background-color:#8152b8;
+  background-color: #8152b8;
   margin: 20px;
   color: black;
   border: none;
@@ -126,17 +130,16 @@ button:hover {
   margin: 0 80px;
 }
 
-/*Mensajes de error*/
-
+/* Estilos para mensajes de error */
 .error {
   color: red;
   margin-top: 5px;
   margin-bottom: 10px;
   display: none;
-  animation: bounce 1s
+  animation: bounce 1s;
 }
 
-/*Navigation bar*/
+/* Estilos para la barra de navegación */
 .navbar {
   color: white;
   padding: 7px;
@@ -152,7 +155,7 @@ button:hover {
 }
 
 .navbar ul:hover {
-  animation: scale 2s
+  animation: scale 2s;
 }
 
 .navbar li {
@@ -164,28 +167,27 @@ button:hover {
 .navbar a, .navbar img {
   color: #8BD450;
   text-decoration: none;
-  transition: color 0.3s; /* Transición para suavizar el cambio de color */
+  transition: color 0.3s;
 }
 
 .navbar a:hover, .navbar img:hover {
   border-bottom: 2px solid white;
-  color: white; /* Cambia el color al pasar sobre el enlace o la imagen */
+  color: white;
 }
 
-/*Clases propias*/
+/* Estilos para clases personalizadas */
 .transparency {
   opacity: 0.9;
-  animation: bounce 2s infinite; /* Aplicar la animación de rebote infinita */
+  animation: bounce 2s infinite;
 }
-
 
 .contenedorCentradoTotal {
   display: flex;
-  flex-direction: column; /* Cambia la dirección del eje principal a columna */
-  align-items: center; /* Centra verticalmente */
-  justify-content: center; /* Centra horizontalmente */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
-  text-align: center; /* Centra el contenido dentro del div */
+  text-align: center;
 }
 
 .contenedorBotonAct {
@@ -197,11 +199,9 @@ button:hover {
   margin: 50px;
 }
 
-/*Bar Menu*/
-
+/* Estilos para la barra de menú */
 .menu {
-  background-color: #333; /* Color de fondo de la barra de menú */
-  /*width: 100%; Ancho del contenedor */
+  background-color: #333;
   overflow: hidden;
 }
 
@@ -213,27 +213,26 @@ button:hover {
 
 .menu li {
   width: 20%;
-  float: left; /* Hace que los elementos de la lista floten en línea */
+  float: left;
 }
 
 .menu li a {
   display: block;
-  color: white; /* Color del texto en los enlaces del menú */
+  color: white;
   text-align: center;
   padding: 14px 0px;
   text-decoration: none;
   width: 100%;
 }
 
-/* Cambia el color de fondo del enlace cuando se pasa el cursor sobre él */
 .menu li a:hover {
   background-color: #444;
 }
 
 .menu-destacado {
-  background-color: #8152b8; /* Color de fondo */
-  color: #333; /* Color del texto */
-  font-weight: bold; /* Texto en negrita */
+  background-color: #8152b8;
+  color: #333;
+  font-weight: bold;
 }
 
 /*Animaciones*/
@@ -269,4 +268,86 @@ button:hover {
 @keyframes rotate {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+/* Estilos para el carrusel de preguntas */
+.carousel {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.question {
+  display: none;
+}
+
+.question ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  /* Agrega estas líneas para dividir en dos columnas */
+  max-width: 400px; /* Ajusta el ancho según tu preferencia */
+  margin: 0 auto;
+}
+
+.question li {
+  box-sizing: border-box;
+  text-align: center;
+  margin: 5px 1%;
+  width: 45%; /* Establece el ancho de cada elemento li */
+}
+
+.question li:hover {
+  color: #2F2A41;
+  font-weight: bold;
+  animation: scale 1s;
+}
+
+.question li input {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.question p {
+  text-align: justify;
+  margin-left: -25px;
+  margin-bottom: 20px;
+}
+
+.question-container {
+  border: 2px solid #2f2a41;
+  background-color: rgba(176, 111, 220, 15%);
+  padding: 10px;
+  text-align: left;
+  margin-bottom: 20px;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.question-container label {
+  display: contents;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.botonesCarrousel {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Centrar los botones horizontalmente */
+}
+
+.botonesCarrousel button {
+  margin: 0 10px;
+}
+
+#btn-submit {
+  display: block;
+  margin: 20px auto;
+  background-color: #8BD450;
+  color: black;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  width: 150px;
 }

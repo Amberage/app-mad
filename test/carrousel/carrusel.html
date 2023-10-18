@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Carrusel de Preguntas</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <div class="carousel">
+    <div class="question" style="display: block;">
+      <div class="question-container">
+        <p>Pregunta 1: ¿Cuál es tu color favorito?</p>
+        <ul>
+          <li><input type="radio" name="q1" value="rojo"> Rojo</li>
+          <li><input type="radio" name="q1" value="verde"> Verde</li>
+          <li><input type="radio" name="q1" value="azul"> Azul</li>
+          <li><input type="radio" name="q1" value="amarillo"> Amarillo</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="question" style="display: none;">
+      <div class="question-container">
+        <p>Pregunta 2: ¿Cuál es tu animal favorito?</p>
+        <ul>
+          <li><input type="radio" name="q2" value="perro"> Perro</li>
+          <li><input type="radio" name="q2" value="gato"> Gato</li>
+          <li><input type="radio" name="q2" value="pajaro"> Pájaro</li>
+          <li><input type="radio" name="q2" value="otro"> Otro</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Agrega más preguntas siguiendo el mismo formato -->
+
+    <div class="buttons">
+      <button onclick="prevQuestion()" id="btn-prev" style="display: none;">Atrás</button>
+      <button onclick="nextQuestion()" id="btn-next">Siguiente</button>
+    </div>
+
+    <button onclick="calificar()" id="btn-submit" style="display: none;">Enviar</button>
+  </div>
+  <script src="script.js"/>
+</body>
+</html>
