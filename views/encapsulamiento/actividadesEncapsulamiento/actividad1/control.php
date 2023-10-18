@@ -1,11 +1,6 @@
 <?php
 include('../../../php/config.php');
 
-$servername = "localhost";
-$username = "amberage_root";
-$password = "Q2om%)?H.sAQV(r(MD";
-$dbname = "amberage_madness";
-
 // recuperar datos del usuario
 if (isset($_COOKIE['userData'])) {
     // Decodifica y deserializa la información de la cookie
