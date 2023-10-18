@@ -44,4 +44,6 @@ if ($conn->query($sql) === TRUE) {
 
 // Cerrar la conexión
 $conn->close();
+header("Location: /index.html");
+exit();  // Asegúrate de salir del script después de la redirección
 ?>
