@@ -23,5 +23,5 @@ xhr.onreadystatechange = function () {
     }
 };
 
-xhr.open('GET', 'control.php', true);
+xhr.open('GET', './control.php', true);
 xhr.send();
