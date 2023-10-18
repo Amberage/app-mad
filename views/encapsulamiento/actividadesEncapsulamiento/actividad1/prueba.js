@@ -8,6 +8,7 @@ xhr.open('GET', 'control.php');
 xhr.onload = function() {
     if(xhr.status === 200) {
         var json = xhr.responseText;
+        console.log("Mi primer JSON\n"+json);
         var aciertos = json.aciertos;
         var actRealizada = json.actRealizada;
         var fechaEntrega = json.fechaEntrega;
