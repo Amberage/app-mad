@@ -37,7 +37,7 @@ $sql = "UPDATE actividades_Encapsulamiento
         WHERE idAlumno = '$alumnoID' AND username = '$alumnoUsername'";
 
 if ($conn->query($sql) === TRUE) {
-    echo "Depuración realizada con éxito.";
+    echo "Reset realizado con éxito.";
 } else {
     echo "Error al actualizar el registro: " . $conn->error;
 }

@@ -22,6 +22,7 @@ function calificarRespuestas() {
       todosCamposCompletos = false;
     } else if (respuestasCorrectas[id] === seleccion) {
       aciertosActividad += 1;
+      console.log(aciertosActividad);
     }
   });
 
