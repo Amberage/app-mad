@@ -34,8 +34,11 @@ function calificarRespuestas() {
     btnNext.style.display = 'none';
 
     resultadoElement.innerHTML = `Puntaje obtenido: <span style="color: green">${puntaje}/8</span>`;
+
+    
+
     setTimeout(function () {
-      window.location.href = "actividad1_Encapsulamiento.html";
+      window.location.href = "retroalimentacion.html";
     }, 2500);
   }
 }
