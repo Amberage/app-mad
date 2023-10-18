@@ -14,7 +14,7 @@ $alumnoID = null;
 $alumnoUsername = null;
 
 //Apuntar a la actividad adecuada
-$numeroActividad = 2; //Puede ser 1, 2 o 3 segun sea el ccaso
+$numeroActividad = 1; //Puede ser 1, 2 o 3 segun sea el ccaso
 $fechaEntrega = date('Y-m-d H:i:s');
 
 if (isset($_COOKIE['userData'])) {

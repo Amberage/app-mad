@@ -1,6 +1,6 @@
 # Como generar nuevas actividades a raiz de esta  
 1. En calificarRespuestas asignar las nuevas respuestas a las preguntas.
-2. En el control.php cambiar la sintaxys SQL para apuntar al numero de actividad deseado y tabla deseada [Linea 29]  
+2. En el validarActividad.php cambiar la sintaxys SQL para apuntar al numero de actividad deseado y tabla deseada [Linea 29]  
 3. En cuestionario y retroalimentacion cambiar los titulos
 4. En enviarAciertos.php selecccionar la actividad correcta [Linea 17]
 
