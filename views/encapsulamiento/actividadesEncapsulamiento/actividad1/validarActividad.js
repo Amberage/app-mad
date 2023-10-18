@@ -16,8 +16,8 @@ xhr.send();
 
 if (actRealizada === 'Si') {
   window.location.href = "retroalimentacion.html";
-} else if (actRealizada === 'No') {
+}
+
+if (actRealizada === 'No') {
   window.location.href = "cuestionario.html";
-} else if (window.location.pathname !== '/index.html') {
-  window.location.href = "/index.html";
 }
