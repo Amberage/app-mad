@@ -17,8 +17,8 @@ if (isset($_COOKIE['userData'])) {
     $alumnoUsername = $userData['username'];
 
     // Puedes usar estas variables como necesites en tu código
-    echo "Username: " . $usernameFromCookie . "<br>";
-    echo "ID: " . $idFromCookie;
+    echo "Username: " . $alumnoID . "<br>";
+    echo "ID: " . $alumnoUsername;
 } else {
     header("Location: /index.html");
     exit();  // Asegúrate de salir del script después de la redirección
