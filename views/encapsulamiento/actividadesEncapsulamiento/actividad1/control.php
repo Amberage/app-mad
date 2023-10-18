@@ -1,7 +1,7 @@
 <?php
 include '/php/config.php';
 
-echo "$username";
+echo $username;
 
 /* $conn = new mysqli($servername, $username, $password, $dbname);
 
