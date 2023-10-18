@@ -26,7 +26,7 @@ function generalCheck() {
 
 function cuestionarioCheck() {
   if (actRealizada === 'Si') {
-    window.location.href = "/index.html";
+    window.location.href = "retroalimentacion.html";
   }
 }
 
