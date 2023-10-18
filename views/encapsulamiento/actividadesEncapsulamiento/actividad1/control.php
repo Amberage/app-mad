@@ -1,5 +1,5 @@
 <?php
-/* include $_SERVER['DOCUMENT_ROOT'] . '/php/config.php'; */
+include $_SERVER['DOCUMENT_ROOT'] . '/php/config.php';
 
 $servername = "localhost";
 $username = "amberage_root";
