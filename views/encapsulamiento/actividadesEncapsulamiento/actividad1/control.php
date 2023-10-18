@@ -1,5 +1,5 @@
 <?php
-include('/php/config.php');
+include($_SERVER['DOCUMENT_ROOT'] . '/php/config.php');
 
 // recuperar datos del usuario
 if (isset($_COOKIE['userData'])) {
