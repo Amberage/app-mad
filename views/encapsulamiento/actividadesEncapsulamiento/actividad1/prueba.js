@@ -26,10 +26,8 @@ console.log(fechaEntrega);
 console.log(alumnoID);
 console.log(alumnoUsername);
 
-if (actRealizada === 'Si') {
-  window.location.href = "retroalimentacion.html";
-}
-
 if (actRealizada === 'No') {
   window.location.href = "cuestionario.html";
+} else {
+  window.location.href = "retroalimentacion.html";
 }

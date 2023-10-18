@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Redireccionamiento según actividadResuelta</title>
-</head>
-<body>
-  <script src="prueba.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redireccionamiento según actividadResuelta</title>
+  </head>
+  <body>
+    <script>
+      var xhr = new XMLHttpRequest();
+      var actRealizada;
+
+      xhr.open("GET", "control.php", false); //true para ejecutar de manera asincrona y false para hacerlo de manera asincrona
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          //var json = xhr.responseText;
+          var json = JSON.parse(xhr.responseText);
+          actRealizada = json.actRealizada;
+        } else {
+          console.log("Error al cargar el servidor");
+        }
+      };
+      xhr.send();
+      
+      if (actRealizada === "No") {
+        window.location.href = "cuestionario.html";
+      } else {
+        window.location.href = "retroalimentacion.html";
+      }
+    </script>
+  </body>
 </html>
