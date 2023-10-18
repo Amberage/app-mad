@@ -57,12 +57,3 @@ $actData = array(
 // Convertir el array a formato JSON
 $actDataJSON = json_encode($actData);
 ?>
-
-<script>
-// Almacenar las variables en variables JavaScript
-var aciertos = <?php echo json_encode($aciertos); ?>;
-var actRealizada = <?php echo json_encode($actRealizada); ?>;
-var fechaEntrega = <?php echo json_encode($fechaEntrega); ?>;
-var alumnoID = <?php echo json_encode($alumnoID); ?>;
-var alumnoUsername = <?php echo json_encode($alumnoUsername); ?>;
-</script>
