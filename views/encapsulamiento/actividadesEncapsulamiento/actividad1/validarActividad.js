@@ -2,7 +2,7 @@
 var xhr = new XMLHttpRequest();
 var actRealizada;
 
-xhr.open("GET", "control.php", false); //true para ejecutar de manera asincrona y false para hacerlo de manera asincrona
+xhr.open("GET", "validarActividad.php", false); //true para ejecutar de manera asincrona y false para hacerlo de manera asincrona
 xhr.onload = function () {
   if (xhr.status === 200) {
     //var json = xhr.responseText;

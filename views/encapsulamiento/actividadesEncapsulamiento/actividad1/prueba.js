@@ -1,31 +1,21 @@
-/*Pasar las variables de PHP a JS
-Fuente: https://www.youtube.com/watch?v=ev9wASpNN9A
-*/
+var variableJS = "Hola desde JavaScript";
+
+// Crear un objeto XMLHttpRequest
 var xhr = new XMLHttpRequest();
-var aciertos, actRealizada, fechaEntrega, alumnoID, alumnoUsername;
 
-xhr.open("GET", "control.php", false); //true para ejecutar de manera asincrona y false para hacerlo de manera asincrona
-xhr.onload = function () {
-  if (xhr.status === 200) {
-    //var json = xhr.responseText;
-    var json = JSON.parse(xhr.responseText);
-    aciertos = json.aciertos;
-    actRealizada = json.actRealizada;
-    fechaEntrega = json.fechaEntrega;
-    alumnoID = json.alumnoID;
-    alumnoUsername = json.alumnoUsername;
-  } else {
-    console.log("Error al cargar el servidor");
-  }
+// Configurar una solicitud POST al archivo PHP
+xhr.open("POST", "tu_archivo_php.php", true);
+
+// Establecer una función que se ejecutará cuando la solicitud se complete
+xhr.onreadystatechange = function() {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+        // Manejar la respuesta del servidor (si es necesario)
+        console.log(xhr.responseText);
+    }
 };
-xhr.send();
 
-console.log(aciertos);
-console.log(actRealizada);
-console.log(fechaEntrega);
-console.log(alumnoID);
-console.log(alumnoUsername);
+// Establecer el encabezado de la solicitud para enviar datos como un formulario
+xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
-if (actRealizada === 'Si') {
-  window.location.href = "retroalimentacion.html";
-}
+// Enviar la variable al servidor
+xhr.send("variablePHP=" + variableJS);
