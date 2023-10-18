@@ -32,3 +32,13 @@ const footerHTML = `
 
 const footerContainer = document.getElementById('endFooter'); // Busca en el HTML el id endFooter para vacciar el menuHTML
 footerContainer.innerHTML = footerHTML;
+
+// Footer
+const userDisplayHTML = `
+<div class="userDataDisplay">
+  <span>Usuario: </span><span id="nombreUsuario"></span>
+</div>
+`;
+
+const dataContainer = document.getElementById('dataShow'); // Busca en el HTML el id endFooter para vacciar el menuHTML
+dataContainer.innerHTML = userDisplayHTML;
