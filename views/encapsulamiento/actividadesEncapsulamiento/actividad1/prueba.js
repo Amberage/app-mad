@@ -28,6 +28,8 @@ console.log(alumnoUsername);
 
 if (actRealizada === 'Si') {
   window.location.href = "retroalimentacion.html";
-} else {
+}
+
+if (actRealizada === 'No') {
   window.location.href = "cuestionario.html";
 }
