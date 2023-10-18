@@ -45,16 +45,15 @@ if ($result->num_rows > 0) {
 
 $conn->close();
 
-/* Variables */
-$aciertos = $aciertos;
-$actRealizada = $actRealizada;
-$fechaEntrega = $fechaEntrega;
-$alumnoID = $alumnoID;
-$alumnoUsername = $alumnoUsername;
+// Crear un array asociativo con las variables
+$actData = array(
+    'aciertos' => $aciertos,
+    'actRealizada' => $actRealizada,
+    'fechaEntrega' => $fechaEntrega,
+    'alumnoID' => $alumnoID,
+    'alumnoUsername' => $alumnoUsername
+);
 
-echo "Aciertos: '$aciertos'<br>";
-echo "ActRealizada: '$actRealizada'<br>";
-echo "Fecha de Entrega: '$fechaEntrega'<br>";
-echo "Alumno ID: '$alumnoID'<br>";
-echo "Alumno Username: '$alumnoUsername'<br>";
+// Convertir el array a formato JSON
+$actDataJSON = json_encode($actData);
 ?>
