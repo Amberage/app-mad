@@ -45,11 +45,21 @@
           la clase en la que se encuentra, por lo tanto debe ser declarada como "private". Esto
           significa que solo los métodos dentro de la misma clase pueden acceder a esta
           variable. Esto proporciona un alto nivel de protección para la dirección.</p>
-          <div class="codeContainer"> 
+          <div class="codeContainer" style="margin-bottom: 20px;"> 
             <code>
               private &lt;tipoDato&gt; &lt;nombreVariable&gt;;
             </code>
           </div>
+          <p style="margin-bottom: -5px;">
+            <strong>NOTA:</strong>
+            <p style="font-style: italic;">
+              Como se puede observar en este pequeño diagrama de clases hay herencia,
+              nuestra superclase es Persona y las clasesHijas son Empleado y Cliente,
+              RECUERDA que, aunque tus variables son privadas en la superclase, estas son
+              heredadas automáticamente por las subclases, y para poder acceder a ella,
+              necesitas hacerlo con los métodos getters and setters.
+            </p>
+          </p>
       </div>
     </div>
 
@@ -60,7 +70,7 @@
   </div>
   <div id="endFooter"><!-- Aqui se genera el footer proveniente del script getUserData --></div>
   <!-- Scripts -->
-  <script src="/js/getUserData.js"></script>
+<!--   <script src="/js/getUserData.js"></script> -->
   <script src="/js/bannerFooter.js"></script>
   <script>
     var xhr = new XMLHttpRequest();
