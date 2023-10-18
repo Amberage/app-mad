@@ -9,7 +9,6 @@ xhr.onload = function() {
     if(xhr.status === 200) {
         //var json = xhr.responseText;
         var json = JSON.parse(xhr.responseText);
-        console.log("Mi primer JSON\n"+json);
         aciertos = json.aciertos;
         actRealizada = json.actRealizada;
         fechaEntrega = json.fechaEntrega;
