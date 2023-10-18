@@ -19,6 +19,7 @@ if (isset($_COOKIE['userData'])) {
     echo "Password: " . $password . "<br>";
     echo "dsssbName: " . $dbname . "<br>";
     echo "ID: " . $alumnoUsername; 
+    echo $_SERVER['DOCUMENT_ROOT'];
 } else {
     header("Location: /index.html");
     exit();  // Asegúrate de salir del script después de la redirección
