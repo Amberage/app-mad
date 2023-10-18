@@ -67,7 +67,7 @@ const menuHTML = `
       <li></li>
       <li><a href="#">Polimorfismo</a></li>
       <li></li>
-      <li><a href="#" onclick="cerrarSesion()"><span id="nombreUsuario"></span>: Cerrar Sesión</a></li>
+      <li><a href="#" onclick="cerrarSesion()">Cerrar Sesión</a></li>
     </ul>
   </div>
 `;
