@@ -27,11 +27,15 @@ function generalCheck() {
 function cuestionarioCheck() {
   if (actRealizada === 'Si') {
     window.location.href = "retroalimentacion.html";
-  } 
+  } else if (window.location.pathname !== '/index.html') {
+    window.location.href = "/index.html";
+  }
 }
 
 function retroalimentacionCheck() {
   if (actRealizada === 'No') {
     window.location.href = "cuestionario.html";
+  } else if (window.location.pathname !== '/index.html') {
+    window.location.href = "/index.html";
   }
 }
