@@ -1,4 +1,4 @@
-var xht = new XMLHttpRequest();
+var xhr = new XMLHttpRequest();
 xhr.open('GET', 'control.php');
 xhr.onload = function() {
     if(xhr.status === 200) {
