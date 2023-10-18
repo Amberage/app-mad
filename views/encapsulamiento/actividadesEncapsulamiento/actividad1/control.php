@@ -1,5 +1,4 @@
 <?php
-include $_SERVER['DOCUMENT_ROOT'] . '/php/config.php';
 
 $servername = "localhost";
 $username = "amberage_root";
@@ -21,7 +20,7 @@ if (isset($_COOKIE['userData'])) {
     echo "Username: " . $usernameFromCookie . "<br>";
     echo "ID: " . $idFromCookie;
 } else {
-    header("Location: " . $_SERVER['DOCUMENT_ROOT'] . "/index.html");
+    header("Location: /index.html");
     exit();  // Asegúrate de salir del script después de la redirección
 }
 
