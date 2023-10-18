@@ -1,14 +1,27 @@
-// Contenido de prueba.js
+// Realizar una solicitud AJAX para obtener los datos del archivo.php
+const xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function () {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+        if (xhr.status === 200) {
+            const actData = JSON.parse(xhr.responseText);
+            // Aquí puedes acceder a las variables recuperadas
+            const aciertos = actData.aciertos;
+            const actRealizada = actData.actRealizada;
+            const fechaEntrega = actData.fechaEntrega;
+            const alumnoID = actData.alumnoID;
+            const alumnoUsername = actData.alumnoUsername;
 
-// Imprimir el JSON en la consola
-console.log("JSON Data:", actDataJSON);
+            // Haz lo que necesites con las variables
+            console.log('Aciertos:', aciertos);
+            console.log('Actividad Realizada:', actRealizada);
+            console.log('Fecha de Entrega:', fechaEntrega);
+            console.log('ID del Alumno:', alumnoID);
+            console.log('Nombre de Usuario del Alumno:', alumnoUsername);
+        } else {
+            console.error('Hubo un error al obtener los datos:', xhr.status, xhr.statusText);
+        }
+    }
+};
 
-// Acceder a las variables del JSON
-var actData = JSON.parse(actDataJSON);
-
-// Acceso a variables individualmente
-console.log('Aciertos:', actData.aciertos);
-console.log('ActRealizada:', actData.actRealizada);
-console.log('Fecha de Entrega:', actData.fechaEntrega);
-console.log('Alumno ID:', actData.alumnoID);
-console.log('Alumno Username:', actData.alumnoUsername);
+xhr.open('GET', 'archivo.php', true);
+xhr.send();

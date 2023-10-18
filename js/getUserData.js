@@ -40,7 +40,7 @@ function getCookie(name) {
 // Función para eliminar la cookie y redireccionar a index.html
 function cerrarSesion() {
   document.cookie = "userData=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-  window.location.href = "../index.html";
+  window.location.href = "/index.html";
 
   const userDataCookieValue = getCookie("userData");
   console.log("Sesión finalizada. Cookie eliminada:", userDataCookieValue);
