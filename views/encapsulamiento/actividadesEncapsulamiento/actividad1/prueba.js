@@ -8,11 +8,11 @@ xhr.open('GET', 'control.php');
 xhr.onload = function() {
     if(xhr.status === 200) {
         var json = xhr.responseText;
-        var aciertos = json[0].aciertos;
-        var actRealizada = json[0].actRealizada;
-        var fechaEntrega = json[0].fechaEntrega;
-        var alumnoID = json[0].alumnoID;
-        var alumnoUsername = json[0].alumnoUsername;
+        var aciertos = json.aciertos;
+        var actRealizada = json.actRealizada;
+        var fechaEntrega = json.fechaEntrega;
+        var alumnoID = json.alumnoID;
+        var alumnoUsername = json.alumnoUsername;
 
         console.log(aciertos);
         console.log(actRealizada);
