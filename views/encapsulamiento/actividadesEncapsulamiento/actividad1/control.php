@@ -1,5 +1,5 @@
 <?php
-include('../../../php/config.php');
+include('/php/config.php');
 
 // recuperar datos del usuario
 if (isset($_COOKIE['userData'])) {
@@ -17,7 +17,7 @@ if (isset($_COOKIE['userData'])) {
     echo "Servername: " . $servername . "<br>";
     echo "Username: " . $username . "<br>";
     echo "Password: " . $password . "<br>";
-    echo "dbName: " . $dbname . "<br>";
+    echo "dsssbName: " . $dbname . "<br>";
     echo "ID: " . $alumnoUsername; 
 } else {
     header("Location: /index.html");
