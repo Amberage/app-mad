@@ -46,6 +46,6 @@ if ($conn->query($sql) === TRUE) {
 $conn->close();
 
 // Redireccionar después de la operación de base de datos
-header("Location: ../index.html");
+
 exit();  // Asegúrate de salir del script después de la redirección
 ?>
