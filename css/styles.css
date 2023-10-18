@@ -405,6 +405,6 @@ button:hover {
 }
 
 .codeContainer code {
-  margin-left: 20px;
   color: rgb(106,217,84);
+  text-align: center;
 }
