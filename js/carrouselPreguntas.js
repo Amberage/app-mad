@@ -5,7 +5,7 @@ const btnNext = document.getElementById('btn-next');
 const btnSubmit = document.getElementById('btn-submit');
 
 function nextQuestion() {
-  const selectedAnswer = document.querySelector(`input[name="q${currentQuestion + 1}"]:checked`);
+  const selectedAnswer = document.querySelector(`#q${currentQuestion + 1}`).value;
 
   if (selectedAnswer) {
     questions[currentQuestion].style.display = 'none';
@@ -23,8 +23,9 @@ function nextQuestion() {
       btnNext.style.display = 'none';
       btnSubmit.style.display = 'block';
     }
+    errorRespuestas.innerHTML = "";
   } else {
-    alert('Por favor, selecciona una respuesta antes de continuar.');
+    errorRespuestas.innerHTML = "Por favor, selecciona una respuesta antes de continuar.";
   }
 }
 
@@ -43,5 +44,6 @@ function prevQuestion() {
       btnNext.style.display = 'block';
       btnSubmit.style.display = 'none';
     }
+    errorRespuestas.innerHTML = "";
   }
 }
