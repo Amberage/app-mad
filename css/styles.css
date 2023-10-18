@@ -400,6 +400,9 @@ button:hover {
   background-color: rgb(47,42,65);
   border-radius: 5px;
   margin: 0 auto; /* Alineación horizontal al centro */
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Centrar los botones horizontalmente */
 /*   white-space: pre-wrap;
   word-wrap: break-word; */
 }
