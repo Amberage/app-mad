@@ -10,11 +10,11 @@ xhr.onload = function() {
         //var json = xhr.responseText;
         var json = JSON.parse(xhr.responseText);
         console.log("Mi primer JSON\n"+json);
-        var aciertos = json.aciertos;
-        var actRealizada = json.actRealizada;
-        var fechaEntrega = json.fechaEntrega;
-        var alumnoID = json.alumnoID;
-        var alumnoUsername = json.alumnoUsername;
+        aciertos = json.aciertos;
+        actRealizada = json.actRealizada;
+        fechaEntrega = json.fechaEntrega;
+        alumnoID = json.alumnoID;
+        alumnoUsername = json.alumnoUsername;
 
         console.log(aciertos);
         console.log(actRealizada);
