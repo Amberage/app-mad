@@ -15,7 +15,7 @@ if (isset($_COOKIE['userData'])) {
     $alumnoID = $userData['id'];
     $alumnoUsername = $userData['username'];
 } else {
-    header("Location: /index.html");
+    header("Location: ../index.html");
     exit();  // Asegúrate de salir del script después de la redirección
 }
 
@@ -44,6 +44,8 @@ if ($conn->query($sql) === TRUE) {
 
 // Cerrar la conexión
 $conn->close();
-header("Location: /index.html");
+
+// Redireccionar después de la operación de base de datos
+header("Location: ../index.html");
 exit();  // Asegúrate de salir del script después de la redirección
 ?>
