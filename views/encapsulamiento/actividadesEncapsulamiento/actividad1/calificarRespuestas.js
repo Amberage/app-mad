@@ -1,5 +1,5 @@
 /* Para preguntas: Calificar respuestas */
-var aciertosActividad = null;
+var aciertosActividad = 0;
 function calificarRespuestas() {
   let todosCamposCompletos = true;
 

@@ -13,6 +13,7 @@
 <body>
   <div id="menuHeader"><!-- Aqui se genera el header proveniente del script getUserData --></div>
   <div id="dataShow"> <!-- Aquí se aloja un campo de depuracion u:--> </div>
+  <div id="userDataDisplay" style="opacity: 100%;"><span id="actividadInfo"></span></div> <!-- Aqui se reciben y muestran los datos de la actividad -->
   <h1 style="color: #6ad954; font-size: 3em; animation: showSlow 3s">Encapsulamiento</h1>
   <h1 style="margin-top: -70px; font-size: 2em; color: #b06fdc; animation: showSlow 3s">Retroalimentación: Actividad 1</h1>
   <div>
@@ -164,5 +165,29 @@
   <script src="/js/getUserData.js"></script>
   <script src="/js/carrouselRespuestas.js"></script>
   <script src="/js/bannerFooter.js"></script>
+  <script>
+    var xhr = new XMLHttpRequest();
+    var actividadRetro, aciertosRetro, fechaRetro;
+
+    xhr.open("GET", "validarActividad.php", false); //true para ejecutar de manera asincrona y false para hacerlo de manera asincrona
+    xhr.onload = function () {
+      if (xhr.status === 200) {
+        //var json = xhr.responseText;
+        var json = JSON.parse(xhr.responseText);
+        actividadRetro = json.actRealizada;
+        aciertosRetro = json.aciertos;
+        fechaRetro = json.fechaEntrega;
+
+        document.getElementById("actividadInfo").innerHTML = `
+        Actividad Realizada: ${actividadRetro}<br>
+        Aciertos: ${aciertosRetro}<br>
+        Fecha de Entrega: ${fechaRetro}`;
+
+      } else {
+        console.log("Error al cargar el servidor");
+      }
+    };
+    xhr.send();
+  </script>
 </body>
 </html>

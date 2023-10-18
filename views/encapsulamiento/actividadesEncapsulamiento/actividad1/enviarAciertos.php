@@ -7,7 +7,7 @@ if (!isset($_POST['aciertosActividad']) || !is_numeric($_POST['aciertosActividad
     exit();
 }
 
-$c = (int)$_POST['aciertosActividad'];
+$aciertosAct = (int)$_POST['aciertosActividad'];
 
 // Recuperar datos del usuario
 $alumnoID = null;
@@ -54,7 +54,7 @@ if ($stmt === FALSE) {
 }
 
 // Bindear los parámetros
-$stmt->bind_param("isiss", $aciertosActividad, $fechaEntrega, $numeroActividad, $alumnoID, $alumnoUsername);
+$stmt->bind_param("isiss", $aciertosAct, $fechaEntrega, $numeroActividad, $alumnoID, $alumnoUsername);
 
 // Ejecutar la consulta
 if ($stmt->execute() === TRUE) {
