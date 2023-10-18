@@ -14,10 +14,12 @@ xhr.onload = function () {
 };
 xhr.send();
 
-if (actRealizada === 'Si') {
+
+console.log(actRealizada);
+/* if (actRealizada === 'Si') {
   window.location.href = "retroalimentacion.html";
 }
 
 if (actRealizada === 'No') {
   window.location.href = "cuestionario.html";
-}
+} */
