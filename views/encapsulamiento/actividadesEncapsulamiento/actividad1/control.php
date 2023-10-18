@@ -1,8 +1,6 @@
 <?php
 include $_SERVER['DOCUMENT_ROOT'] . '/php/config.php';
 
-echo $username;
-echo "holaMMundo";
 
 /* $conn = new mysqli($servername, $username, $password, $dbname);
 

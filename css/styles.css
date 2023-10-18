@@ -407,7 +407,11 @@ button:hover {
   word-wrap: break-word; */
 }
 
-.codeContainer code {
+code {
   color: rgb(106,217,84);
   text-align: center;
+  margin: 0 auto; /* Alineación horizontal al centro */
+  text-align: center;
+  display: flex;
+  justify-content: center; /
 }
