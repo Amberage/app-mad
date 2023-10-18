@@ -14,12 +14,24 @@ xhr.onload = function () {
 };
 xhr.send();
 
-
-console.log(actRealizada);
-/* if (actRealizada === 'Si') {
-  window.location.href = "retroalimentacion.html";
+function generalCheck() {
+  if (actRealizada === 'Si') {
+    window.location.href = "retroalimentacion.html";
+  } else if (actRealizada === 'No') {
+    window.location.href = "cuestionario.html";
+  } else if (window.location.pathname !== '/index.html') {
+    window.location.href = "/index.html";
+  }
 }
 
-if (actRealizada === 'No') {
-  window.location.href = "cuestionario.html";
-} */
+function cuestionarioCheck() {
+  if (actRealizada === 'Si') {
+    window.location.href = "retroalimentacion.html";
+  } 
+}
+
+function retroalimentacionCheck() {
+  if (actRealizada === 'No') {
+    window.location.href = "cuestionario.html";
+  }
+}
