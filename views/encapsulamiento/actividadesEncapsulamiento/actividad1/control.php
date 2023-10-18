@@ -55,5 +55,5 @@ $actData = array(
 );
 
 // Convertir el array a formato JSON
-$actDataJSON = json_encode($actData);
+echo json_encode($actData);
 ?>
