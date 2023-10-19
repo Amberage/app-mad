@@ -201,6 +201,12 @@ button:hover {
   margin: 50px;
 }
 
+.imag-texto {
+  margin-left: 30%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
 /* Estilos para la barra de menú */
 .menu {
   background-color: #333;
