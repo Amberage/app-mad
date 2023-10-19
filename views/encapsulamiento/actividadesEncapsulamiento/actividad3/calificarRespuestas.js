@@ -5,14 +5,11 @@ function calificarRespuestas() {
   let todosCamposCompletos = true;
 
   const respuestasCorrectas = {
-    q1: "si",
-    q2: "no",
-    q3: "si",
-    q4: "si",
-    q5: "no",
-    q6: "si",
-    q7: "no",
-    q8: "no",
+    q1: "a",
+    q2: "c",
+    q3: "a",
+    q4: "b",
+    q5: "b"
   };
 
   Object.keys(respuestasCorrectas).forEach((id) => {

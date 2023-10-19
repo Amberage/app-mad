@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="/assets/images/logo.png">
   <link rel="stylesheet" href="/css/styles.css">
-  <title>MAD: Encapsulamiento I</title>
+  <title>MAD: Encapsulamiento III</title>
   <script src="validarActividad.js"></script>
   <script> document.addEventListener('DOMContentLoaded', function() { retroalimentacionCheck(); }); </script>
 </head>
@@ -15,14 +15,12 @@
   <div id="dataShow"> <!-- Aquí se aloja un campo de depuracion u:--> </div>
   <div class="userDataDisplay" style="opacity: 100%;"><span id="actividadInfo"></span></div> <!-- Aqui se reciben y muestran los datos de la actividad -->
   <h1 style="color: #6ad954; font-size: 3em; animation: showSlow 3s">Encapsulamiento</h1>
-  <h1 style="margin-top: -70px; font-size: 2em; color: #b06fdc; animation: showSlow 3s">Retroalimentación: Actividad 1</h1>
+  <h1 style="margin-top: -70px; font-size: 2em; color: #b06fdc; animation: showSlow 3s">Retroalimentación: Actividad 3</h1>
   <div>
       <!-- Objetivos -->
       <p style="font-size: 1.5em;"><strong>OBJETIVOS</strong></p>
-      <ul style="margin-left: 70px;">
-          <li>1. Comprender el concepto de encapsulamiento en la programación orientada a objetos.</li>
-          <li>2. Identificar situaciones del mundo real en las que el encapsulamiento es esencial.</li>
-          <li>3. Evaluar si un escenario dado requiere encapsulamiento o no.</li>
+      <ul style="margin-left: 70px; font-size: 1.3em;">
+          <li>Evaluar el nivel de conocimiento de los estudiantes sobre el tema de encapsulamiento a través de un cuestionario.</li>
       </ul>
       
       <!-- Retroalimentacion: Descripcion -->
@@ -33,124 +31,62 @@
     <!-- Pregunta 1 display: block -->
     <div class="question" style="display: block;">
       <div class="question-container">
-        <p><strong>Escenario 1: Aplicación de Gestión de Correos Electrónicos</strong></p>
-        <p><strong>Problema: </strong>En una aplicación de gestión de correos electrónicos, es necesario rastrear la dirección de correo electrónico de un usuario.</p>
-        <p>De acuerdo con el problema planteado, ¿es necesario aplicar encapsulamiento a <strong>"correoElectronico"</strong>?</p>          
-        <p><strong>En este escenario SI es necesario el encapsulamiento, </strong>pues la dirección de correo electrónico es información privada y sensible. El encapsulamiento es necesario para proteger la privacidad del usuario y garantizar que solo se acceda y modifique de manera autorizada.</p>
-        <div class="codeContainer"> 
-          <code>
-            private String correoElectronico;
-          </code>
-        </div>
+        <p><strong>Pregunta 1</strong></p>
+        <p>¿Cuál es el concepto de Encapsulamiento?</p> 
+        <p><strong>RESPUESTA:</strong></p>
+        <p><strong>A. El encapsulamiento es un principio de la programación orientada a objetos que
+          consiste en ocultar el estado de los datos, con el fin de que solo se pueda cambiar
+          mediante las operaciones definidas para el mismo.</strong></p>
+          <p>El encapsulamiento se refiere a ocultar los detalles internos de una
+            clase y exponer una interfaz pública para interactuar con la clase.
+          </p>
       </div>
     </div>
 
     <!-- Pregunta 2 display: none -->
     <div class="question" style="display: none;">
       <div class="question-container">
-        <p><strong>Escenario 2: Sistema de Registro de Eventos Públicos</strong></p>
-        <p><strong>Problema: </strong>En un sistema que registra eventos públicos, como conferencias o conciertos, es necesario rastrear la fecha de cada evento.</p>
-        <p>¿En relación con el problema planteado, se debe encapsular la variable <strong>"fechaEvento"</strong>?</p>          
-        <p><strong>En este escenario NO es necesario el encapsulamiento, </strong>pues la fecha y hora del evento suelen ser información que se divulga ampliamente y no necesita protección especial. En este caso, el acceso público a esta información es apropiado y no hay necesidad de ocultarla.</p>
-        <div class="codeContainer"> 
-          <code>
-            public Date fechaEvento;
-          </code>
-        </div>
+        <p><strong>Pregunta 2</strong></p>
+        <p>¿Cuál de las siguientes <strong><u>NO</u></strong> es una razón para usar encapsulamiento?</p> 
+        <p><strong>RESPUESTA:</strong></p>      
+        <p><strong>C. Mejorar el rendimiento del programa.</strong></p>         
+        <p>El encapsulamiento se utiliza principalmente para mejorar la
+          seguridad y la organización del código, no para mejorar el rendimiento.</p>         
       </div>
     </div>
 
     <!-- Pregunta 3 display: none -->
     <div class="question" style="display: none;">
       <div class="question-container">
-        <p><strong>Escenario 3: Sistema de Control de Inventario en una Tienda de Ropa</strong></p>
-        <p><strong>Problema: </strong>En un sistema de control de inventario en una tienda de ropa, es necesario llevar un registro de la cantidad de existencias de cada artículo de ropa.</p>
-        <p>¿Según el problema planteado, es necesario encapsular la variable <strong>"cantidadExistencias"</strong>?</p>          
-        <p><strong>En este escenario SI es necesario el encapsulamiento, </strong>pues la cantidad de existencias afecta la disponibilidad de productos para los clientes y la gestión de pedidos de reposición. El encapsulamiento es necesario para evitar que las existencias se actualicen de manera incorrecta y para garantizar un control adecuado del inventario.
-        </p>
-        <div class="codeContainer"> 
-          <code>
-            private int cantidadExistencias;
-          </code>
-        </div>
+        <p><strong>Pregunta 3</strong></p>
+        <p>¿Cuál de los siguientes modificadores de acceso permite el acceso desde cualquier parte del programa?</p> 
+        <p><strong>RESPUESTA:</strong></p>
+        <p style="font-family: monospace;"><strong>A. </strong>public</p>             
+        <p>El modificador "public" permite el acceso desde cualquier parte del programa.</p>     
       </div>
     </div>
 
     <!-- Pregunta 4 display: none -->
     <div class="question" style="display: none;">
       <div class="question-container">
-        <p><strong>Escenario 4: Sistema de Control de Temperatura en una Industria de Alimentos</strong></p>
-        <p><strong>Problema: </strong>En un sistema de control de temperatura en una fábrica de alimentos, es fundamental rastrear la temperatura de almacenamiento de un producto.</p>
-        <p>¿De acuerdo con el problema planteado, es necesario encapsular la variable <strong>"temperaturaAlmacenamiento"</strong>?</p>          
-        <p><strong>En este escenario SI es necesario el encapsulamiento, </strong>pues la temperatura de almacenamiento es crítica para garantizar la seguridad y la calidad de los alimentos. El encapsulamiento es necesario para controlar la temperatura de manera precisa y evitar cambios que puedan comprometer la calidad del producto.</p>
-        <div class="codeContainer"> 
-          <code>
-            private double temperaturaAlmacenamiento;
-          </code>
-        </div>
+        <p><strong>Pregunta 4</strong></p>
+        <p>¿Qué modificador de acceso restringe el acceso a los miembros de una clase solo a esa clase en particular?</p> 
+        <p><strong>RESPUESTA:</strong></p>      
+        <p style="font-family: monospace;"><strong>B. </strong>private</p>           
+        <p>El modificador "private" limita el acceso a los miembros solo dentro de la misma clase.</p>     
       </div>
     </div>
 
     <!-- Pregunta 5 display: none -->
     <div class="question" style="display: none;">
       <div class="question-container">
-        <p><strong>Escenario 5. Clase de Constantes Matemáticas</strong></p>
-        <p><strong>Problema: </strong>Suponga que tiene una clase donde las variables son constantes de matemáticas, por ejemplo, PI.</p>
-        <p>De acuerdo con el problema planteado, analiza si las constantes de matemáticas necesitan encapsulamiento o no</p>          
-        <p><strong>En este escenario NO es necesario el encapsulamiento, </strong>pues las constantes matemáticas son valores conocidos y públicos que no deben cambiar. No hay necesidad de encapsular estas constantes, ya que se espera que sean accesibles públicamente.</p>
-        <div class="codeContainer"> 
-            <code>
-              public static final double PI = 3.14159265359;
-            </code>
-        </div>
-      </div>
+        <p><strong>Pregunta 5</strong></p>
+        <p>¿Cuál es el propósito principal de un getter en una clase?</p> 
+        <p><strong>RESPUESTA:</strong></p>      
+        <p><strong>B. </strong>Obtener valores de propiedades privadas</p>    
+        <p>Los getters se utilizan para obtener valores de propiedades privadas.</p> 
+       </div>
     </div>
-
-    <!-- Pregunta 6 display: none -->
-    <div class="question" style="display: none;">
-      <div class="question-container">
-        <p><strong>Escenario 6. Sistema de Registro de Calificaciones en una Escuela</strong></p>
-        <p><strong>Problema: </strong>En un sistema de registro de calificaciones escolares, se necesita rastrear las calificaciones de un estudiante en una asignatura.</p>
-        <p>De acuerdo con el problema planteado, analiza si una <strong>calificación</strong> necesita de encapsulamiento o no.</p>          
-        <p><strong>En este escenario SI es necesario el encapsulamiento, </strong>pues las calificaciones son datos sensibles y deben estar encapsuladas para garantizar la precisión y evitar la manipulación no autorizada.</p>
-        <div class="codeContainer"> 
-          <code>
-            private double calificacion;
-          </code>
-        </div>
-      </div>
-    </div>
-
-    <!-- Pregunta 7 display: none -->
-    <div class="question" style="display: none;">
-      <div class="question-container">
-        <p><strong>Escenario 7. Sistema de Configuración de Software</strong></p>
-        <p><strong>Problema: </strong>En un sistema de configuración de software, se almacenan opciones de configuración, como el idioma, que los usuarios pueden modificar según sus preferencias.</p>
-        <p>De acuerdo con el problema planteado, ¿es necesario encapsular la variable <strong>"configuracionIdioma"</strong>?</p>          
-        <p><strong>En este escenario NO es necesario el encapsulamiento, </strong>pues las opciones de configuración son datos que los usuarios esperan modificar fácilmente. No es necesario encapsular esta información, ya que se supone que debe ser accesible y modificable públicamente.</p>
-        <div class="codeContainer"> 
-          <code>
-            public String configuracionIdioma;
-          </code>
-        </div>
-      </div>
-    </div>
-
-    <!-- Pregunta 8 display: none -->
-    <div class="question" style="display: none;">
-      <div class="question-container">
-        <p><strong>Escenario 8. Sistema de Registro de Eventos de Uso de Aplicaciones</strong></p>
-        <p><strong>Problema: </strong>En un sistema de registro de eventos de uso de aplicaciones como los registros de eventos y las acciones realizadas por los usuarios es indispensable tener acceso para el análisis.</p>
-        <p>De acuerdo con el problema planteado, ¿es necesario encapsular el <strong>registro de eventos</strong>?</p>          
-        <p><strong>En este escenario NO es necesario el encapsulamiento, </strong>pues los registros de eventos son esenciales para comprender el comportamiento de las aplicaciones y solucionar problemas. No es necesario ocultarlos.</p>
-        <div class="codeContainer"> 
-          <code>
-            public List&lt;Evento&gt; registroEventos;
-          </code>
-        </div>
-      </div>
-    </div>
-
     <!-- Fin de preguntas ↑ -->
     <!-- Botones ↓ -->
     <p class="mensajeError" id="errorRespuestas"></p>

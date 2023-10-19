@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="/assets/images/logo.png">
   <link rel="stylesheet" href="/css/styles.css">
-  <title>MAD: Encapsulamiento - Actividad 1</title>
+  <title>MAD: Encapsulamiento III</title>
   <script src="validarActividad.js"></script>
   <script> document.addEventListener('DOMContentLoaded', function() { cuestionarioCheck(); }); </script>
 </head>
@@ -14,19 +14,17 @@
   <div id="menuHeader"><!-- Aqui se genera el header proveniente del script getUserData --></div>
   <div id="dataShow"> <!-- Aquí se aloja un campo de depuracion u:--> </div>
   <h1 style="color: #6ad954; font-size: 3em; animation: showSlow 3s">Encapsulamiento</h1>
-  <h1 style="margin-top: -70px; font-size: 2em; color: #b06fdc; animation: showSlow 3s">Actividad 1</h1>
+  <h1 style="margin-top: -70px; font-size: 2em; color: #b06fdc; animation: showSlow 3s">Actividad 3</h1>
   <div>
       <!-- Objetivos -->
       <p style="font-size: 1.5em;"><strong>OBJETIVOS</strong></p>
-      <ul style="margin-left: 70px;">
-          <li>1. Comprender el concepto de encapsulamiento en la programación orientada a objetos.</li>
-          <li>2. Identificar situaciones del mundo real en las que el encapsulamiento es esencial.</li>
-          <li>3. Evaluar si un escenario dado requiere encapsulamiento o no.</li>
+      <ul style="margin-left: 70px; font-size: 1.3em;">
+          <li>Evaluar el nivel de conocimiento de los estudiantes sobre el tema de encapsulamiento a través de un cuestionario.</li>
       </ul>
       
       <!-- Actividad: Descripcion -->
       <p style="font-size: 1.5em; margin-top: 25px;"><strong>ACTIVIDAD</strong></p>
-      <p>A continuación,  se  presentan  ejemplos  de  escenarios  reales,  lee  y  analiza  si  es esencial el encapsulamiento o no, dependiendo de la situación. </p>
+      <p>De acuerdo con los conocimientos adquiridos en este tema, responde las siguientes preguntas.</p>
   </div>
 
   <!-- Actividad: Desarrollo -->
@@ -34,13 +32,20 @@
     <!-- Pregunta 1 display: block -->
     <div class="question" style="display: block;">
       <div class="question-container">
-        <p><strong>Escenario 1: Aplicación de Gestión de Correos Electrónicos</strong></p>
-        <p><strong>Problema: </strong>En una aplicación de gestión de correos electrónicos, es necesario rastrear la dirección de correo electrónico de un usuario.</p>
-        <p>De acuerdo con el problema planteado, ¿es necesario aplicar encapsulamiento a <strong>"correoElectronico"</strong>?</p>          
+        <p><strong>Pregunta 1</strong></p>
+        <p>¿Cuál es el concepto de Encapsulamiento?</p> 
+        <p><strong>A. </strong>El encapsulamiento es un principio de la programación orientada a objetos que
+          consiste en ocultar el estado de los datos, con el fin de que solo se pueda cambiar
+          mediante las operaciones definidas para el mismo.</p>         
+        <p><strong>B. </strong>El encapsulamiento se refiere a la creación de múltiples instancias de una clase.</p>         
+        <p><strong>C. </strong>El encapsulamiento se utiliza para heredar propiedades y métodos de una clase padre</p>         
+        <p><strong>D. </strong>El encapsulamiento solo se aplica a las clases abstractas.</p>         
         <select id="q1" class="seleccionarRespuesta">
           <option value="" disabled selected>Selecciona una opción</option>
-          <option value="si">Si, se necesita de encapsulamiento.</option>
-          <option value="no">No, el encapsulamiento no es necesario.</option>
+          <option value="a">Opción A</option>
+          <option value="b">Opción B</option>
+          <option value="c">Opción C</option>
+          <option value="d">Opción D</option>
         </select>
       </div>
     </div>
@@ -48,13 +53,18 @@
     <!-- Pregunta 2 display: none -->
     <div class="question" style="display: none;">
       <div class="question-container">
-        <p><strong>Escenario 2: Sistema de Registro de Eventos Públicos</strong></p>
-        <p><strong>Problema: </strong>En un sistema que registra eventos públicos, como conferencias o conciertos, es necesario rastrear la fecha de cada evento.</p>
-        <p>¿En relación con el problema planteado, se debe encapsular la variable <strong>"fechaEvento"</strong>?</p>          
+        <p><strong>Pregunta 2</strong></p>
+        <p>¿Cuál de las siguientes <strong><u>NO</u></strong> es una razón para usar encapsulamiento?</p> 
+        <p><strong>A. </strong>Facilitar la reutilización de código.</p>         
+        <p><strong>B. </strong>Proteger los datos de una clase de modificaciones no autorizadas.</p>         
+        <p><strong>C. </strong>Mejorar el rendimiento del programa.</p>         
+        <p><strong>D. </strong>Ocultar la complejidad interna de una clase.</p>         
         <select id="q2" class="seleccionarRespuesta">
           <option value="" disabled selected>Selecciona una opción</option>
-          <option value="si">Si, se necesita de encapsulamiento.</option>
-          <option value="no">No, el encapsulamiento no es necesario.</option>
+          <option value="a">Opción A</option>
+          <option value="b">Opción B</option>
+          <option value="c">Opción C</option>
+          <option value="d">Opción D</option>
         </select>
       </div>
     </div>
@@ -62,13 +72,18 @@
     <!-- Pregunta 3 display: none -->
     <div class="question" style="display: none;">
       <div class="question-container">
-        <p><strong>Escenario 3: Sistema de Control de Inventario en una Tienda de Ropa</strong></p>
-        <p><strong>Problema: </strong>En un sistema de control de inventario en una tienda de ropa, es necesario llevar un registro de la cantidad de existencias de cada artículo de ropa.</p>
-        <p>¿Según el problema planteado, es necesario encapsular la variable <strong>"cantidadExistencias"</strong>?</p>          
+        <p><strong>Pregunta 3</strong></p>
+        <p>¿Cuál de los siguientes modificadores de acceso permite el acceso desde cualquier parte del programa?</p> 
+        <p style="font-family: monospace;"><strong>A. </strong>public</p>         
+        <p style="font-family: monospace;"><strong>B. </strong>private</p>         
+        <p style="font-family: monospace;"><strong>C. </strong>protected</p>         
+        <p style="font-family: monospace;"><strong>D. </strong>internal</p>         
         <select id="q3" class="seleccionarRespuesta">
           <option value="" disabled selected>Selecciona una opción</option>
-          <option value="si">Si, se necesita de encapsulamiento.</option>
-          <option value="no">No, el encapsulamiento no es necesario.</option>
+          <option value="a">Opción A</option>
+          <option value="b">Opción B</option>
+          <option value="c">Opción C</option>
+          <option value="d">Opción D</option>
         </select>
       </div>
     </div>
@@ -76,13 +91,18 @@
     <!-- Pregunta 4 display: none -->
     <div class="question" style="display: none;">
       <div class="question-container">
-        <p><strong>Escenario 4: Sistema de Control de Temperatura en una Industria de Alimentos</strong></p>
-        <p><strong>Problema: </strong>En un sistema de control de temperatura en una fábrica de alimentos, es fundamental rastrear la temperatura de almacenamiento de un producto.</p>
-        <p>¿De acuerdo con el problema planteado, es necesario encapsular la variable <strong>"temperaturaAlmacenamiento"</strong>?</p>          
+        <p><strong>Pregunta 4</strong></p>
+        <p>¿Qué modificador de acceso restringe el acceso a los miembros de una clase solo a esa clase en particular?</p> 
+        <p style="font-family: monospace;"><strong>A. </strong>public</p>         
+        <p style="font-family: monospace;"><strong>B. </strong>private</p>         
+        <p style="font-family: monospace;"><strong>C. </strong>protected</p>         
+        <p style="font-family: monospace;"><strong>D. </strong>internal</p>         
         <select id="q4" class="seleccionarRespuesta">
           <option value="" disabled selected>Selecciona una opción</option>
-          <option value="si">Si, se necesita de encapsulamiento.</option>
-          <option value="no">No, el encapsulamiento no es necesario.</option>
+          <option value="a">Opción A</option>
+          <option value="b">Opción B</option>
+          <option value="c">Opción C</option>
+          <option value="d">Opción D</option>
         </select>
       </div>
     </div>
@@ -90,55 +110,18 @@
     <!-- Pregunta 5 display: none -->
     <div class="question" style="display: none;">
       <div class="question-container">
-        <p><strong>Escenario 5. Clase de Constantes Matemáticas</strong></p>
-        <p><strong>Problema: </strong>Suponga que tiene una clase donde las variables son constantes de matemáticas, por ejemplo, PI.</p>
-        <p>De acuerdo con el problema planteado, analiza si las constantes de matemáticas necesitan encapsulamiento o no</p>          
+        <p><strong>Pregunta 5</strong></p>
+        <p>¿Cuál es el propósito principal de un getter en una clase?</p> 
+        <p><strong>A. </strong>Establecer valores en propiedades privadas.</p>         
+        <p><strong>B. </strong>Obtener valores de propiedades privadas</p>         
+        <p><strong>C. </strong>Crear nuevas instancias de la clase.</p>         
+        <p><strong>D. </strong>Eliminar métodos de una clase.</p>         
         <select id="q5" class="seleccionarRespuesta">
           <option value="" disabled selected>Selecciona una opción</option>
-          <option value="si">Si, se necesita de encapsulamiento.</option>
-          <option value="no">No, el encapsulamiento no es necesario.</option>
-        </select>
-      </div>
-    </div>
-
-    <!-- Pregunta 6 display: none -->
-    <div class="question" style="display: none;">
-      <div class="question-container">
-        <p><strong>Escenario 6. Sistema de Registro de Calificaciones en una Escuela</strong></p>
-        <p><strong>Problema: </strong>En un sistema de registro de calificaciones escolares, se necesita rastrear las calificaciones de un estudiante en una asignatura.</p>
-        <p>De acuerdo con el problema planteado, analiza si una <strong>calificación</strong> necesita de encapsulamiento o no.</p>          
-        <select id="q6" class="seleccionarRespuesta">
-          <option value="" disabled selected>Selecciona una opción</option>
-          <option value="si">Si, se necesita de encapsulamiento.</option>
-          <option value="no">No, el encapsulamiento no es necesario.</option>
-        </select>
-      </div>
-    </div>
-
-    <!-- Pregunta 7 display: none -->
-    <div class="question" style="display: none;">
-      <div class="question-container">
-        <p><strong>Escenario 7. Sistema de Configuración de Software</strong></p>
-        <p><strong>Problema: </strong>En un sistema de configuración de software, se almacenan opciones de configuración, como el idioma, que los usuarios pueden modificar según sus preferencias.</p>
-        <p>De acuerdo con el problema planteado, ¿es necesario encapsular la variable <strong>"configuracionIdioma"</strong>?</p>          
-        <select id="q7" class="seleccionarRespuesta">
-          <option value="" disabled selected>Selecciona una opción</option>
-          <option value="si">Si, se necesita de encapsulamiento.</option>
-          <option value="no">No, el encapsulamiento no es necesario.</option>
-        </select>
-      </div>
-    </div>
-
-    <!-- Pregunta 8 display: none -->
-    <div class="question" style="display: none;">
-      <div class="question-container">
-        <p><strong>Escenario 8. Sistema de Registro de Eventos de Uso de Aplicaciones</strong></p>
-        <p><strong>Problema: </strong>En un sistema de registro de eventos de uso de aplicaciones como los registros de eventos y las acciones realizadas por los usuarios es indispensable tener acceso para el análisis.</p>
-        <p>De acuerdo con el problema planteado, ¿es necesario encapsular el <strong>registro de eventos</strong>?</p>          
-        <select id="q8" class="seleccionarRespuesta">
-          <option value="" disabled selected>Selecciona una opción</option>
-          <option value="si">Si, se necesita de encapsulamiento.</option>
-          <option value="no">No, el encapsulamiento no es necesario.</option>
+          <option value="a">Opción A</option>
+          <option value="b">Opción B</option>
+          <option value="c">Opción C</option>
+          <option value="d">Opción D</option>
         </select>
       </div>
     </div>
