@@ -20,8 +20,7 @@
     </div>
     <!-- Panel de adminstrador -->
     <div class="adminPanel">
-      <script src="/debug/resetActividades.js"></script>
-      <button onclick="resetDatabase()">Resetear Base de Datos</button>
+      <button class="adminButton" onclick="resetEncapsulamiento()">Resetear Encapsulamiento</button>
     </div>
     <!-- Panel de adminstrador -->
     <h2><b>¿Qué es MAD Learning?</b></h2>
@@ -104,5 +103,23 @@
     </div>
     <script src="/js/getUserData.js"></script>
     <script src="/js/bannerFooter.js"></script>
+    <script src="/debug/resetActividades.js"></script>
+    <script>
+      /* function resetEncapsulamiento() {
+          var xhr = new XMLHttpRequest();
+          var serverMsg;
+
+          xhr.open("GET", "/debug/resetActividades.php", false);
+          xhr.onload = function () {
+              if (xhr.status === 200) {
+                  var json = JSON.parse(xhr.responseText);
+                  alert(JSON.stringify(json));
+              } else {
+                  console.log("Error al cargar el servidor");
+              }
+          };
+          xhr.send();
+      } */
+    </script>
   </body>
 </html>
