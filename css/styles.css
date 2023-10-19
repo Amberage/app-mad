@@ -67,6 +67,15 @@ ol {
   text-align: justify;
 }
 
+.ol li {
+  font-size: 24px;
+  color: #333;
+  padding-left: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: justify;
+}
+
 /* Estilos para el pie de página */
 footer {
   background-color: #333;
