@@ -16,9 +16,10 @@ const menuHTML = `
       <li></li>
       <li><a href="#" onclick="cerrarSesion()">Cerrar Sesión</a></li>
     </ul>
+     </div>
+        `;
 
-    <script>
-    
+    /*
     // Obtén una referencia a los elementos de la barra de menú
     const inicio = document.getElementById('inicio');
     const encapsulamiento = document.getElementById('encapsulamiento');
@@ -67,14 +68,8 @@ const menuHTML = `
       encapsulamiento.style.backgroundColor = '';
       herencia.style.backgroundColor = '';
       polimorfismo.style.backgroundColor = '';
-    });
+    });*/
 
-    </script>
-
-
-    
-  </div>
-        `;
 const menuContainer = document.getElementById('menuHeader'); // Busca en el HTML el id menuHeader para vacciar el menuHTML
 menuContainer.innerHTML = menuHTML;
 
