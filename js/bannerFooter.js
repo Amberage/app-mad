@@ -18,7 +18,7 @@ const menuHTML = `
     </ul>
   </div>
 `;
-
+    /*
     // Obtén una referencia a los elementos de la barra de menú
     const inicio = document.getElementById('inicio');
     const encapsulamiento = document.getElementById('encapsulamiento');
@@ -69,7 +69,7 @@ const menuHTML = `
       herencia.style.backgroundColor = '';
       polimorfismo.style.backgroundColor = '';
     });
-
+    */
 const menuContainer = document.getElementById('menuHeader'); // Busca en el HTML el id menuHeader para vacciar el menuHTML
 menuContainer.innerHTML = menuHTML;
 
