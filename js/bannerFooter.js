@@ -61,7 +61,6 @@ const menuHTLMPoli = `
       <li><a href="/views/herencia/herencia.html">Herencia</a></li>
       <li></li>
       <li><a href="/views/polimorfismo/polimorfismo.html" class="menu-destacado">Polimorfismo</a></li>
-      <li></li>
       <li><a href="#" onclick="cerrarSesion()">Cerrar Sesión</a></li>
     </ul>
   </div>
