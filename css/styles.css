@@ -80,9 +80,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  width: 880px;
+  width: 50%;
   padding: auto;
+  margin: 0 auto;
 }
 
 /* Estilos para botones */
