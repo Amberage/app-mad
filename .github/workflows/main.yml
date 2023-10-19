@@ -12,7 +12,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ secrets.FTP_SERVER }}
-        username: alejandro@development.amberage.com.mx
+        username: admin@development.amberage.com.mx
         password: ${{ secrets.FTP_PASSWORD }}
         port: 21
         server-dir: ./
