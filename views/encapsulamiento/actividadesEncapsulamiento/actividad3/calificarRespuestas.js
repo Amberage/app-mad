@@ -32,7 +32,7 @@ function calificarRespuestas() {
     btnPrev.style.display = "none";
     btnNext.style.display = "none";
 
-    resultadoElement.innerHTML = `Aciertos obtenidos: <span style="color: green">${aciertosActividad}/8</span>`;
+    resultadoElement.innerHTML = `Aciertos obtenidos: <span style="color: green">${aciertosActividad}/5</span>`;
 
     /*Mandar los resultados a la la BBDD*/
     var xhr = new XMLHttpRequest();
