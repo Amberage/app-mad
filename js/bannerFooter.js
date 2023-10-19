@@ -16,8 +16,8 @@ const menuHTML = `
       <li></li>
       <li><a href="#" onclick="cerrarSesion()">Cerrar Sesión</a></li>
     </ul>
-  </div>
 
+    <script>
     
     // Obtén una referencia a los elementos de la barra de menú
     const inicio = document.getElementById('inicio');
@@ -36,7 +36,6 @@ const menuHTML = `
         polimorfismo.style.backgroundColor = '';
         cerrarSesion.style.backgroundColor = '';
     });
-
     // Repite el proceso para otros elementos del menú
     encapsulamiento.addEventListener('click', () => {
         encapsulamiento.style.backgroundColor = '#8152b8';
@@ -69,7 +68,13 @@ const menuHTML = `
       herencia.style.backgroundColor = '';
       polimorfismo.style.backgroundColor = '';
     });
-    `;
+
+    </script>
+
+
+    
+  </div>
+        `;
 const menuContainer = document.getElementById('menuHeader'); // Busca en el HTML el id menuHeader para vacciar el menuHTML
 menuContainer.innerHTML = menuHTML;
 
