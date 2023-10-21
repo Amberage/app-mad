@@ -14,7 +14,7 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         # username: admin@amberage.com.mx || Este username es para subir a https://amberage.com.mx/
         # username: alejandro@development.amberage.com.mx || Este username es para subir a https://development.amberage.com.mx/
-        username: admin@development.amberage.com.mx
+        username: admin@amberage.com.mx
         password: ${{ secrets.FTP_PASSWORD }}
         port: 21
         server-dir: ./
