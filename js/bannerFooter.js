@@ -1,7 +1,7 @@
 /*Banners 
 En caso de querer realizar cambios al header o footer se deben realizar en los codigos de abajo en la seccción del HTML
 */
-
+/*
 // Headers
 const menuHTML = `
   <div class="menu">
@@ -68,10 +68,10 @@ const menuHTML = `
       encapsulamiento.style.backgroundColor = '';
       herencia.style.backgroundColor = '';
       polimorfismo.style.backgroundColor = '';
-    });*/
+    });
 
 const menuContainer = document.getElementById('menuHeader'); // Busca en el HTML el id menuHeader para vacciar el menuHTML
-menuContainer.innerHTML = menuHTML;
+menuContainer.innerHTML = menuHTML;*/
 
 // Footer
 const footerHTML = `

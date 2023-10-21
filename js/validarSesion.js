@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (userDataCookie) {
         // La cookie "userData" existe, redirigir a home.html
-        window.location.href = '../views/home.html';
+        window.location.href = '/views/home.html';
     }
 });
 

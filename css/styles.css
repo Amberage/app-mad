@@ -20,6 +20,17 @@ body {
   padding: 0;
 }
 
+/* Estilos para el pie de página */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
 /* Estilos para la imagen del encabezado */
 .imag-encabezado {
   width: 350px;
@@ -74,16 +85,7 @@ ol {
   text-align: justify;
 }
 
-/* Estilos para el pie de página */
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 30px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
+
 
 /* Estilos para contenedor de YouTube */
 .yt-container {

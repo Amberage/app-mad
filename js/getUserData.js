@@ -2,7 +2,6 @@
 1. Almacena el nombre del usuario en la variable nombreUsuario
 2. Valida que existan datos en la cookie, de no existir redirigue al index
 3. Tiene un metodo para cerrar la sesión (eliminar la cookie)
-4. Contiene el banner y el footer de los HTML correspondientes
 */
 // Función para mostrar la información del usuario
 function mostrarInformacionUsuario() {
