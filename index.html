@@ -4,42 +4,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/validarSesion.js"></script>
   <link rel="icon" type="image/png" href="/assets/images/logo.png">
   <link rel="stylesheet" href="/css/styles.css">
-  <title>MAD Learning: Encapsulamiento</title>
+  <title>MAD Testing</title>
 </head>
 <body>
-  <div class="body">
-    <div id="menuHeader"><!-- Aqui se genera el header proveniente del script getUserData --></div>
-    <div id="dataShow"> <!-- Aquí se aloja un campo de depuracion u:--> </div>
-    <img style="margin-left: 30%;" src="/assets/images/Encapsulamiento.png" alt="Encapsulamiento">
-  
-    <h2 style="font-size: 35px;"><b>¿Qué es?</b></h2> 
-    <p class="p" style="font-size: 25px;">Ocultamiento del estado de los datos (atributos) de un objeto de manera que solo se pueda cambiar mediante las operaciones definidas para ese objeto (métodos). Cada objeto está aislado del exterior, este aislamiento protege a los datos (atributos) de un objeto contra su modificación por quien no tenga derecho a acceder a ellos.</p>
-  
-    <div style="text-align: center;"> 
-      <img height="300px" src="/assets/images/Modificadores.png" alt="Imagen modificadores de acceso">
-    </div>
-  
-    <h2 style="font-size: 35px;"><b>¿Cómo Encapsulamos?</b></h2>
-    <ol>
-      <li>Definir los atributos o métodos que vamos a encapsular (ocultar), o sea, poner privados</li>
-      <li>Crear métodos accesores para poder leer o escribir él o los atributos que se encapsularon. Estos métodos son los Getters y Setters.</li>
-    </ol>
-  
-    <div class="yt-container">
-      <iframe width="854" height="480" src="https://www.youtube.com/embed/9jdZpBax1Uw?si=as45w93M_DIsm_8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-  </div>
-  
-  <div class="contenedorBotonAct">
-    <button class="button-activities" type="button" onclick="window.location.href='/cuestionario.html'">Cuestionario</button>
-    <button class="button-activities" type="button" onclick="window.location.href='/retroalimentacion.html'">Retroalimentacion</button>
+  <div class="contenedorCentradoTotal">
+    <h1 style="font-size: 5em;">Bievenido Testing!</h1>
+    <img style="width: 300px;" src="https://i.pinimg.com/originals/6c/2e/07/6c2e07660c6fcf90d6a362ced622e1ad.png" class="transparency" alt="MAD Learning Logo">
     <br>
+    <button onclick="redirectToLogin()">Da clic aqui para sufrir...</button>
   </div>
-
-  <div id="endFooter"><!-- Aqui se genera el footer proveniente del script getUserData --></div>
- <!--  <script src="/js/getUserData.js"></script> -->
-  <script src="/js/bannerFooter.js"></script>
+  <script>
+    function redirectToLogin() {
+      window.location.href = "views/login.html";
+    }
+  </script>
 </body>
 </html>
