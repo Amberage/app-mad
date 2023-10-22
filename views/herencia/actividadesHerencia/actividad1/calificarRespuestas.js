@@ -5,15 +5,21 @@ function calificarRespuestas() {
   let todosCamposCompletos = true;
 
   const respuestasCorrectas = {
-    q1: "si",
-    q2: "no",
-    q3: "si",
-    q4: "si",
-    q5: "no",
-    q6: "si",
-    q7: "no",
-    q8: "no",
+    q1: "terrestre",
+    q2: "aereo",
+    q3: "aereo",
+    q4: "carnivoro",
+    q5: "carnivoro",
+    q6: "carnivoro",
+    q7: "terrestre",
+    q8: "terrestre",
+    q9: "herbivoro",
+    q10: "herbivoro",
+    q11: "aereo",
+    q12: "herbivoro",
   };
+
+  const numeroPreguntas = Object.keys(respuestasCorrectas).length;
 
   Object.keys(respuestasCorrectas).forEach((id) => {
     const selectElement = document.getElementById(id);
@@ -35,7 +41,7 @@ function calificarRespuestas() {
     btnPrev.style.display = "none";
     btnNext.style.display = "none";
 
-    resultadoElement.innerHTML = `Aciertos obtenidos: <span style="color: green">${aciertosActividad}/8</span>`;
+    resultadoElement.innerHTML = `Aciertos obtenidos: <span style="color: green">${aciertosActividad}/${numeroPreguntas}</span>`;
 
     /*Mandar los resultados a la la BBDD*/
     var xhr = new XMLHttpRequest();

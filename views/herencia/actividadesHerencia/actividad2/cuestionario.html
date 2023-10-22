@@ -8,118 +8,73 @@
   <link rel="stylesheet" href="/css/styles.css">
   <title>MAD: Encapsulamiento II</title>
   <script src="validarActividad.js"></script>
-  <script> document.addEventListener('DOMContentLoaded', function() { cuestionarioCheck(); }); </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      cuestionarioCheck();
+    });
+  </script>
 </head>
 <body>
   <div class="body">
     <div class="menu">
       <ul>
         <li><a href="/views/home.html">Inicio</a></li>
-        <li></li>
         <li class="menu-destacado"><a href="/views/encapsulamiento/encapsulamiento.html">Encapsulamiento</a></li>
-        <li></li>
         <li><a href="/views/herencia/herencia.html">Herencia</a></li>
-        <li></li>
         <li><a href="/views/polimorfismo/polimorfismo.html">Polimorfismo</a></li>
-        <li></li>
         <li><a href="#" onclick="cerrarSesion()">Cerrar Sesión</a></li>
       </ul>
     </div>
     
-  <div id="dataShow"> <!-- Aquí se aloja un campo de depuracion u:--> </div>
-  <h1 style="color: #6ad954; font-size: 3em; animation: showSlow 3s">Encapsulamiento</h1>
-  <h1 style="margin-top: -70px; font-size: 2em; color: #b06fdc; animation: showSlow 3s">Actividad 2</h1>
-  <div>
+    <div id="dataShow"> <!-- Aquí se aloja un campo de depuración u:--> </div>
+    <h1 style="color: #6ad954; font-size: 3em; animation: showSlow 3s">Herencia</h1>
+    <h1 style="margin-top: -70px; font-size: 2em; color: #b06fdc; animation: showSlow 3s">Actividad 1</h1>
+    <div>
       <!-- Objetivos -->
       <p style="font-size: 1.5em;"><strong>OBJETIVOS</strong></p>
       <ul style="margin-left: 70px; font-size: 1.3em;">
-          <li>Ayudar a los estudiantes en comprender y ejercitar la categorización de propiedades en programación, basándose en su nivel de acceso apropiado, es decir, determinando si deben ser declaradas como "public", "private" o "protected".</li>
+        <li>Comprender el concepto de herencia.</li>
+        <li>Identificar y clasificar objetos en categorías basadas en sus características compartidas.</li>
       </ul>
-      
-      <!-- Actividad: Descripcion -->
+
+      <!-- Actividad: Descripción -->
       <p style="font-size: 1.5em; margin-top: 25px;"><strong>ACTIVIDAD</strong></p>
-      <p>
-        Después de ver el video de Encapsulamiento, analiza el siguiente diagrama, clasifica cada propiedad como "public",
-        "private" o "protected" seleccionando la opción correspondiente. Piensa en la
-        necesidad de proteger cierta información y a considerar qué propiedades deben ser
-        accesibles desde fuera de la clase o el objeto y cuáles deben ser restringidas.
-      </p>
-      <img class="contenedorImagen" src="assets/diagramaAct2.jpg" style="width: fit-content; animation: showSlow 1s">
-  </div>
-
-  <!-- Actividad: Desarrollo -->
-  <div class="carousel">
-    <!-- Pregunta 1 display: block -->
-    <div class="question" style="display: block;">
-      <div class="question-container">
-        <p><strong>Propiedad 1: Nombre</strong></p>
-        <p>De acuerdo con el diagrama planteado, ¿Cómo debería clasificarse esta propiedad?</p>          
-        <select id="q1" class="seleccionarRespuesta">
-          <option value="" disabled selected>Selecciona una opción</option>
-          <option style="font-family: monospace;" value="private">private</option>
-          <option style="font-family: monospace;" value="public">public</option>
-          <option style="font-family: monospace;" value="protected">protected</option>
-        </select>
-      </div>
+      <p><strong>Después de ver el video de Herencia,</strong> deberán clasificar los siguientes objetos en categorías basadas en las características que comparten según las opciones disponibles.</p>
     </div>
 
-    <!-- Pregunta 2 display: none -->
-    <div class="question" style="display: none;">
-      <div class="question-container">
-        <p><strong>Propiedad 2: Dirección</strong></p>
-        <p>De acuerdo con el diagrama planteado, ¿Cómo debería clasificarse esta propiedad?</p>          
-        <select id="q2" class="seleccionarRespuesta">
-          <option value="" disabled selected>Selecciona una opción</option>
-          <option style="font-family: monospace;" value="private">private</option>
-          <option style="font-family: monospace;" value="public">public</option>
-          <option style="font-family: monospace;" value="protected">protected</option>
-        </select>
+    <!-- Actividad: Desarrollo -->
+    <div class="carousel">
+      <!-- Pregunta 1 display: block -->
+      <div class="question" style="display: block;">
+        <div class="question-container">
+          <p><strong>Pregunta 1/12</strong></p>
+          <p><strong>Objeto: </strong>Automóvil</p>
+          <select id="q1" class="seleccionarRespuesta">
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="terrestre">Transporte Terrestre</option>
+            <option value="aereo">Transporte Aéreo</option>
+            <option value="carnivoro">Animales Carnívoros</option>
+            <option value="herbivoro">Animales Herbívoros</option>
+          </select>
+        </div>
       </div>
-    </div>
-
-    <!-- Pregunta 3 display: none -->
-    <div class="question" style="display: none;">
-      <div class="question-container">
-        <p><strong>Propiedad 3: Sueldo_bruto</strong></p>
-        <p>De acuerdo con el diagrama planteado, ¿Cómo debería clasificarse esta propiedad?</p>          
-        <select id="q3" class="seleccionarRespuesta">
-          <option value="" disabled selected>Selecciona una opción</option>
-          <option style="font-family: monospace;" value="private">private</option>
-          <option style="font-family: monospace;" value="public">public</option>
-          <option style="font-family: monospace;" value="protected">protected</option>
-        </select>
+      
+      <!-- Pregunta 2 display: none -->
+      <div class="question" style="display: none;">
+        <div class="question-container">
+          <p><strong>Pregunta 2/12</strong></p>
+          <p><strong>Objeto: </strong>Avión</p>
+          <select id="q2" class="seleccionarRespuesta">
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="terrestre">Transporte Terrestre</option>
+            <option value="aereo">Transporte Aéreo</option>
+            <option value="carnivoro">Animales Carnívoros</option>
+            <option value="herbivoro">Animales Herbívoros</option>
+          </select>
+        </div>
       </div>
-    </div>
-
-    <!-- Pregunta 4 display: none -->
-    <div class="question" style="display: none;">
-      <div class="question-container">
-        <p><strong>Propiedad 4: Teléfono_de_contacto</strong></p>
-        <p>De acuerdo con el diagrama planteado, ¿Cómo debería clasificarse esta propiedad?</p>          
-        <select id="q4" class="seleccionarRespuesta">
-          <option value="" disabled selected>Selecciona una opción</option>
-          <option style="font-family: monospace;" value="private">private</option>
-          <option style="font-family: monospace;" value="public">public</option>
-          <option style="font-family: monospace;" value="protected">protected</option>
-        </select>
-      </div>
-    </div>
-
-    <!-- Pregunta 5 display: none -->
-    <div class="question" style="display: none;">
-      <div class="question-container">
-        <p><strong>Propiedad 5: Categoría</strong></p>
-        <p>De acuerdo con el diagrama planteado, ¿Cómo debería clasificarse esta propiedad?</p>          
-        <select id="q5" class="seleccionarRespuesta">
-          <option value="" disabled selected>Selecciona una opción</option>
-          <option style="font-family: monospace;" value="private">private</option>
-          <option style="font-family: monospace;" value="public">public</option>
-          <option style="font-family: monospace;" value="protected">protected</option>
-        </select>
-      </div>
-    </div>
-
-    <!-- Fin de preguntas ↑ -->
+      
+      <!-- Fin de preguntas ↑ -->
     <!-- Botones ↓ -->
     <p class="mensajeError" id="errorRespuestas"></p>
     <p class="mensajeFinalizado" id="resultadoElement"></p>
@@ -130,11 +85,11 @@
 
     <button onclick="calificarRespuestas()" id="btn-submit" style="display: none;">Enviar</button>
   </div>
-  <div id="endFooter"><!-- Aqui se genera el footer proveniente del script getUserData --></div>
+  <div id="endFooter"><!-- Aquí se genera el footer proveniente del script getUserData --></div>
   <!-- Scripts -->
   <script src="/js/carrouselPreguntas.js"></script>
   <script src="calificarRespuestas.js"></script>
-  <script src="/js/getUserData.js"></script>
+<!--   <script src="/js/getUserData.js"></script> -->
   <script src="/js/bannerFooter.js"></script>
 </body>
 </html>

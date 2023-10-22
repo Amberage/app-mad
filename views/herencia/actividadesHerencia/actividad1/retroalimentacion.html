@@ -6,187 +6,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="/assets/images/logo.png">
   <link rel="stylesheet" href="/css/styles.css">
-  <title>MAD: Encapsulamiento I</title>
+  <title>MAD: Herencia I</title>
   <script src="validarActividad.js"></script>
-  <script> document.addEventListener('DOMContentLoaded', function() { retroalimentacionCheck(); }); </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      retroalimentacionCheck();
+    });
+  </script>
 </head>
 <body>
   <div class="body">
     <div class="menu">
       <ul>
         <li><a href="/views/home.html">Inicio</a></li>
-        <li></li>
-        <li class="menu-destacado"><a href="/views/encapsulamiento/encapsulamiento.html">Encapsulamiento</a></li>
-        <li></li>
-        <li><a href="/views/herencia/herencia.html">Herencia</a></li>
-        <li></li>
+        <li><a href="/views/encapsulamiento/encapsulamiento.html">Encapsulamiento</a></li>
+        <li class="menu-destacado"><a href="/views/herencia/herencia.html">Herencia</a></li>
         <li><a href="/views/polimorfismo/polimorfismo.html">Polimorfismo</a></li>
-        <li></li>
         <li><a href="#" onclick="cerrarSesion()">Cerrar Sesión</a></li>
       </ul>
     </div>
-    
-  <div id="dataShow"> <!-- Aquí se aloja un campo de depuracion u:--> </div>
-  <div class="userDataDisplay" style="opacity: 100%;"><span id="actividadInfo"></span></div> <!-- Aqui se reciben y muestran los datos de la actividad -->
-  <h1 style="color: #6ad954; font-size: 3em; animation: showSlow 3s">Encapsulamiento</h1>
-  <h1 style="margin-top: -70px; font-size: 2em; color: #b06fdc; animation: showSlow 3s">Retroalimentación: Actividad 1</h1>
-  <div>
+
+    <div id="dataShow"> <!-- Aquí se aloja un campo de depuración u:--> </div>
+    <div class="userDataDisplay" style="opacity: 100%;"><span id="actividadInfo"></span></div> <!-- Aquí se reciben y muestran los datos de la actividad -->
+    <h1 style="color: #6ad954; font-size: 3em; animation: showSlow 3s">Herencia</h1>
+    <h1 style="margin-top: -70px; font-size: 2em; color: #b06fdc; animation: showSlow 3s">Retroalimentación: Actividad 1</h1>
+    <div>
       <!-- Objetivos -->
       <p style="font-size: 1.5em;"><strong>OBJETIVOS</strong></p>
       <ul style="margin-left: 70px; font-size: 1.3em;">
-          <li>1. Comprender el concepto de encapsulamiento en la programación orientada a objetos.</li>
-          <li>2. Identificar situaciones del mundo real en las que el encapsulamiento es esencial.</li>
-          <li>3. Evaluar si un escenario dado requiere encapsulamiento o no.</li>
+        <li>Comprender el concepto de herencia.</li>
+        <li>Identificar y clasificar objetos en categorías basadas en sus características compartidas.</li>
       </ul>
-      
-      <!-- Retroalimentacion: Descripcion -->
+
+      <!-- Retroalimentación: Descripción -->
       <p style="font-size: 1.5em; margin-top: 25px;"><strong>RETROALIMENTACIÓN</strong></p>
+    </div>
+
+    <div class="carousel">
+      <!-- Pregunta 1 display: block -->
+      <div class="question" style="display: block;">
+        <div class="question-container">
+          <p><strong>RESPUESTAS</strong></p>
+          <ul style="padding: 0%; ">
+            <li><strong>1. Automóvil:</strong><span style="font-style: italic; color: #b06fdc"> T. Terrestre</span></li>
+            <li><strong>2. Avión:</strong><span style="font-style: italic; color: #b06fdc"> T. Aéreo</span></li>
+            <li><strong>3. Helicóptero:</strong><span style="font-style: italic; color: #b06fdc"> T. Aéreo</span></li>
+            <li><strong>4. Coyote:</strong><span style="font-style: italic; color: #b06fdc"> A. Carnívoro</span></li>
+            <li><strong>5. Puma:</strong><span style="font-style: italic; color: #b06fdc"> A. Carnívoro</span></li>
+            <li><strong>6. Jaguar:</strong><span style="font-style: italic; color: #b06fdc"> A. Carnívoro</span></li>
+            <li><strong>7. Motocicleta:</strong><span style="font-style: italic; color: #b06fdc"> T. Terrestre</span></li>
+            <li><strong>8. Bicicleta:</strong><span style="font-style: italic; color: #b06fdc"> T. Terrestre</span></li>
+            <li><strong>9. Elefante:</strong><span style="font-style: italic; color: #b06fdc"> A. Herbívoro</span></li>
+            <li><strong>10. Cebra:</strong><span style="font-style: italic; color: #b06fdc"> A. Herbívoro</span></li>
+            <li><strong>11. Avioneta:</strong><span style="font-style: italic; color: #b06fdc"> T. Aéreo</span></li>
+            <li><strong>12. Koala:</strong><span style="font-style: italic; color: #b06fdc"> A. Herbívoro</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Fin de preguntas ↑ -->
+      <!-- Botones ↓ -->
+    </div>
+    <div class="navigateButtons">
+      <button class="button-flechas" type="button" onclick="window.location.href='../../herencia.html'">Encapsulamiento: Herencia</button>
+      <button class="button-flechas" type="button" onclick="window.location.href='../actividad2/actividad.html'">Siguiente Actividad</button>
+    </div>
+    <div id="endFooter"><!-- Aquí se genera el footer proveniente del script getUserData --></div>
   </div>
-
-  <div class="carousel">
-    <!-- Pregunta 1 display: block -->
-    <div class="question" style="display: block;">
-      <div class="question-container">
-        <p><strong>Escenario 1: Aplicación de Gestión de Correos Electrónicos</strong></p>
-        <p><strong>Problema: </strong>En una aplicación de gestión de correos electrónicos, es necesario rastrear la dirección de correo electrónico de un usuario.</p>
-        <p>De acuerdo con el problema planteado, ¿es necesario aplicar encapsulamiento a <strong>"correoElectronico"</strong>?</p>          
-        <p><strong>En este escenario SI es necesario el encapsulamiento, </strong>pues la dirección de correo electrónico es información privada y sensible. El encapsulamiento es necesario para proteger la privacidad del usuario y garantizar que solo se acceda y modifique de manera autorizada.</p>
-        <div class="codeContainer"> 
-          <code>
-            private String correoElectronico;
-          </code>
-        </div>
-      </div>
-    </div>
-
-    <!-- Pregunta 2 display: none -->
-    <div class="question" style="display: none;">
-      <div class="question-container">
-        <p><strong>Escenario 2: Sistema de Registro de Eventos Públicos</strong></p>
-        <p><strong>Problema: </strong>En un sistema que registra eventos públicos, como conferencias o conciertos, es necesario rastrear la fecha de cada evento.</p>
-        <p>¿En relación con el problema planteado, se debe encapsular la variable <strong>"fechaEvento"</strong>?</p>          
-        <p><strong>En este escenario NO es necesario el encapsulamiento, </strong>pues la fecha y hora del evento suelen ser información que se divulga ampliamente y no necesita protección especial. En este caso, el acceso público a esta información es apropiado y no hay necesidad de ocultarla.</p>
-        <div class="codeContainer"> 
-          <code>
-            public Date fechaEvento;
-          </code>
-        </div>
-      </div>
-    </div>
-
-    <!-- Pregunta 3 display: none -->
-    <div class="question" style="display: none;">
-      <div class="question-container">
-        <p><strong>Escenario 3: Sistema de Control de Inventario en una Tienda de Ropa</strong></p>
-        <p><strong>Problema: </strong>En un sistema de control de inventario en una tienda de ropa, es necesario llevar un registro de la cantidad de existencias de cada artículo de ropa.</p>
-        <p>¿Según el problema planteado, es necesario encapsular la variable <strong>"cantidadExistencias"</strong>?</p>          
-        <p><strong>En este escenario SI es necesario el encapsulamiento, </strong>pues la cantidad de existencias afecta la disponibilidad de productos para los clientes y la gestión de pedidos de reposición. El encapsulamiento es necesario para evitar que las existencias se actualicen de manera incorrecta y para garantizar un control adecuado del inventario.
-        </p>
-        <div class="codeContainer"> 
-          <code>
-            private int cantidadExistencias;
-          </code>
-        </div>
-      </div>
-    </div>
-
-    <!-- Pregunta 4 display: none -->
-    <div class="question" style="display: none;">
-      <div class="question-container">
-        <p><strong>Escenario 4: Sistema de Control de Temperatura en una Industria de Alimentos</strong></p>
-        <p><strong>Problema: </strong>En un sistema de control de temperatura en una fábrica de alimentos, es fundamental rastrear la temperatura de almacenamiento de un producto.</p>
-        <p>¿De acuerdo con el problema planteado, es necesario encapsular la variable <strong>"temperaturaAlmacenamiento"</strong>?</p>          
-        <p><strong>En este escenario SI es necesario el encapsulamiento, </strong>pues la temperatura de almacenamiento es crítica para garantizar la seguridad y la calidad de los alimentos. El encapsulamiento es necesario para controlar la temperatura de manera precisa y evitar cambios que puedan comprometer la calidad del producto.</p>
-        <div class="codeContainer"> 
-          <code>
-            private double temperaturaAlmacenamiento;
-          </code>
-        </div>
-      </div>
-    </div>
-
-    <!-- Pregunta 5 display: none -->
-    <div class="question" style="display: none;">
-      <div class="question-container">
-        <p><strong>Escenario 5. Clase de Constantes Matemáticas</strong></p>
-        <p><strong>Problema: </strong>Suponga que tiene una clase donde las variables son constantes de matemáticas, por ejemplo, PI.</p>
-        <p>De acuerdo con el problema planteado, analiza si las constantes de matemáticas necesitan encapsulamiento o no</p>          
-        <p><strong>En este escenario NO es necesario el encapsulamiento, </strong>pues las constantes matemáticas son valores conocidos y públicos que no deben cambiar. No hay necesidad de encapsular estas constantes, ya que se espera que sean accesibles públicamente.</p>
-        <div class="codeContainer"> 
-            <code>
-              public static final double PI = 3.14159265359;
-            </code>
-        </div>
-      </div>
-    </div>
-
-    <!-- Pregunta 6 display: none -->
-    <div class="question" style="display: none;">
-      <div class="question-container">
-        <p><strong>Escenario 6. Sistema de Registro de Calificaciones en una Escuela</strong></p>
-        <p><strong>Problema: </strong>En un sistema de registro de calificaciones escolares, se necesita rastrear las calificaciones de un estudiante en una asignatura.</p>
-        <p>De acuerdo con el problema planteado, analiza si una <strong>calificación</strong> necesita de encapsulamiento o no.</p>          
-        <p><strong>En este escenario SI es necesario el encapsulamiento, </strong>pues las calificaciones son datos sensibles y deben estar encapsuladas para garantizar la precisión y evitar la manipulación no autorizada.</p>
-        <div class="codeContainer"> 
-          <code>
-            private double calificacion;
-          </code>
-        </div>
-      </div>
-    </div>
-
-    <!-- Pregunta 7 display: none -->
-    <div class="question" style="display: none;">
-      <div class="question-container">
-        <p><strong>Escenario 7. Sistema de Configuración de Software</strong></p>
-        <p><strong>Problema: </strong>En un sistema de configuración de software, se almacenan opciones de configuración, como el idioma, que los usuarios pueden modificar según sus preferencias.</p>
-        <p>De acuerdo con el problema planteado, ¿es necesario encapsular la variable <strong>"configuracionIdioma"</strong>?</p>          
-        <p><strong>En este escenario NO es necesario el encapsulamiento, </strong>pues las opciones de configuración son datos que los usuarios esperan modificar fácilmente. No es necesario encapsular esta información, ya que se supone que debe ser accesible y modificable públicamente.</p>
-        <div class="codeContainer"> 
-          <code>
-            public String configuracionIdioma;
-          </code>
-        </div>
-      </div>
-    </div>
-
-    <!-- Pregunta 8 display: none -->
-    <div class="question" style="display: none;">
-      <div class="question-container">
-        <p><strong>Escenario 8. Sistema de Registro de Eventos de Uso de Aplicaciones</strong></p>
-        <p><strong>Problema: </strong>En un sistema de registro de eventos de uso de aplicaciones como los registros de eventos y las acciones realizadas por los usuarios es indispensable tener acceso para el análisis.</p>
-        <p>De acuerdo con el problema planteado, ¿es necesario encapsular el <strong>registro de eventos</strong>?</p>          
-        <p><strong>En este escenario NO es necesario el encapsulamiento, </strong>pues los registros de eventos son esenciales para comprender el comportamiento de las aplicaciones y solucionar problemas. No es necesario ocultarlos.</p>
-        <div class="codeContainer"> 
-          <code>
-            public List&lt;Evento&gt; registroEventos;
-          </code>
-        </div>
-      </div>
-    </div>
-
-    <!-- Fin de preguntas ↑ -->
-    <!-- Botones ↓ -->
-    <p class="mensajeError" id="errorRespuestas"></p>
-    <div class="botonesCarrousel">
-      <button onclick="prevQuestion()" id="btn-prev" style="display: none;">Atrás</button>
-      <button onclick="nextQuestion()" id="btn-next">Siguiente</button>
-    </div>
-  </div>
-  <div class="navigateButtons">
-    <button class="button-flechas" type="button" onclick="window.location.href='../../encapsulamiento.html'">Encapsulamiento: Teoria</button>
-    <button class="button-flechas" type="button" onclick="window.location.href='../actividad2/actividad.html'">Siguiente Actividad</button>
-  </div>
-  <div id="endFooter"><!-- Aqui se genera el footer proveniente del script getUserData --></div>
   <!-- Scripts -->
-  <script src="/js/getUserData.js"></script>
-  <script src="/js/carrouselRespuestas.js"></script>
+  <!-- <script src="/js/getUserData.js"></script> -->
   <script src="/js/bannerFooter.js"></script>
   <script>
     var xhr = new XMLHttpRequest();
     var actividadRetro, aciertosRetro, fechaRetro;
 
-    xhr.open("GET", "validarActividad.php", false); //true para ejecutar de manera asincrona y false para hacerlo de manera asincrona
+    xhr.open("GET", "validarActividad.php", false); //true para ejecutar de manera asincrónica y false para hacerlo de manera sincrónica
     xhr.onload = function () {
       if (xhr.status === 200) {
         //var json = xhr.responseText;
