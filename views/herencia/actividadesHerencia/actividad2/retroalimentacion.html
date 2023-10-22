@@ -34,8 +34,7 @@
       <!-- Objetivos -->
       <p style="font-size: 1.5em;"><strong>OBJETIVOS</strong></p>
       <ul style="margin-left: 70px; font-size: 1.3em;">
-        <li>Comprender el concepto de herencia.</li>
-        <li>Identificar y clasificar objetos en categorías basadas en sus características compartidas.</li>
+        <li>Que los estudiantes comprendan las relaciones de herencia en la programación orientada a objetos y sean capaces de identificar y clasificar clases como <strong>"Clase Base"</strong> o <strong>"Clase Derivada"</strong> en un contexto práctico.</li>
       </ul>
 
       <!-- Retroalimentación: Descripción -->
@@ -46,36 +45,120 @@
       <!-- Pregunta 1 display: block -->
       <div class="question" style="display: block;">
         <div class="question-container">
-          <p><strong>RESPUESTAS</strong></p>
-          <ul style="padding: 0%; ">
-            <li><strong>1. Automóvil:</strong><span style="font-style: italic; color: #b06fdc"> T. Terrestre</span></li>
-            <li><strong>2. Avión:</strong><span style="font-style: italic; color: #b06fdc"> T. Aéreo</span></li>
-            <li><strong>3. Helicóptero:</strong><span style="font-style: italic; color: #b06fdc"> T. Aéreo</span></li>
-            <li><strong>4. Coyote:</strong><span style="font-style: italic; color: #b06fdc"> A. Carnívoro</span></li>
-            <li><strong>5. Puma:</strong><span style="font-style: italic; color: #b06fdc"> A. Carnívoro</span></li>
-            <li><strong>6. Jaguar:</strong><span style="font-style: italic; color: #b06fdc"> A. Carnívoro</span></li>
-            <li><strong>7. Motocicleta:</strong><span style="font-style: italic; color: #b06fdc"> T. Terrestre</span></li>
-            <li><strong>8. Bicicleta:</strong><span style="font-style: italic; color: #b06fdc"> T. Terrestre</span></li>
-            <li><strong>9. Elefante:</strong><span style="font-style: italic; color: #b06fdc"> A. Herbívoro</span></li>
-            <li><strong>10. Cebra:</strong><span style="font-style: italic; color: #b06fdc"> A. Herbívoro</span></li>
-            <li><strong>11. Avioneta:</strong><span style="font-style: italic; color: #b06fdc"> T. Aéreo</span></li>
-            <li><strong>12. Koala:</strong><span style="font-style: italic; color: #b06fdc"> A. Herbívoro</span></li>
+          <p><strong>Escenario I. Dado un grupo de mascotas domésticas...</strong></p>
+          <ul style="margin-bottom: 20px;"><li style="color: #b06fdc; font-size: 1.5em;" >Clase Perro: Clase Derivada</li>
+            <li style="color: #b06fdc; font-size: 1.5em;" >Clase Pez: Clase Derivada</li>
+            <li style="color: #6ad954; font-size: 1.5em;" >Clase Animal: Clase Padre</li>
           </ul>
+          <p><strong>Clase Base (Padre):</strong> <u style="font-style: italic;">"Animal"</u>, puede contener propiedades y métodos
+            comunes a todos los animales, como nombre, edad y método de
+            alimentación.</p>
+
+          <p><strong>Clase Derivada (Hija):</strong> <u style="font-style: italic;">"Perro"</u>, un perro es un tipo específico de animal que
+            hereda las propiedades y métodos de la clase base "Animal." Puede agregar
+            atributos adicionales.</p>
+
+          <p><strong>Clase Derivada (Hija):</strong> <u style="font-style: italic;">"Pez"</u>, los peces son un grupo de animales acuáticos
+            que tienen propiedades comunes, por lo que se puede crear una clase
+            derivada <u style="font-style: italic;">"Pez"</u> que herede propiedades generales de la clase base <u style="font-style: italic;">"Animal."</u>
+            Además, puede agregar atributos específicos como tipo de aleta y métodos
+            relacionados con la natación.</p>
         </div>
+      </div>
+
+      <!-- Pregunta 2 display: none -->
+      <div class="question" style="display: none;">
+        <div class="question-container">
+          <p><strong>Escenario II. Dado un grupo de medios de transporte...</strong></p>
+          <ul style="margin-bottom: 20px;"><li style="color: #b06fdc; font-size: 1.5em;" >Clase Bicicleta: Clase Derivada</li>
+            <li style="color: #b06fdc; font-size: 1.5em;" >Clase Motocicleta: Clase Derivada</li>
+            <li style="color: #6ad954; font-size: 1.5em;" >Clase Vehículo: Clase Padre</li>
+          </ul>
+          <p><strong>Clase Base (Padre):</strong> <u style="font-style: italic;">"Vehículo"</u>, puede contener propiedades y métodos
+            comunes a todos los vehículos, como velocidad máxima y capacidad de pasajeros. </p>
+
+          <p><strong>Clase Derivada (Hija):</strong> <u style="font-style: italic;">"Motocicleta"</u>, una motocicleta es un tipo específico de
+            vehículo que hereda las propiedades y métodos de la clase base <u style="font-style: italic;">"Vehículo."</u> Puedes agregar atributos adicionales como el tipo de motor y métodos para
+            cambiar de marcha.</p>
+
+          <p><strong>Clase Derivada (Hija):</strong> <u style="font-style: italic;">"Bicicleta"</u>, una bicicleta es un tipo específico de
+            vehículo que hereda algunas de las propiedades generales de la clase base
+            <u style="font-style: italic;">"Vehículo,"</u> como la capacidad de transporte. Además, puede agregar
+            atributos específicos como el número de ruedas, el tipo de pedales y métodos
+            relacionados con la dirección y el pedaleo.
+            </p>
+        </div>
+      </div>
+
+      <!-- Pregunta 3 display: none -->
+      <div class="question" style="display: none;">
+        <div class="question-container">
+          <p><strong>Escenario III. Dado un grupo de polígonos...</strong></p>
+          <ul style="margin-bottom: 20px;"><li style="color: #b06fdc; font-size: 1.5em;" >Clase Cuadrado: Clase Derivada</li>
+            <li style="color: #b06fdc; font-size: 1.5em;" >Clase Triángulo: Clase Derivada</li>
+            <li style="color: #6ad954; font-size: 1.5em;" >Clase Figura Geométrica: Clase Padre</li>
+          </ul>
+          <p><strong>Clase Base (Padre):</strong> <u style="font-style: italic;">"Figura Geométrica"</u>, puede contener propiedades y métodos comunes a todas las figuras
+            geométricas, como el área y el perímetro.</p>
+
+          <p><strong>Clase Derivada (Hija):</strong> <u style="font-style: italic;">"Triángulo"</u>, Un triángulo es un tipo específico de figura
+            geométrica que hereda las propiedades y métodos de la clase base <u style="font-style: italic;">"Figura Geométrica."</u>
+            Puede agregar atributos adicionales como la longitud de sus
+            lados y métodos para calcular el tipo de triángulo (equilátero, isósceles,
+            escaleno).</p>
+
+          <p><strong>Clase Derivada (Hija):</strong> <u style="font-style: italic;">"Cuadrado"</u>, un cuadrado es un tipo particular de
+            rectángulo en el que todos los lados son iguales. Hereda las propiedades y
+            métodos generales de la clase base <u style="font-style: italic;">"Figura Geométrica."</u> pero puede
+            agregar atributos adicionales como la longitud de un lado y métodos
+            específicos para calcular el área y el perímetro de un cuadrado.
+            </p>
+        </div>
+      </div>
+
+      <!-- Pregunta 4 display: none -->
+      <div class="question" style="display: none;">
+        <div class="question-container">
+          <p><strong>Escenario IV. Dada la existencia de una tienda...</strong></p>
+          <ul style="margin-bottom: 20px;"><li style="color: #b06fdc; font-size: 1.5em;" >Clase Vendedor: Clase Derivada</li>
+            <li style="color: #b06fdc; font-size: 1.5em;" >Clase Gerente: Clase Derivada</li>
+            <li style="color: #6ad954; font-size: 1.5em;" >Clase Empleado: Clase Padre</li>
+          </ul>
+          <p><strong>Clase Base (Padre):</strong> <u style="font-style: italic;">"Empleado"</u>, puede contener
+            propiedades y métodos comunes a todos los empleados, como nombre,
+            número de empleado y salario base.</p>
+
+          <p><strong>Clase Derivada (Hija):</strong> <u style="font-style: italic;">"Gerente"</u>, un gerente es un tipo específico de
+            empleado que hereda las propiedades y métodos de la clase base
+            <u style="font-style: italic;">"Empleado."</u> Puede agregar atributos adicionales como el departamento que
+            supervisa y métodos para aprobar o rechazar solicitudes de vacaciones</p>
+
+          <p><strong>Clase Derivada (Hija):</strong> <u style="font-style: italic;">"Vendedor"</u>, un vendedor es un tipo específico de
+            empleado que hereda las propiedades generales de la clase base
+            <u style="font-style: italic;">"Empleado,"</u> como nombre y salario base. Además, puede agregar atributos
+            adicionales como las ventas realizadas y métodos relacionados con el
+            seguimiento de las ventas y el cálculo de comisiones.</p>
+        </div>
+      </div>
+
+      <div class="botonesCarrousel">
+        <button onclick="prevQuestion()" id="btn-prev" style="display: none;">Atrás</button>
+        <button onclick="nextQuestion()" id="btn-next">Siguiente</button>
       </div>
 
       <!-- Fin de preguntas ↑ -->
       <!-- Botones ↓ -->
     </div>
     <div class="navigateButtons">
-      <button class="button-flechas" type="button" onclick="window.location.href='../../herencia.html'">Encapsulamiento: Herencia</button>
-      <button class="button-flechas" type="button" onclick="window.location.href='../actividad2/actividad.html'">Siguiente Actividad</button>
+      <button class="button-flechas" type="button" onclick="window.location.href='../actividad1/actividad.html'">Actividad Anterior</button>
+      <button class="button-flechas" type="button" onclick="window.location.href='../actividad3/actividad.html'">Siguiente Actividad</button>
     </div>
     <div id="endFooter"><!-- Aquí se genera el footer proveniente del script getUserData --></div>
   </div>
   <!-- Scripts -->
   <script src="/js/getUserData.js"></script>
   <script src="/js/bannerFooter.js"></script>
+  <script src="/js/carrouselRespuestas.js"></script>
   <script>
     var xhr = new XMLHttpRequest();
     var actividadRetro, aciertosRetro, fechaRetro;

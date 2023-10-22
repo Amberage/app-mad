@@ -5,18 +5,18 @@ function calificarRespuestas() {
   let todosCamposCompletos = true;
 
   const respuestasCorrectas = {
-    q1: "terrestre",
-    q2: "aereo",
-    q3: "aereo",
-    q4: "carnivoro",
-    q5: "carnivoro",
-    q6: "carnivoro",
-    q7: "terrestre",
-    q8: "terrestre",
-    q9: "herbivoro",
-    q10: "herbivoro",
-    q11: "aereo",
-    q12: "herbivoro",
+    q1: "derivada",
+    q2: "base",
+    q3: "derivada",
+    q4: "base",
+    q5: "derivada",
+    q6: "derivada",
+    q7: "derivada",
+    q8: "derivada",
+    q9: "base",
+    q10: "derivada",
+    q11: "base",
+    q12: "derivada",
   };
 
   const numeroPreguntas = Object.keys(respuestasCorrectas).length;
