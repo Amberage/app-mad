@@ -16,7 +16,7 @@ function resetEncapsulamiento() {
 }
 
 //Resetear Herencia
-function resetHerencica() {
+function resetHerencia() {
     var xhr = new XMLHttpRequest();
     var serverMsg;
 
