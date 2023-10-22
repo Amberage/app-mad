@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/assets/images/logo.png">
+  <link rel="stylesheet" href="/css/styles.css">
+  <title>MAD: Encapsulamiento II</title>
+  <script src="validarActividad.js"></script>
+  <script> document.addEventListener('DOMContentLoaded', function() { retroalimentacionCheck(); }); </script>
+</head>
+<body>
+  <div class="body">
+    <div class="menu">
+      <ul>
+        <li><a href="/views/home.html">Inicio</a></li>
+        <li></li>
+        <li class="menu-destacado"><a href="/views/encapsulamiento/encapsulamiento.html">Encapsulamiento</a></li>
+        <li></li>
+        <li><a href="/views/herencia/herencia.html">Herencia</a></li>
+        <li></li>
+        <li><a href="/views/polimorfismo/polimorfismo.html">Polimorfismo</a></li>
+        <li></li>
+        <li><a href="#" onclick="cerrarSesion()">Cerrar Sesión</a></li>
+      </ul>
+    </div>
+    
+  <div id="dataShow"> <!-- Aquí se aloja un campo de depuracion u:--> </div>
+  <div class="userDataDisplay" style="opacity: 100%;"><span id="actividadInfo"></span></div> <!-- Aqui se reciben y muestran los datos de la actividad -->
+  <h1 style="color: #6ad954; font-size: 3em; animation: showSlow 3s">Encapsulamiento</h1>
+  <h1 style="margin-top: -70px; font-size: 2em; color: #b06fdc; animation: showSlow 3s">Retroalimentación: Actividad 2</h1>
+  <div>
+      <!-- Objetivos -->
+      <p style="font-size: 1.5em;"><strong>OBJETIVOS</strong></p>
+      <ul style="margin-left: 70px; font-size: 1.3em;">
+          <li>Ayudar a los estudiantes en comprender y ejercitar la categorización de propiedades en programación, basándose en su nivel de acceso apropiado, es decir, determinando si deben ser declaradas como "public", "private" o "protected".</li>
+      </ul>
+      
+      
+      <!-- Retroalimentacion: Descripcion -->
+      <p style="font-size: 1.5em; margin-top: 25px;"><strong>RETROALIMENTACIÓN</strong></p>
+      <p>
+        De acuerdo con el siguiente diagrama, clasifica cada propiedad como "public",
+        "private" o "protected" seleccionando la opción correspondiente. Piensa en la
+        necesidad de proteger cierta información y a considerar qué propiedades deben ser
+        accesibles desde fuera de la clase o el objeto y cuáles deben ser restringidas.
+      </p>
+      <img class="contenedorImagen" src="assets/diagramaAct2.jpg" style="width: fit-content; animation: showSlow 1s">
+  </div>
+
+  <div class="carousel">
+    <!-- Pregunta 1 display: block -->
+    <div class="question" style="display: block;">
+      <div class="question-container">
+        <p><strong>RESPUESTAS:</strong></p>
+        <p>Para este escenario,en todos los casos <strong>todas las variables deben ser privadas (-)</strong> ya que la
+          información es sensible la cual no debe ser accedida ni modificada desde fuera de
+          la clase en la que se encuentra, por lo tanto debe ser declarada como "private". Esto
+          significa que solo los métodos dentro de la misma clase pueden acceder a esta
+          variable. Esto proporciona un alto nivel de protección para la dirección.</p>
+          <div class="codeContainer" style="margin-bottom: 20px;"> 
+            <code>
+              private &lt;tipoDato&gt; &lt;nombreVariable&gt;;
+            </code>
+          </div>
+      </div>
+    </div>
+
+    <!-- Fin de preguntas ↑ -->
+    <!-- Botones ↓ -->
+    <div class="navigateButtons">
+      <button class="button-flechas" type="button" onclick="window.location.href='../actividad1/actividad.html'">Actividad Anterior</button>
+      <button class="button-flechas" type="button" onclick="window.location.href='../actividad3/actividad.html'">Siguiente Actividad</button>
+    </div>
+
+  </div>
+  <div id="endFooter"><!-- Aqui se genera el footer proveniente del script getUserData --></div>
+  <!-- Scripts -->
+  <script src="/js/getUserData.js"></script>
+  <script src="/js/bannerFooter.js"></script>
+  <script>
+    var xhr = new XMLHttpRequest();
+    var actividadRetro, aciertosRetro, fechaRetro;
+
+    xhr.open("GET", "validarActividad.php", false); //true para ejecutar de manera asincrona y false para hacerlo de manera asincrona
+    xhr.onload = function () {
+      if (xhr.status === 200) {
+        //var json = xhr.responseText;
+        var json = JSON.parse(xhr.responseText);
+        actividadRetro = json.actRealizada;
+        aciertosRetro = json.aciertos;
+        fechaRetro = json.fechaEntrega;
+
+        document.getElementById("actividadInfo").innerHTML = `
+        Actividad Realizada: ${actividadRetro}<br>
+        Aciertos: ${aciertosRetro}<br>
+        Fecha de Entrega: ${fechaRetro}`;
+
+      } else {
+        console.log("Error al cargar el servidor");
+      }
+    };
+    xhr.send();
+  </script>
+</body>
+</html>

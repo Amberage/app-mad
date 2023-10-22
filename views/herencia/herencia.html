@@ -6,53 +6,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="/assets/images/logo.png">
   <link rel="stylesheet" href="/css/styles.css">
-  <title>Herencia</title>
+  <title>MAD Learning: Encapsulamiento</title>
 </head>
 <body>
   <div class="body">
     <div class="menu">
       <ul>
-          <li><a href="/views/home.html">Inicio</a></li>
-          <li></li>
-          <li><a href="/views/encapsulamiento/encapsulamiento.html">Encapsulamiento</a></li>
-          <li></li>
-          <li><a href="#" class="menu-destacado">Herencia</a></li>
-          <li></li>
-          <li><a href="/views/polimorfismo/polimorfismo.html">Polimorfismo</a></li>
-          <li></li>
-          <li><a href="../index.html">Cerrar Sesión</a></li>
+        <li><a href="/views/home.html">Inicio</a></li>
+        <li><a href="/views/encapsulamiento/encapsulamiento.html">Encapsulamiento</a></li>
+        <li class="menu-destacado"><a href="/views/herencia/herencia.html">Herencia</a></li>
+        <li><a href="/views/polimorfismo/polimorfismo.html">Polimorfismo</a></li>
+        <li><a href="#" onclick="cerrarSesion()">Cerrar Sesión</a></li>
       </ul>
     </div>
+
+    <div id="dataShow"> <!-- Aquí se aloja un campo de depuración --> </div>
+
     <div>
       <img style="margin-left: 35%;" src="/assets/images/Herencia.png" alt="Herencia">
-  </div>
-
-  <h2 style="font-size: 35px;"><b>¿Qué es?</b></h2>
-  <p class="p" style="font-size: 25px;"> Es un mecanismo de la POO que permite agrupar miembros comunes entre clases, 
-    creando clases que concentren las características comunes y las compartan entre
-    otras manteniendo centralizados aquellos miembros que se repiten.
-    La herencia se utiliza cuando existen atributos o métodos que se repitan entre las clases,
-    se deberá aplicar la Herencia, para mantener en un solo lugar (clase) esos miembros comunes (atributos y métodos)
-    y heredarlos en clases más específicas sin necesidad de definirlas en su código.
-    SIEMPRE QUE SE DETECTEN ATRIBUTOS Y/O métodos repetidos entre clases, es un caso para la herencia.
-  </p>
-  <div style="text-align: center;">
-    <img style="padding-bottom: 25px;" height="400px" src="/assets/images/herencia-poo.jpg" alt="Imagen herencia">
-  </div>
-  <div class="yt-container">
-    <iframe width="854" height="480" src="https://www.youtube.com/embed/S8ayMhvF02Q?si=aYOKSak1lnYaWMFx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  </div>
-  <div class="contenedorBotonAct">
-    <button class="button-activities" type="button" onclick="window.location.href='/views/home.html'">Actividades</button>
-  </div>
-    <div class="navegacion">
-      <button class="button-flechas" type="button" onclick="window.location.href='/encapsulamiento.html'">Anterior</button>
-      <button class="button-flechas" type="button" onclick="window.location.href='/polimorfismo.html'">Siguiente</button>
     </div>
-    <footer>
-      <img width="100px" src="/assets/images/logo.png">
-      <img width="200px" src="/assets/images/contacto.png">
-  </footer>
-  </div>
-</body>
+
+    <h2 style="font-size: 35px;"><b>¿Qué es?</b></h2>
+    <p class="p" style="font-size: 25px;">Es un mecanismo de la POO que permite agrupar miembros comunes entre clases,
+      creando clases que concentren las características comunes y las compartan entre
+      otras manteniendo centralizados aquellos miembros que se repiten.
+      La herencia se utiliza cuando existen atributos o métodos que se repiten entre las clases,
+      se deberá aplicar la Herencia, para mantener en un solo lugar (clase) esos miembros comunes (atributos y métodos)
+      y heredarlos en clases más específicas sin necesidad de definirlos en su código.
+      SIEMPRE QUE SE DETECTEN ATRIBUTOS Y/O métodos repetidos entre clases, es un caso para la herencia.
+    </p>
+
+    <div style="text-align: center;">
+      <img style="padding-bottom: 25px;" height="400px" src="/assets/images/herencia-poo.jpg" alt="Imagen herencia">
+    </div>
+
+    <div class="yt-container">
+      <iframe width="854" height="480" src="https://www.youtube.com/embed/S8ayMhvF02Q?si=aYOKSak1lnYaWMFx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <div class="contenedorBotonAct">
+      <button class="button-activities" type="button" onclick="window.location.href='./actividadesEncapsulamiento/actividad1/actividad.html'">Actividad I</button>
+      <button class="button-activities" type="button" onclick="window.location.href='./actividadesEncapsulamiento/actividad2/actividad.html'">Actividad II</button>
+      <br>
+      <button class="button-activities" style="color: whitesmoke; background-color: #8152b8;" type="button" onclick="window.location.href='./actividadesEncapsulamiento/actividad3/actividad.html'">Evaluación</button>
+    </div>
+
+    <div id="endFooter">
+      <!-- Aquí se genera el footer proveniente del script getUserData -->
+    </div>
+
+<!--     <script src="/js/getUserData.js"></script> -->
+    <script src="/js/bannerFooter.js"></script>
+  </body>
 </html>
