@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="/assets/images/logo.png">
   <link rel="stylesheet" href="/css/styles.css">
-  <title>MAD: Herencia I</title>
+  <title>MAD: Herencia II</title>
   <script src="validarActividad.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -29,7 +29,7 @@
     <div id="dataShow"> <!-- Aquí se aloja un campo de depuración u:--> </div>
     <div class="userDataDisplay" style="opacity: 100%;"><span id="actividadInfo"></span></div> <!-- Aquí se reciben y muestran los datos de la actividad -->
     <h1 style="color: #6ad954; font-size: 3em; animation: showSlow 3s">Herencia</h1>
-    <h1 style="margin-top: -70px; font-size: 2em; color: #b06fdc; animation: showSlow 3s">Retroalimentación: Actividad 1</h1>
+    <h1 style="margin-top: -70px; font-size: 2em; color: #b06fdc; animation: showSlow 3s">Retroalimentación: Actividad 2</h1>
     <div>
       <!-- Objetivos -->
       <p style="font-size: 1.5em;"><strong>OBJETIVOS</strong></p>
@@ -146,9 +146,10 @@
         <button onclick="nextQuestion()" id="btn-next">Siguiente</button>
       </div>
 
-      <!-- Fin de preguntas ↑ -->
-      <!-- Botones ↓ -->
     </div>
+    <!-- Fin de preguntas ↑ -->
+      <!-- Botones ↓ -->
+    <p class="mensajeError" id="errorRespuestas"></p>
     <div class="navigateButtons">
       <button class="button-flechas" type="button" onclick="window.location.href='../actividad1/actividad.html'">Actividad Anterior</button>
       <button class="button-flechas" type="button" onclick="window.location.href='../actividad3/actividad.html'">Siguiente Actividad</button>
