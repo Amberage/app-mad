@@ -1,3 +1,4 @@
+//Resetar Encapsulamiento
 function resetEncapsulamiento() {
     var xhr = new XMLHttpRequest();
     var serverMsg;
@@ -13,6 +14,8 @@ function resetEncapsulamiento() {
     };
     xhr.send();
 }
+
+//Resetear Herencia
 function resetHerencica() {
     var xhr = new XMLHttpRequest();
     var serverMsg;
