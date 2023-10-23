@@ -1,6 +1,6 @@
 // Función para mostrar la información del usuario
 function revisarCuenta() {
-  const userDataCookie = getCookie("userData");
+  const userDataCookie = getCock("userData");
 
   if (userDataCookie) {
     const userDataJSON = decodeURIComponent(atob(userDataCookie));
@@ -18,7 +18,7 @@ function revisarCuenta() {
 }
 
 // Función para obtener el valor de una cookie por su nombre
-function getCookie(name) {
+function getCock(name) {
   const decodedCookie = decodeURIComponent(document.cookie);
   const cookies = decodedCookie.split(";");
 
