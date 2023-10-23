@@ -6,11 +6,9 @@ function mostrarInformacionUsuario() {
       const userDataJSON = decodeURIComponent(atob(userDataCookie));
       const userData = JSON.parse(userDataJSON);
       const userDataDisplay = document.getElementById("userDataDisplay");
-      const nombreUsuario = `${userData.username}`;
-      document.getElementById("nombreUsuario").innerHTML = nombreUsuario;
     } else {
       console.log("No se encontró la cookie del usuario.");
-      /* window.location.href = "/views/login.html"; */
+      window.location.href = "/";
     }
   }
   
