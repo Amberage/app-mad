@@ -7,7 +7,12 @@ function calificarRespuestas() {
   const respuestasCorrectas = {
     q1: "c",
     q2: "b",
-    q3: "b"
+    q3: "b",
+    q4: "c",
+    q5: "c",
+    q6: "b",
+    q7: "c",
+    q8: "c"
   };
 
   const numeroPreguntas = Object.keys(respuestasCorrectas).length;
