@@ -5,18 +5,14 @@ function calificarRespuestas() {
   let todosCamposCompletos = true;
 
   const respuestasCorrectas = {
-    q1: "terrestre",
-    q2: "aereo",
-    q3: "aereo",
-    q4: "carnivoro",
-    q5: "carnivoro",
-    q6: "carnivoro",
-    q7: "terrestre",
-    q8: "terrestre",
-    q9: "herbivoro",
-    q10: "herbivoro",
-    q11: "aereo",
-    q12: "herbivoro",
+    q1: "b",
+    q2: "d",
+    q3: "b",
+    q4: "c",
+    q5: "c",
+    q6: "c",
+    q7: "c",
+    q8: "c",
   };
 
   const numeroPreguntas = Object.keys(respuestasCorrectas).length;
