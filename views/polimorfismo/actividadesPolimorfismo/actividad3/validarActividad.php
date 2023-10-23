@@ -26,7 +26,7 @@ if ($conn->connect_error) {
     die("La conexión a la base de datos ha fallado: " . $conn->connect_error);
 }
 
-$sql = "SELECT aciertos, actRealizada, fechaEntrega FROM actividades_Polimorfismo WHERE username = '$alumnoUsername' AND actividadNumero = 1";
+$sql = "SELECT aciertos, actRealizada, fechaEntrega FROM actividades_Polimorfismo WHERE username = '$alumnoUsername' AND actividadNumero = 3";
 
 $result = $conn->query($sql);
 
