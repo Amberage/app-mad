@@ -6,8 +6,8 @@ function revisarCuenta() {
     const userDataJSON = decodeURIComponent(atob(userDataCookie));
     const userData = JSON.parse(userDataJSON);
     const tipoCuenta = `${userData.userType}`;
+    console.log(tipoCuenta);
     if (tipoCuenta === "alumno") {
-      //pass
     } else if (tipoCuenta === "docente" || tipoCuenta === "administrador") {
       window.location.href = "/views/admin";
     }
