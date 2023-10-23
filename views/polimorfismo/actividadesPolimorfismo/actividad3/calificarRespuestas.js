@@ -5,9 +5,9 @@ function calificarRespuestas() {
   let todosCamposCompletos = true;
 
   const respuestasCorrectas = {
-    q1: "extends",
-    q2: "extends",
-    q3: "extends"
+    q1: "c",
+    q2: "b",
+    q3: "b"
   };
 
   const numeroPreguntas = Object.keys(respuestasCorrectas).length;

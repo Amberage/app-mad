@@ -31,19 +31,17 @@
     <h1 style="color: #6ad954; font-size: 3em; animation: showSlow 3s">Polimorfismo</h1>
     <h1 style="margin-top: -70px; font-size: 2em; color: #b06fdc; animation: showSlow 3s">Retroalimentación: Evaluación</h1>
     <div>
-      
       <!-- Objetivos -->
       <p style="font-size: 1.5em;"><strong>OBJETIVOS</strong></p>
       <ul style="margin-left: 70px; font-size: 1.3em;">
-        <li>El alumno deberá ser capáz de aplicar y desmostrar su comprensión del concepto de
-          polimorfismo en programación orientada a objetos, desarrollando la habilidad
-          de implementar este principio de manera efectiva</li>
+        <li>El alumno deberá demostrar su compresión del polimorfismo</li>
       </ul>
 
       <!-- Retroalimentación: Descripción -->
       <p style="font-size: 1.5em; margin-top: 25px;"><strong>RETROALIMENTACIÓN</strong></p>
     </div>
 
+    <!-- Retroalimentación: Desarrollo -->
     <div class="carousel">
       <!-- Pregunta 1 display: block -->
       <div class="question" style="display: block;">
@@ -75,17 +73,25 @@
         </div>
       </div>
 
-      <!-- Fin de preguntas ↑ -->
-      <!-- Botones ↓ -->
+    <!-- Fin de preguntas ↑ -->
+
+    <!-- Botones ↓ -->
+    <p class="mensajeError" id="errorRespuestas"></p>
+    <div class="botonesCarrousel">
+      <button onclick="prevQuestion()" id="btn-prev" style="display: none;">Atrás</button>
+      <button onclick="nextQuestion()" id="btn-next">Siguiente</button>
+    </div>
+    
     </div>
     <div class="navigateButtons">
-      <button class="button-flechas" type="button" onclick="window.location.href='../../polimorfismo.html'">Polimorfismo: Teoría</button>
-      <button class="button-flechas" type="button" onclick="window.location.href='../actividad2/actividad.html'">Siguiente Actividad</button>
+      <button class="button-flechas" type="button" onclick="window.location.href='../actividad2/actividad.html'">Actividad Anterior</button>
+      <button class="button-flechas" type="button" onclick="window.location.href='/view/home.html'">Volver al inicio</button>
     </div>
     <div id="endFooter"><!-- Aquí se genera el footer proveniente del script getUserData --></div>
   </div>
   <!-- Scripts -->
   <script src="/js/getUserData.js"></script>
+  <script src="/js/carrouselRespuestas.js"></script>
   <script src="/js/bannerFooter.js"></script>
   <script>
     var xhr = new XMLHttpRequest();
