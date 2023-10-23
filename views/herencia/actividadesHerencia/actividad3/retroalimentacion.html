@@ -137,7 +137,13 @@
 
     <!-- Fin de preguntas ↑ -->
 
-      <!-- Botones ↓ -->
+    <!-- Botones ↓ -->
+    <p class="mensajeError" id="errorRespuestas"></p>
+    <div class="botonesCarrousel">
+      <button onclick="prevQuestion()" id="btn-prev" style="display: none;">Atrás</button>
+      <button onclick="nextQuestion()" id="btn-next">Siguiente</button>
+    </div>
+    
     </div>
     <div class="navigateButtons">
       <button class="button-flechas" type="button" onclick="window.location.href='../actividad2/actividad.html'">Actividad Anterior</button>
@@ -146,7 +152,7 @@
     <div id="endFooter"><!-- Aquí se genera el footer proveniente del script getUserData --></div>
   </div>
   <!-- Scripts -->
-  <script src="/js/getUserData.js"></script>
+  <!-- <script src="/js/getUserData.js"></script> -->
   <script src="/js/carrouselRespuestas.js"></script>
   <script src="/js/bannerFooter.js"></script>
   <script>
