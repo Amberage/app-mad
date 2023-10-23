@@ -20,21 +20,21 @@
 
     <h1 style="font-size: 4em; margin-top: 150px; animation: showSlow 2s;">Iniciar Sesión</h1>
     <div style="display: flex; justify-content: center; align-items: center; animation: showSlow 3.5s;">
+      
       <form id="loginForm" action="/php/login.php" method="post">
           <label for="username">Nombre de usuario</label>
           <input type="text" id="username" name="username" maxlength="12" style="margin-bottom: 30px;">
           <label for="password">Contraseña</label>
           <input type="password" id="password" name="password" maxlength="20">
-          
-          
-          
+                 
           <!-- Botones -->
           <div style="display: flex; flex-direction: column; align-items: center; margin-top: 50px;">
-            <button style="margin-top: 10px;" type="button" onclick="window.location.href='/views/login.html'">Iniciar Sesión</button>
+            <button style="margin-top: 10px;" type="submit" onclick="window.location.href='/views/login.html'">Iniciar Sesión</button>
             <span id="loginMessage" style="color: red; margin-top: -20px; font-size: 1.5em; animation: scale 2s;"></span>
             <button style="margin-top: 25x; color: #1D1A2F; background-color: #8BD450" type="button" onclick="window.location.href='/views/register.html'">Registrarse</button>
          </div>
       </form>
+
   </div>
   <script src="/js/login.js"></script>
 </body>
