@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="/assets/images/logo.png">
   <link rel="stylesheet" href="/css/styles.css">
-  <title>MAD: Herencia I</title>
+  <title>MAD: Polimorfismo I</title>
   <script src="validarActividad.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -20,22 +20,24 @@
       <ul>
         <li><a href="/views/home.html">Inicio</a></li>
         <li><a href="/views/encapsulamiento/encapsulamiento.html">Encapsulamiento</a></li>
-        <li class="menu-destacado"><a href="/views/herencia/herencia.html">Herencia</a></li>
-        <li><a href="/views/polimorfismo/polimorfismo.html">Polimorfismo</a></li>
+        <li><a href="/views/herencia/herencia.html">Herencia</a></li>
+        <li class="menu-destacado"><a href="/views/polimorfismo/polimorfismo.html">Polimorfismo</a></li>
         <li><a href="#" onclick="cerrarSesion()">Cerrar Sesión</a></li>
       </ul>
     </div>
 
     <div id="dataShow"> <!-- Aquí se aloja un campo de depuración u:--> </div>
     <div class="userDataDisplay" style="opacity: 100%;"><span id="actividadInfo"></span></div> <!-- Aquí se reciben y muestran los datos de la actividad -->
-    <h1 style="color: #6ad954; font-size: 3em; animation: showSlow 3s">Herencia</h1>
+    <h1 style="color: #6ad954; font-size: 3em; animation: showSlow 3s">Encapsulamiento</h1>
     <h1 style="margin-top: -70px; font-size: 2em; color: #b06fdc; animation: showSlow 3s">Retroalimentación: Actividad 1</h1>
     <div>
+      
       <!-- Objetivos -->
       <p style="font-size: 1.5em;"><strong>OBJETIVOS</strong></p>
       <ul style="margin-left: 70px; font-size: 1.3em;">
-        <li>Comprender el concepto de herencia.</li>
-        <li>Identificar y clasificar objetos en categorías basadas en sus características compartidas.</li>
+        <li>El alumno deberá ser capáz de aplicar y desmostrar su comprensión del concepto de
+          polimorfismo en programación orientada a objetos, desarrollando la habilidad
+          de implementar este principio de manera efectiva</li>
       </ul>
 
       <!-- Retroalimentación: Descripción -->
@@ -47,20 +49,13 @@
       <div class="question" style="display: block;">
         <div class="question-container">
           <p><strong>RESPUESTAS</strong></p>
-          <ul style="padding: 0%; ">
-            <li><strong>1. Automóvil:</strong><span style="font-style: italic; color: #b06fdc"> T. Terrestre</span></li>
-            <li><strong>2. Avión:</strong><span style="font-style: italic; color: #b06fdc"> T. Aéreo</span></li>
-            <li><strong>3. Helicóptero:</strong><span style="font-style: italic; color: #b06fdc"> T. Aéreo</span></li>
-            <li><strong>4. Coyote:</strong><span style="font-style: italic; color: #b06fdc"> A. Carnívoro</span></li>
-            <li><strong>5. Puma:</strong><span style="font-style: italic; color: #b06fdc"> A. Carnívoro</span></li>
-            <li><strong>6. Jaguar:</strong><span style="font-style: italic; color: #b06fdc"> A. Carnívoro</span></li>
-            <li><strong>7. Motocicleta:</strong><span style="font-style: italic; color: #b06fdc"> T. Terrestre</span></li>
-            <li><strong>8. Bicicleta:</strong><span style="font-style: italic; color: #b06fdc"> T. Terrestre</span></li>
-            <li><strong>9. Elefante:</strong><span style="font-style: italic; color: #b06fdc"> A. Herbívoro</span></li>
-            <li><strong>10. Cebra:</strong><span style="font-style: italic; color: #b06fdc"> A. Herbívoro</span></li>
-            <li><strong>11. Avioneta:</strong><span style="font-style: italic; color: #b06fdc"> T. Aéreo</span></li>
-            <li><strong>12. Koala:</strong><span style="font-style: italic; color: #b06fdc"> A. Herbívoro</span></li>
-          </ul>
+          <img class="contenedorImagen" src="assets/resultados.png" style="width: fit-content; animation: showSlow 1s">
+          <p>La respuesta correcta sería: <strong>“Extends”</strong>, ya que gracias a esa palabra sabemos que
+            está heredando a la superclase <strong>“Animal”</strong>, y la función <strong>“hacerSonido”</strong> podrá
+            utilizarse en las subclases.</p>
+            <p>Esto dando a entender que el Perro es un Animal y
+              emite un sonido, así como el gato, pero aunque son sonidos, son distintos, uno
+              ladra mientras el otro maulla.</p>
         </div>
       </div>
 
@@ -68,13 +63,13 @@
       <!-- Botones ↓ -->
     </div>
     <div class="navigateButtons">
-      <button class="button-flechas" type="button" onclick="window.location.href='../../herencia.html'">Herencica: Teoría</button>
+      <button class="button-flechas" type="button" onclick="window.location.href='../../polimorfismo.html'">Polimorfismo: Teoría</button>
       <button class="button-flechas" type="button" onclick="window.location.href='../actividad2/actividad.html'">Siguiente Actividad</button>
     </div>
     <div id="endFooter"><!-- Aquí se genera el footer proveniente del script getUserData --></div>
   </div>
   <!-- Scripts -->
-  <script src="/js/getUserData.js"></script>
+  <!-- <script src="/js/getUserData.js"></script> -->
   <script src="/js/bannerFooter.js"></script>
   <script>
     var xhr = new XMLHttpRequest();
