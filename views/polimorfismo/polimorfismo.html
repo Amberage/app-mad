@@ -38,17 +38,20 @@
     <div class="yt-container">
       <iframe width="854" height="480" src="https://www.youtube.com/embed/I2MYuinS6zE?si=KoVrv52800ndLK2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
-    <div class="contenedorBotonAct">
-      <button class="button-activities" type="button" onclick="window.location.href='/views/home.html'">Actividades</button>
-    </div>
-    <div class="navegacion">
-      <button class="button-flechas" type="button" onclick="window.location.href='/views/herencia.html'">Anterior</button>
-      <button class="button-flechas" type="button" onclick="window.location.href='/views/home.html'">Califícanos</button>
-    </div>
-    <footer>
-      <img width="100px" src="/assets/images/logo.png">
-      <img width="200px" src="/assets/images/contacto.png">
-    </footer>
+
+    <span style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+    <strong style="font-size: 1.5em;">Después de ver el video, contesta las siguientes actividades.</strong>
+    </span>
+  
+  <div class="contenedorBotonAct">
+    <button class="button-activities" type="button" onclick="window.location.href='./actividadesEncapsulamiento/actividad1/actividad.html'">Actividad I</button>
+    <button class="button-activities" type="button" onclick="window.location.href='./actividadesEncapsulamiento/actividad2/actividad.html'">Actividad II</button>
+    <br>
+    <button class="button-activities" style="color:whitesmoke; background-color: #fd2477;" type="button" onclick="window.location.href='./actividadesEncapsulamiento/actividad3/actividad.html'">Evaluación</button>
   </div>
+
+  <div id="endFooter"><!-- Aquí se genera el footer proveniente del script getUserData --></div>
+  <script src="/js/getUserData.js"></script>
+  <script src="/js/bannerFooter.js"></script>
 </body>
 </html>
