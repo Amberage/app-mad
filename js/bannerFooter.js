@@ -74,12 +74,14 @@ const menuContainer = document.getElementById('menuHeader'); // Busca en el HTML
 menuContainer.innerHTML = menuHTML;*/
 
 // Footer
-const footerHTML = `
+var footerHTML = `
 <footer style="margin-top: 25px;">
   <img width="100px" src="/assets/images/logo.png" />
   <img width="200px" src="/assets/images/contacto.png" />
 </footer>
 `;
+
+footerHTML = ``;
 
 const footerContainer = document.getElementById('endFooter'); // Busca en el HTML el id endFooter para vacciar el menuHTML
 footerContainer.innerHTML = footerHTML;
