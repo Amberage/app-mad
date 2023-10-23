@@ -1,0 +1,69 @@
+/* Para preguntas: Calificar respuestas */
+var aciertosActividad = 0;
+function calificarRespuestas() {
+  var aciertosActividad = 0;
+  let todosCamposCompletos = true;
+
+  const respuestasCorrectas = {
+    q1: "derivada",     //Pez
+    q2: "base",         //Animal
+    q3: "derivada",     //Perro
+    q4: "base",         //Vehiculo
+    q5: "derivada",     //Motocicleta
+    q6: "derivada",     //Bicicleta
+    q7: "derivada",     //Cuadrado
+    q8: "derivada",     //Triangulo
+    q9: "base",         //Figura Geométrica
+    q10: "derivada",    //Vendedor
+    q11: "base",        //Empleado
+    q12: "derivada",    //Gerente
+  };
+
+  const numeroPreguntas = Object.keys(respuestasCorrectas).length;
+
+  Object.keys(respuestasCorrectas).forEach((id) => {
+    const selectElement = document.getElementById(id);
+    const seleccion = selectElement.value;
+
+    if (seleccion === "") {
+      todosCamposCompletos = false;
+    } else if (respuestasCorrectas[id] === seleccion) {
+      aciertosActividad += 1;
+    }
+  });
+
+  if (!todosCamposCompletos) {
+    errorRespuestas.innerHTML =
+      "Conteste la última pregunta para poder enviar sus respuestas.";
+  } else {
+    errorRespuestas.innerHTML = "";
+    btnSubmit.style.display = "none";
+    btnPrev.style.display = "none";
+    btnNext.style.display = "none";
+
+    resultadoElement.innerHTML = `Aciertos obtenidos: <span style="color: green">${aciertosActividad}/${numeroPreguntas}</span>`;
+
+    /*Mandar los resultados a la la BBDD*/
+    var xhr = new XMLHttpRequest();
+    // Configurar una solicitud POST al archivo PHP
+    xhr.open("POST", "enviarAciertos.php", false);
+
+    // Establecer una función que se ejecutará cuando la solicitud se complete
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState == 4 && xhr.status == 200) {
+        // Manejar la respuesta del servidor (si es necesario)
+        console.log(xhr.responseText);
+      }
+    };
+    // Establecer el encabezado de la solicitud para enviar datos como un formulario
+    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+    // Enviar la variable al servidor
+    xhr.send("aciertosActividad=" + aciertosActividad);
+    /* fin del envio */
+
+    setTimeout(function () {
+      window.location.href = "retroalimentacion.html";
+    }, 2500);
+  }
+}

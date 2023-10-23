@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/assets/images/logo.png">
+  <link rel="stylesheet" href="/css/styles.css">
+  <title>MAD: Herencia I</title>
+  <script src="validarActividad.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      retroalimentacionCheck();
+    });
+  </script>
+</head>
+<body>
+  <div class="body">
+    <div class="menu">
+      <ul>
+        <li><a href="/views/home.html">Inicio</a></li>
+        <li><a href="/views/encapsulamiento/encapsulamiento.html">Encapsulamiento</a></li>
+        <li class="menu-destacado"><a href="/views/herencia/herencia.html">Herencia</a></li>
+        <li><a href="/views/polimorfismo/polimorfismo.html">Polimorfismo</a></li>
+        <li><a href="#" onclick="cerrarSesion()">Cerrar Sesión</a></li>
+      </ul>
+    </div>
+
+    <div id="dataShow"> <!-- Aquí se aloja un campo de depuración u:--> </div>
+    <div class="userDataDisplay" style="opacity: 100%;"><span id="actividadInfo"></span></div> <!-- Aquí se reciben y muestran los datos de la actividad -->
+    <h1 style="color: #6ad954; font-size: 3em; animation: showSlow 3s">Herencia</h1>
+    <h1 style="margin-top: -70px; font-size: 2em; color: #b06fdc; animation: showSlow 3s">Retroalimentación: Actividad 1</h1>
+    <div>
+      <!-- Objetivos -->
+      <p style="font-size: 1.5em;"><strong>OBJETIVOS</strong></p>
+      <ul style="margin-left: 70px; font-size: 1.3em;">
+        <li>Comprender el concepto de herencia.</li>
+        <li>Identificar y clasificar objetos en categorías basadas en sus características compartidas.</li>
+      </ul>
+
+      <!-- Retroalimentación: Descripción -->
+      <p style="font-size: 1.5em; margin-top: 25px;"><strong>RETROALIMENTACIÓN</strong></p>
+    </div>
+
+    <div class="carousel">
+      <!-- Pregunta 1 display: block -->
+      <div class="question" style="display: block;">
+        <div class="question-container">
+          <p><strong>RESPUESTAS</strong></p>
+          <ul style="padding: 0%; ">
+            <li><strong>1. Automóvil:</strong><span style="font-style: italic; color: #b06fdc"> T. Terrestre</span></li>
+            <li><strong>2. Avión:</strong><span style="font-style: italic; color: #b06fdc"> T. Aéreo</span></li>
+            <li><strong>3. Helicóptero:</strong><span style="font-style: italic; color: #b06fdc"> T. Aéreo</span></li>
+            <li><strong>4. Coyote:</strong><span style="font-style: italic; color: #b06fdc"> A. Carnívoro</span></li>
+            <li><strong>5. Puma:</strong><span style="font-style: italic; color: #b06fdc"> A. Carnívoro</span></li>
+            <li><strong>6. Jaguar:</strong><span style="font-style: italic; color: #b06fdc"> A. Carnívoro</span></li>
+            <li><strong>7. Motocicleta:</strong><span style="font-style: italic; color: #b06fdc"> T. Terrestre</span></li>
+            <li><strong>8. Bicicleta:</strong><span style="font-style: italic; color: #b06fdc"> T. Terrestre</span></li>
+            <li><strong>9. Elefante:</strong><span style="font-style: italic; color: #b06fdc"> A. Herbívoro</span></li>
+            <li><strong>10. Cebra:</strong><span style="font-style: italic; color: #b06fdc"> A. Herbívoro</span></li>
+            <li><strong>11. Avioneta:</strong><span style="font-style: italic; color: #b06fdc"> T. Aéreo</span></li>
+            <li><strong>12. Koala:</strong><span style="font-style: italic; color: #b06fdc"> A. Herbívoro</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Fin de preguntas ↑ -->
+      <!-- Botones ↓ -->
+    </div>
+    <div class="navigateButtons">
+      <button class="button-flechas" type="button" onclick="window.location.href='../../herencia.html'">Herencica: Teoría</button>
+      <button class="button-flechas" type="button" onclick="window.location.href='../actividad2/actividad.html'">Siguiente Actividad</button>
+    </div>
+    <div id="endFooter"><!-- Aquí se genera el footer proveniente del script getUserData --></div>
+  </div>
+  <!-- Scripts -->
+  <script src="/js/getUserData.js"></script>
+  <script src="/js/bannerFooter.js"></script>
+  <script>
+    var xhr = new XMLHttpRequest();
+    var actividadRetro, aciertosRetro, fechaRetro;
+
+    xhr.open("GET", "validarActividad.php", false); //true para ejecutar de manera asincrónica y false para hacerlo de manera sincrónica
+    xhr.onload = function () {
+      if (xhr.status === 200) {
+        //var json = xhr.responseText;
+        var json = JSON.parse(xhr.responseText);
+        actividadRetro = json.actRealizada;
+        aciertosRetro = json.aciertos;
+        fechaRetro = json.fechaEntrega;
+
+        document.getElementById("actividadInfo").innerHTML = `
+        Actividad Realizada: ${actividadRetro}<br>
+        Aciertos: ${aciertosRetro}<br>
+        Fecha de Entrega: ${fechaRetro}`;
+
+      } else {
+        console.log("Error al cargar el servidor");
+      }
+    };
+    xhr.send();
+  </script>
+</body>
+</html>
