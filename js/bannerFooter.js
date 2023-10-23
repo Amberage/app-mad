@@ -75,7 +75,7 @@ menuContainer.innerHTML = menuHTML;*/
 
 // Footer
 const footerHTML = `
-<footer style="margin-top: 25px;">
+<footer style="max-width: 100%; height: auto;">
   <img width="100px" src="/assets/images/logo.png" />
   <img width="200px" src="/assets/images/contacto.png" />
 </footer>
