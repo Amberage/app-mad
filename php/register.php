@@ -32,7 +32,7 @@ if ($result->num_rows > 0) {
             VALUES ('$username', '$nombre', '$aPaterno', '$aMaterno', '$correo', '$hashedPassword', '$userType', '$ip')";
 
     if ($conn->query($sql) === TRUE) {
-        $response = array("error" => false, "message" => "Registro exitoso");
+        $response = array("error" => false, "message" => "Registro exitoso, ahora puede iniciar sesión.");
         echo json_encode($response);
     } else {
         $response = array("error" => true, "message" => "Error al registrar: " . $conn->error);

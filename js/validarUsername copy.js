@@ -1,4 +1,4 @@
-/* Este script consulta en la BBDD si ya existe el username del usuario que desea registrarse */
+/*Este script consulta en la BBDD si ya existe el username del usuario que desea registrarse */
 
 // Event listener para el formulario de registro
 document
@@ -9,14 +9,7 @@ document
     const formData = new FormData(event.target);
     const response = await enviarDatosAlServidor(formData);
 
-    if (response.error) {
-      mostrarMensajeRegistro(response.message, true);
-    } else {
-      mostrarMensajeRegistro(response.message, false);
-      setTimeout(() => {
-        window.location.href = '/views/login.html'; // Redirige a la página principal
-      }, 2000); // Redirige después de 2 segundos (puedes ajustar el tiempo)
-    }
+    mostrarMensajeRegistro(response.message, response.error);
   });
 
 // Función para enviar datos al servidor

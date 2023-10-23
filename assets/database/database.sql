@@ -24,7 +24,7 @@ CREATE TABLE actividades_Encapsulamiento (
     actRealizada ENUM('Si', 'No'),
     fechaEntrega TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     actividadNumero INT CHECK (actividadNumero IN (1, 2, 3)),
-    FOREIGN KEY (idAlumno) REFERENCES usuarios (id)
+    FOREIGN KEY (idAlumno) REFERENCES usuarios (id) ON UPDATE CASCADE ON DELETE CASCADE
 );
 
 -- Actividades Herencia
@@ -36,7 +36,7 @@ CREATE TABLE actividades_Herencia (
     actRealizada ENUM('Si', 'No'),
     fechaEntrega TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     actividadNumero INT CHECK (actividadNumero IN (1, 2, 3)),
-    FOREIGN KEY (idAlumno) REFERENCES usuarios (id)
+    FOREIGN KEY (idAlumno) REFERENCES usuarios (id) ON UPDATE CASCADE ON DELETE CASCADE
 );
 
 -- Actividades Polimorfismo
@@ -48,7 +48,7 @@ CREATE TABLE actividades_Polimorfismo (
     actRealizada ENUM('Si', 'No'),
     fechaEntrega TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     actividadNumero INT CHECK (actividadNumero IN (1, 2, 3)),
-    FOREIGN KEY (idAlumno) REFERENCES usuarios (id)
+    FOREIGN KEY (idAlumno) REFERENCES usuarios (id) ON UPDATE CASCADE ON DELETE CASCADE
 );
 
 -- Trigger

@@ -47,11 +47,11 @@ if ($result->num_rows > 0) {
         echo json_encode(array("error" => false, "message" => "Inicio de sesión exitoso", "redirect" => "home.html"));
     } else {
         // Contraseña incorrecta
-        echo json_encode(array("error" => true, "message" => "Contraseña Incorrecta"));
+        echo json_encode(array("error" => true, "message" => "El nombre de usuario o contraseña son incorrectos"));
     }
 } else {
     // Usuario no encontrado
-    echo json_encode(array("error" => true, "message" => "Usuario inexistente"));
+    echo json_encode(array("error" => true, "message" => "El nombre de usuario o contraseña son incorrectos"));
 }
 
 $conn->close();
