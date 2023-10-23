@@ -12,48 +12,43 @@
   <div class="body">
     <div class="menu">
       <ul>
-          <li><a href="/views/home.html">Inicio</a></li>
-          <li></li>
-          <li><a href="/views/encapsulamiento/encapsulamiento.html">Encapsulamiento</a></li>
-          <li></li>
-          <li><a href="/views/herencia/herencia.html">Herencia</a></li>
-          <li></li>
-          <li><a href="#" class="menu-destacado">Polimorfismo</a></li>
-          <li></li>
-          <li><a href="../index.html">Cerrar Sesión</a></li>
+        <li><a href="/views/home.html">Inicio</a></li>
+        <li><a href="/views/encapsulamiento/encapsulamiento.html">Encapsulamiento</a></li>
+        <li><a href="/views/herencia/herencia.html">Herencia</a></li>
+        <li class="menu-destacado"><a href="/views/polimorfismo/polimorfismo.html">Polimorfismo</a></li>
+        <li><a href="#" onclick="cerrarSesion()">Cerrar Sesión</a></li>
       </ul>
     </div>
+
     <div>
-      <img style="margin-left: 30%;" src="/assets/images/Polimorfismo.png" alt="Polimorfismo">
-  </div>
+      <img style="margin-left: 30%;" src="/assets/images/Polimorfismo.png">
+    </div>
 
-  <h2 style="font-size: 35px;"><b>¿Qué es?</b></h2>
-  <p class="p" style="font-size: 25px;"> Es la capacidad que tienen los objetos de una clase de responder al mismo mensaje o evento en función de los parámetros utilizados durante su invocación. Un objeto polimórfico es una entidad que puede contener valores de diferentes tipos durante la ejecución del programa.
-    Hay dos principales tipos de polimorfismo:  
-  </p>
-  <ol>
-    <li><b>Polimorfismo Estático</b> o “ad hoc”, se refiere a la capacidad de una clase para tener múltiples métodos con el mismo nombre, pero diferentes parámetros. El compilador decide qué método llamar en función de los argumentos proporcionados. Los tipos a los que se aplica el polimorfismo deben ser explicitados y declarados uno por uno antes de poder ser utilizados. Ejemplos comunes de esto son las sobrecargas de métodos y operadores.</li>
-    <img style="margin-left: 30%;" style="padding-top: 25px;" style="padding-bottom: 25px;"
-    src="/assets/images/Polimorfismo-static.png" alt="Ejemplo Polimorfismo Estático">
-    <li><b>Polimorfismo Dinámico</b>, o polimorfismo paramétrico es aquél en el que el código no incluye ningún tipo de especificación sobre el tipo de datos sobre el que se trabaja. Así, puede ser utilizado a todo tipo de datos compatible. Se basa en la herencia y la capacidad de una subclase para proporcionar una implementación específica de un método heredado de su super clase. Este tipo de polimorfismo es una característica fundamental de la programación orientada a objetos.</li>
-    <img style="margin-left: 30%;" style="padding-top: 25px;" style="padding-bottom: 25px;"
-     src="/assets/images/Polimorfismo-dinamico.jpg" alt="Ejemplo Polimorfismo Dinámico">
-  </ol>
+    <h2 style="font-size: 35px;"><b>¿Qué es?</b></h2>
+    <p class="p" style="font-size: 25px;">Es la capacidad que tienen los objetos de una clase de responder al mismo mensaje o evento en función de los parámetros utilizados durante su invocación. Un objeto polimórfico es una entidad que puede contener valores de diferentes tipos durante la ejecución del programa. Hay dos principales tipos de polimorfismo:</p>
+    <ol>
+      <li><b>Polimorfismo Estático</b> o "ad hoc", se refiere a la capacidad de una clase para tener múltiples métodos con el mismo nombre, pero diferentes parámetros. El compilador decide qué método llamar en función de los argumentos proporcionados. Los tipos a los que se aplica el polimorfismo deben ser explicitados y declarados uno por uno antes de poder ser utilizados. Ejemplos comunes de esto son las sobrecargas de métodos y operadores.
+        <img style="margin-left: 30%; padding-top: 25px; padding-bottom: 25px;" src="/assets/images/Polimorfismo-static.png">
+      </li>
+      <li><b>Polimorfismo Dinámico</b>, o polimorfismo paramétrico, es aquel en el que el código no incluye ningún tipo de especificación sobre el tipo de datos sobre el que se trabaja. Así, puede ser utilizado a todo tipo de datos compatible. Se basa en la herencia y la capacidad de una subclase para proporcionar una implementación específica de un método heredado de su super clase. Este tipo de polimorfismo es una característica fundamental de la programación orientada a objetos.
+        <img style="margin-left: 30%; padding-top: 25px; padding-bottom: 25px;" src="/assets/images/Polimorfismo-dinamico.jpg">
+      </li>
+    </ol>
 
-  <div class="yt-container">
-    <iframe width="854" height="480" src="https://www.youtube.com/embed/I2MYuinS6zE?si=KoVrv52800ndLK2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  </div>
+    <div class="yt-container">
+      <iframe width="854" height="480" src="https://www.youtube.com/embed/I2MYuinS6zE?si=KoVrv52800ndLK2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
     <div class="contenedorBotonAct">
       <button class="button-activities" type="button" onclick="window.location.href='/views/home.html'">Actividades</button>
     </div>
-  <div class="navegacion">
-    <button class="button-flechas" type="button" onclick="window.location.href='/herencia.html'">Anterior</button>
-    <button class="button-flechas" type="button" onclick="window.location.href='/views/home.html'">Califícanos</button>
-  </div>
-  <footer>
-    <img width="100px" src="/assets/images/logo.png">
-    <img width="200px" src="/assets/images/contacto.png">
-  </footer>
+    <div class="navegacion">
+      <button class="button-flechas" type="button" onclick="window.location.href='/views/herencia.html'">Anterior</button>
+      <button class="button-flechas" type="button" onclick="window.location.href='/views/home.html'">Califícanos</button>
+    </div>
+    <footer>
+      <img width="100px" src="/assets/images/logo.png">
+      <img width="200px" src="/assets/images/contacto.png">
+    </footer>
   </div>
 </body>
 </html>
