@@ -11,7 +11,7 @@ function revisarCuenta() {
       if (tipoCuenta === "administrador") {
         window.location.href = "/views/admin/admin.html";
       } else if (tipoCuenta === "docente") {
-        window.location.href = "/views/admin/";
+        window.location.href = "/views/admin/docente.html";
       }
     } else {
       console.log("No se encontró la cookie del usuario.");

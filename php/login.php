@@ -47,7 +47,7 @@ if ($result->num_rows > 0) {
         // Contraseña válida, inicio de sesión exitoso
         echo json_encode(array("error" => false, "message" => "Inicio de sesión exitoso", "redirect" => "home.html"));
     } else if (password_verify($password, $hashedPassword) && $tipoCuenta == 'docente'){
-        echo json_encode(array("error" => false, "message" => "Inicio de sesión exitoso", "redirect" => "/views/admin/"));
+        echo json_encode(array("error" => false, "message" => "Inicio de sesión exitoso", "redirect" => "/views/admin/docente.html"));
     } else if (password_verify($password, $hashedPassword) && $tipoCuenta == 'administrador'){
         echo json_encode(array("error" => false, "message" => "Inicio de sesión exitoso", "redirect" => "/views/admin/admin.html"));
     } else {
