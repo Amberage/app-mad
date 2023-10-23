@@ -41,7 +41,7 @@ if ($conn->connect_error) {
 }
 
 // Construir la consulta SQL con sentencias preparadas para prevenir la inyección de SQL
-$sql = "UPDATE actividades_Encapsulamiento
+$sql = "UPDATE actividades_Polimorfismo
         SET aciertos = ?, actRealizada = 'Si', fechaEntrega = ? 
         WHERE actividadNumero = ? AND idAlumno = ? AND username = ?";
 
