@@ -1,17 +1,4 @@
 /*Este script cierra la sesión*/
-function mostrarInformacionUsuario() {
-    const userDataCookie = getCookie("userData");
-  
-    if (userDataCookie) {
-      const userDataJSON = decodeURIComponent(atob(userDataCookie));
-      const userData = JSON.parse(userDataJSON);
-      const userDataDisplay = document.getElementById("userDataDisplay");
-    } else {
-      console.log("No se encontró la cookie del usuario.");
-      window.location.href = "/";
-    }
-  }
-  
   // Función para obtener el valor de una cookie por su nombre
   function getCookie(name) {
     const decodedCookie = decodeURIComponent(document.cookie);
@@ -32,7 +19,7 @@ function mostrarInformacionUsuario() {
   // Función para eliminar la cookie y redireccionar a index.html
   function cerrarSesion() {
     document.cookie = "userData=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-    window.location.href = "/index.html";
+    window.location.href = "/";
   
     const userDataCookieValue = getCookie("userData");
     console.log("Sesión finalizada. Cookie eliminada:", userDataCookieValue);

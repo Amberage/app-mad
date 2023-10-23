@@ -8,9 +8,9 @@ function revisarCuenta() {
     const tipoCuenta = `${userData.userType}`;
     console.log(tipoCuenta);
 
-    if (tipoCuenta === "alumno") {
-      //window.location.href = "#";
-    } else if (tipoCuenta === "docente" || tipoCuenta === "administrador") {
+    if (tipoCuenta === "administrador") {
+      window.location.href = "/views/admin/admin.html";
+    } else if (tipoCuenta === "docente") {
       window.location.href = "/views/admin";
     }
   } else {
