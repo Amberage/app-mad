@@ -17,6 +17,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     $row = $result->fetch_assoc();
     $hashedPassword = $row['password'];
+    $tipoCuenta = $row['userType'];
 
     // Obtén la IP del usuario
     $ip = $_SERVER['REMOTE_ADDR'];
@@ -42,9 +43,13 @@ if ($result->num_rows > 0) {
     setcookie("userData", $userDataJSONEncoded, time() + (3600), "/"); 
 
     // Verificar la contraseña proporcionada con la contraseña encriptada
-    if (password_verify($password, $hashedPassword)) {
+    if (password_verify($password, $hashedPassword) && $tipoCuenta == 'alumno') {
         // Contraseña válida, inicio de sesión exitoso
         echo json_encode(array("error" => false, "message" => "Inicio de sesión exitoso", "redirect" => "home.html"));
+    } else if (password_verify($password, $hashedPassword) && $tipoCuenta == 'docente'){
+        echo json_encode(array("error" => false, "message" => "Inicio de sesión exitoso", "redirect" => "/views/admin/"));
+    } else if (password_verify($password, $hashedPassword) && $tipoCuenta == 'administrador'){
+        echo json_encode(array("error" => false, "message" => "Inicio de sesión exitoso", "redirect" => "/views/admin/admin.html"));
     } else {
         // Contraseña incorrecta
         echo json_encode(array("error" => true, "message" => "Contraseña Incorrecta"));
