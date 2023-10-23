@@ -1,53 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="/js/validarSesion.js"></script>
-  <link rel="icon" type="image/png" href="/assets/images/logo.png">
-  <link rel="stylesheet" href="/css/styles.css">
-  <title>Ingresar</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/js/validarSesion.js"></script>
+    <link rel="icon" type="image/png" href="/assets/images/logo.png" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Ingresar</title>
 </head>
 <body>
-  <div class="menu">
-    <ul>
-      <li style="width: 33%;"><a href="/">Inicio</a></li>
-      <li style="width: 33%;" class="menu-destacado"><a href="/views/login.html">Login</a></li>
-      <li style="width: 34%;"><a href="/views/register.html">Registro</a></li>
-    </ul>
-  </div>
-  <div class="contenedorCentradoTotal" style="margin-top: -170px;">
-    <h1>Iniciar Sesión</h1>
-    <form id="loginForm" action="../php/login.php" method="post">
-      <div>
-        <label for="username">Nombre de usuario</label>
-        <input type="text" id="username" name="username" maxlength="12" style="margin-bottom: 30px;">
-      </div>
-      <label for="password">Contraseña</label>
-      <input type="password" id="password" name="password" maxlength="20"><br>
-      <button style="margin-top: 10px;" type="button" onclick="redirectToLogin()">Iniciar Sesión</button> <br>
-      <div id="loginMessage" style="color: red;"></div>
-      <button style="margin-top: 0px; color: #1D1A2F; background-color: #8BD450" type="button" onclick="redirectToRegister()">Registrarse</button>
-    </form>
+    <div class="menu">
+        <ul>
+            <li style="width: 33%"><a href="/">Inicio</a></li>
+            <li style="width: 33%" class="menu-destacado"><a href="/views/login.html">Login</a></li>
+            <li style="width: 34%"><a href="/views/register.html">Registro</a></li>
+        </ul>
+    </div>
 
-    <script>
-      function redirectToRegister() {
-        window.location.href = "register.html";
-      }
-
-      function redirectToLogin() {
-        window.location.href = "login.html";
-      }
-    </script>
-    <script src="/js/login.js"></script>
+    <h1 style="font-size: 4em; margin-top: 150px; animation: showSlow 2s;">Iniciar Sesión</h1>
+    <div style="display: flex; justify-content: center; align-items: center; animation: showSlow 3.5s;">
+      <form id="loginForm" action="/php/login.php" method="post">
+          <label for="username">Nombre de usuario</label>
+          <input type="text" id="username" name="username" maxlength="12" style="margin-bottom: 30px;">
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" name="password" maxlength="20">
+          
+          
+          
+          <!-- Botones -->
+          <div style="display: flex; flex-direction: column; align-items: center; margin-top: 50px;">
+            <button style="margin-top: 10px;" type="button" onclick="window.location.href='/views/login.html'">Iniciar Sesión</button>
+            <span id="loginMessage" style="color: red; margin-top: -20px; font-size: 1.5em; animation: scale 2s;"></span>
+            <button style="margin-top: 25x; color: #1D1A2F; background-color: #8BD450" type="button" onclick="window.location.href='/views/register.html'">Registrarse</button>
+         </div>
+      </form>
   </div>
-  <div class="menuInferior2">
-    <ul>
-      <li><img height="100%" width="100px" style="margin-right: 20px; padding-top: 5%; padding-bottom: 5%;" src="/assets/images/logo.png"></li>
-      <li><img height="100%" width="150px" style="margin-left: 20px; padding-top: 5%; padding-bottom: 5%;" src="/assets/images/contacto.png"></li>
-    </ul>
-  </div>
-  
+  <script src="/js/login.js"></script>
 </body>
 </html>

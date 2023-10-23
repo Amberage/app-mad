@@ -15,7 +15,7 @@ document
 // Función para enviar datos al servidor
 async function enviarDatosAlServidor(formData) {
   try {
-    const response = await fetch("../php/register.php", {
+    const response = await fetch("/php/register.php", {
       method: "POST",
       body: formData,
     });

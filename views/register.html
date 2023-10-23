@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,11 +8,9 @@
   <link rel="icon" type="image/png" href="/assets/images/logo.png" />
   <link rel="stylesheet" href="/css/styles.css" />
   <title>Registro de Usuario</title>
-  <style>
-
-  </style>
 </head>
 <body>
+  <!-- Banner: header -->
   <div class="menu">
     <ul>
       <li style="width: 33%;"><a href="/">Inicio</a></li>
@@ -20,9 +18,10 @@
       <li style="width: 34%;" class="menu-destacado"><a href="/views/register.html">Registro</a></li>
     </ul>
   </div>
-  <div class="contenedorCentradoTotal">
-    <h1>Registro de Usuario</h1>
-    <form id="registerForm" action="../php/register.php" method="post">
+  <h1 style="font-size: 3em; margin-top: 20px; animation: showSlow 2s;">Registrarse</h1>
+  <!-- Formulario -->
+  <div style="display: flex; justify-content: center; align-items: center; animation: showSlow 3.5s;">
+    <form id="registerForm" action="/php/register.php" method="post">
       <div class="form-group">
         <label for="username">Usuario:</label>
         <input type="text" id="username" name="username" pattern="[A-Za-z0-9]{3,12}" required>
@@ -63,20 +62,14 @@
           <option value="alumno" selected>Alumno</option>
         </select>
       </div>
-      <button type="submit">Registrarse</button>
-      <div id="mensajeRegistro" class="error" style="display: none;"></div>
+      <!-- Boton de registro y texto de error centrado -->
+      <div style="display: flex; flex-direction: column; align-items: center; margin-top: 15px;">
+        <button type="submit">Registrarse</button>
+        <span id="mensajeRegistro" style="color: red; font-size: 1.5em; animation: scale 2s;"></span>
+      </div>
     </form>
   </div>
-  
-  <div class="menuInferior1">
-    <ul>
-      <li><img height="100%" width="100px" style="margin-right: 20px; padding-top: 5%; padding-bottom: 5%;" src="/assets/images/logo.png" /></li>
-      <li><img height="100%" width="150px" style="margin-left: 20px; padding-top: 5%; padding-bottom: 5%;" src="/assets/images/contacto.png" /></li>
-    </ul>
-  </div>
-
   <script src="/js/validarUsername.js"></script>
-
   <script>
     const passwordInput = document.getElementById('password');
     const confirmPasswordInput = document.getElementById('confirmPassword');
