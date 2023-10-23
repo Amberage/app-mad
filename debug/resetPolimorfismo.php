@@ -37,7 +37,7 @@ $sql = "UPDATE actividades_Polimorfismo
         WHERE idAlumno = '$alumnoID' AND username = '$alumnoUsername'";
 
 if ($conn->query($sql) === TRUE) {
-    echo json_encode(['resultadoSQL' => 'Actividades de encapsulamiento reiniciadas para el usuario: ' . $alumnoUsername]); 
+    echo json_encode(['resultadoSQL' => 'Actividades de polimorfismo reiniciadas para el usuario: ' . $alumnoUsername]); 
 } else {
     $message = "Error al actualizar el registro: " . $conn->error;
 }

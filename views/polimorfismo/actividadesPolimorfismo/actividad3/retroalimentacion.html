@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="/assets/images/logo.png">
   <link rel="stylesheet" href="/css/styles.css">
-  <title>MAD: Herencia III</title>
+  <title>MAD: Polimorfismo I</title>
   <script src="validarActividad.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -20,140 +20,56 @@
       <ul>
         <li><a href="/views/home.html">Inicio</a></li>
         <li><a href="/views/encapsulamiento/encapsulamiento.html">Encapsulamiento</a></li>
-        <li class="menu-destacado"><a href="/views/herencia/herencia.html">Herencia</a></li>
-        <li><a href="/views/polimorfismo/polimorfismo.html">Polimorfismo</a></li>
+        <li><a href="/views/herencia/herencia.html">Herencia</a></li>
+        <li class="menu-destacado"><a href="/views/polimorfismo/polimorfismo.html">Polimorfismo</a></li>
         <li><a href="#" onclick="cerrarSesion()">Cerrar Sesión</a></li>
       </ul>
     </div>
 
     <div id="dataShow"> <!-- Aquí se aloja un campo de depuración u:--> </div>
     <div class="userDataDisplay" style="opacity: 100%;"><span id="actividadInfo"></span></div> <!-- Aquí se reciben y muestran los datos de la actividad -->
-    <h1 style="color: #6ad954; font-size: 3em; animation: showSlow 3s">Herencia</h1>
-    <h1 style="margin-top: -70px; font-size: 2em; color: #b06fdc; animation: showSlow 3s">Retroalimentación: Evaluación</h1>
+    <h1 style="color: #6ad954; font-size: 3em; animation: showSlow 3s">Polimorfismo</h1>
+    <h1 style="margin-top: -70px; font-size: 2em; color: #b06fdc; animation: showSlow 3s">Retroalimentación: Actividad 1</h1>
     <div>
+      
       <!-- Objetivos -->
       <p style="font-size: 1.5em;"><strong>OBJETIVOS</strong></p>
       <ul style="margin-left: 70px; font-size: 1.3em;">
-        <li>Comprender el concepto de herencia.</li>
-        <li>Identificar y clasificar objetos en categorías basadas en sus características compartidas.</li>
+        <li>El alumno deberá ser capáz de aplicar y desmostrar su comprensión del concepto de
+          polimorfismo en programación orientada a objetos, desarrollando la habilidad
+          de implementar este principio de manera efectiva</li>
       </ul>
 
       <!-- Retroalimentación: Descripción -->
       <p style="font-size: 1.5em; margin-top: 25px;"><strong>RETROALIMENTACIÓN</strong></p>
     </div>
 
-    <!-- Retroalimentación: Desarrollo -->
     <div class="carousel">
-
       <!-- Pregunta 1 display: block -->
       <div class="question" style="display: block;">
         <div class="question-container">
-          <p><strong>Pregunta 1</strong></p>
-          <p>¿Cuál es la definición de herencia en programación orientada a objetos?</p> 
-          <p><strong>RESPUESTA:</strong></p>  
-          <p><strong>B. La capacidad de una clase de adquirir las propiedades y métodos de otra clase.</strong></p>       
-          <p>La herencia en programación orientada a objetos permite que una clase adquiera las propiedades y métodos de otra clase.</p>
-
+          <p><strong>RESPUESTAS</strong></p>
+          <img class="contenedorImagen" src="assets/resultados.png" style="max-width: 100%; height: auto; animation: showSlow 1s">
+          <p>La respuesta correcta sería: <strong>“Extends”</strong>, ya que gracias a esa palabra sabemos que
+            está heredando a la superclase <strong>“Animal”</strong>, y la función <strong>“hacerSonido”</strong> podrá
+            utilizarse en las subclases.</p>
+            <p>Esto dando a entender que el Perro es un Animal y
+              emite un sonido, así como el gato, pero aunque son sonidos, son distintos, uno
+              ladra mientras el otro maulla.</p>
         </div>
       </div>
-    
 
-    <!-- Pregunta 2 display: none -->
-    <div class="question" style="display: none;">
-      <div class="question-container">
-        <p><strong>Pregunta 2</strong></p>
-        <p>¿Qué son las clases base y derivadas en herencia?</p> 
-        <p><strong>RESPUESTA: </strong></p>      
-        <p><strong>D. Las clases base son las clases padre, y las clases derivadas son las que heredan de ellas.</strong></p>         
-        <p>Las clases base son las clases padres de las cuales se hereda en las clases derivadas.</p>
-      </div>
-    </div>
-
-    <!-- Pregunta 3 display: none -->
-    <div class="question" style="display: none;">
-      <div class="question-container">
-        <p><strong>Pregunta 3</strong></p>
-        <p>¿Cómo se heredan los métodos y las propiedades en la jerarquía de clases?</p> 
-        <p><strong>RESPUESTA: </strong></p>        
-        <p><strong>B. Los métodos y las propiedades se heredan automáticamente.</strong></p>   
-        <p>Tanto los métodos como las propiedades se heredan automáticamente en la jerarquía de clases.</p>
-      </div>
-    </div>
-
-    <!-- Pregunta 4 display: none -->
-    <div class="question" style="display: none;">
-      <div class="question-container">
-        <p><strong>Pregunta 4</strong></p>
-        <p>¿Cuál es una de las ventajas clave de la herencia en programación orientada a objetos?</p> 
-        <p><strong>RESPUESTA: </strong></p>       
-        <p><strong>C. Promueve la reutilización de código.</strong></p>                 
-        <p>La herencia promueve la reutilización de código al permitir que las clases hereden propiedades y métodos de otras clases.</p>
-      </div>
-    </div>
-
-    <!-- Pregunta 5 display: none -->
-    <div class="question" style="display: none;">
-      <div class="question-container">
-        <p><strong>Pregunta 5</strong></p>
-        <p>¿Cuál de las siguientes es un ejemplo de relación de herencia?</p> 
-        <p><strong>RESPUESTA: </strong></p> 
-        <p><strong>C. Una clase "Animal" y una clase "Mamífero".</strong></p>                 
-        <p>La relación entre "Animal" y "Mamífero" es un ejemplo de herencia en programación orientada a objetos.</p>
-      </div>
-    </div>
-
-    <!-- Pregunta 6 display: none -->
-    <div class="question" style="display: none;">
-      <div class="question-container">
-        <p><strong>Pregunta 6</strong></p>
-        <p>¿Cuál es el propósito principal de las clases base en la herencia?</p>
-        <p><strong>RESPUESTA: </strong></p>
-        <p><strong>C. Proporcionar una base común para las clases derivadas.</strong></p>                 
-        <p>Las clases base proporcionan una base común para las clases derivadas.</p>
-      </div>
-    </div>
-
-    <!-- Pregunta 7 display: none -->
-    <div class="question" style="display: none;">
-      <div class="question-container">
-        <p><strong>Pregunta 7</strong></p>
-        <p>¿Cuál es la principal diferencia entre una clase base y una clase derivada en herencia?</p>
-        <p><strong>RESPUESTA: </strong></p>     
-        <p><strong>C. La clase derivada se crea a partir de la clase base.</strong></p>             
-        <p>La clase derivada se crea a partir de la clase base. La clase derivada se define utilizando la clase base como punto de partida, agregando o modificando atributos y métodos según sea necesario.</p>
-      </div>
-    </div>
-
-    <!-- Pregunta 8 display: none -->
-    <div class="question" style="display: none;">
-      <div class="question-container">
-        <p><strong>Pregunta 5</strong></p>
-        <p>¿De qué otra forma se le conoce a una clase base o clase padre?</p>
-        <p><strong>RESPUESTA: </strong></p>         
-        <p><strong>C. Super Clase.</strong></p>                  
-        <p>Las clases base también son conocidas como Clase Padre, Super clase.</p>
-      </div>
-    </div>
-
-    <!-- Fin de preguntas ↑ -->
-
-    <!-- Botones ↓ -->
-    <p class="mensajeError" id="errorRespuestas"></p>
-    <div class="botonesCarrousel">
-      <button onclick="prevQuestion()" id="btn-prev" style="display: none;">Atrás</button>
-      <button onclick="nextQuestion()" id="btn-next">Siguiente</button>
-    </div>
-    
+      <!-- Fin de preguntas ↑ -->
+      <!-- Botones ↓ -->
     </div>
     <div class="navigateButtons">
-      <button class="button-flechas" type="button" onclick="window.location.href='../actividad2/actividad.html'">Actividad Anterior</button>
-      <button class="button-flechas" type="button" onclick="window.location.href='/views/polimorfismo/polimorfismo.html'">Tema: Polimorfismo</button>
+      <button class="button-flechas" type="button" onclick="window.location.href='../../polimorfismo.html'">Polimorfismo: Teoría</button>
+      <button class="button-flechas" type="button" onclick="window.location.href='../actividad2/actividad.html'">Siguiente Actividad</button>
     </div>
     <div id="endFooter"><!-- Aquí se genera el footer proveniente del script getUserData --></div>
   </div>
   <!-- Scripts -->
-  <!-- <script src="/js/getUserData.js"></script> -->
-  <script src="/js/carrouselRespuestas.js"></script>
+  <script src="/js/getUserData.js"></script>
   <script src="/js/bannerFooter.js"></script>
   <script>
     var xhr = new XMLHttpRequest();

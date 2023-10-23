@@ -14,7 +14,7 @@ $alumnoID = null;
 $alumnoUsername = null;
 
 //Apuntar a la actividad adecuada
-$numeroActividad = 2; //Puede ser 1, 2 o 3 segun sea el ccaso
+$numeroActividad = 1; //Puede ser 1, 2 o 3 segun sea el ccaso
 $fechaEntrega = date('Y-m-d H:i:s');
 
 if (isset($_COOKIE['userData'])) {
@@ -41,7 +41,7 @@ if ($conn->connect_error) {
 }
 
 // Construir la consulta SQL con sentencias preparadas para prevenir la inyección de SQL
-$sql = "UPDATE actividades_Herencia 
+$sql = "UPDATE actividades_Polimorfismo
         SET aciertos = ?, actRealizada = 'Si', fechaEntrega = ? 
         WHERE actividadNumero = ? AND idAlumno = ? AND username = ?";
 

@@ -5,18 +5,9 @@ function calificarRespuestas() {
   let todosCamposCompletos = true;
 
   const respuestasCorrectas = {
-    q1: "derivada",     //Pez
-    q2: "base",         //Animal
-    q3: "derivada",     //Perro
-    q4: "base",         //Vehiculo
-    q5: "derivada",     //Motocicleta
-    q6: "derivada",     //Bicicleta
-    q7: "derivada",     //Cuadrado
-    q8: "derivada",     //Triangulo
-    q9: "base",         //Figura Geométrica
-    q10: "derivada",    //Vendedor
-    q11: "base",        //Empleado
-    q12: "derivada",    //Gerente
+    q1: "b",
+    q2: "b",
+    q3: "b"
   };
 
   const numeroPreguntas = Object.keys(respuestasCorrectas).length;
