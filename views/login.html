@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="/js/validarSesion.js"></script>
-  <link rel="icon" type="image/png" href="/assets/images/logo.png"/>
-  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="icon" type="image/png" href="/assets/images/logo.png">
+  <link rel="stylesheet" href="/css/styles.css">
   <title>Ingresar</title>
 </head>
 <body>
@@ -18,32 +18,32 @@
     </ul>
   </div>
 
-  <h1 style="font-size: 4em; margin-top: 100px; animation: showSlow 2s;">Iniciar Sesión</h1>
-  <div style="display: flex; justify-content: center; align-items: center; animation: showSlow 3.5s;">
+  <div class="contenedorCentradoTotal" style="animation: showSlow 3.5s">
+    <h1 style="font-size: 4em; margin-top: 100px; animation: showSlow 2s;">Iniciar Sesión</h1>
     <form id="loginForm" action="/php/login.php" method="post">
-      <!-- Inputs -->
-      <label for="username">Nombre de usuario</label>
-      <input type="text" id="username" name="username" maxlength="12"  style="margin-bottom: 30px;" />
-      <label for="password">Contraseña</label>
-      <input type="password" id="password" name="password" maxlength="20"  /><br />
-      <!-- Botones -->
-      <div style="display: flex; flex-direction: column; align-items: center; margin-top: 50px;"></div>
-        <button style="margin-top: 10px;" type="button" onclick="redirectToLogin()">Iniciar Sesión</button> <br>
-        <span id="loginMessage" style="color: red; margin-top: -20px; font-size: 1.2em; animation: scale 2s;"><span>
-        <button style="margin-top: 0px; color: #1D1A2F; background-color: #8BD450" type="button" onclick="window.location.href='/views/register.html'">Registrarse</button>
+      <div>
+        <label for="username">Nombre de usuario</label>
+        <input type="text" id="username" name="username" maxlength="12" style="margin-bottom: 30px;">
       </div>
-    </form>
-  </div>
-  
-  <script>
-    function redirectToRegister() {
-      window.location.href = "register.html";
-    }
 
-    function redirectToLogin() {
-      window.location.href = "login.html";
-    }
-  </script>
-  <script src="/js/login.js"></script>
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" name="password" maxlength="20"><br>
+
+      <button style="margin-top: 25px;" type="button" onclick="redirectToLogin()">Iniciar Sesión</button><br>
+      <div id="loginMessage" style="color: red;"></div>
+      <button style="margin-top: 10px; color: #1D1A2F; background-color: #8BD450" type="button" onclick="redirectToRegister()">Registrarse</button>
+    </form>
+
+    <script>
+      function redirectToRegister() {
+        window.location.href = "register.html";
+      }
+
+      function redirectToLogin() {
+        window.location.href = "login.html";
+      }
+    </script>
+    <script src="/js/login.js"></script>
+  </div>
 </body>
 </html>
