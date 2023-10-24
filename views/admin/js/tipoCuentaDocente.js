@@ -5,8 +5,7 @@ function revisarCuenta() {
     if (userDataCookie) {
       const userDataJSON = decodeURIComponent(atob(userDataCookie));
       const userData = JSON.parse(userDataJSON);
-      const tipoCuenta = `${userData.userType}`;
-      console.log(tipoCuenta);
+      const tipoCuenta = `${userData.userType}`;;
   
       if (tipoCuenta === "administrador") {
         window.location.href = "/views/admin/admin.html";
