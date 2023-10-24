@@ -12,6 +12,13 @@ function mostrarInformacionUsuario() {
     const userData = JSON.parse(userDataJSON);
     const nombreDocente = `${userData.nombre}`;
     document.getElementById("nombreDocente").innerHTML = nombreDocente;
+
+    if (tipoCuenta === "administrador") {
+      window.location.href = "/views/admin/admin.html";
+    } else if (tipoCuenta === "alumno") {
+      window.location.href = "/views/home.html";
+    }
+
   } else {
     console.log("No se encontró la cookie del usuario.");
     window.location.href = "/views/login.html";
