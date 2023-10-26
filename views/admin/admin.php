@@ -1,11 +1,11 @@
 <?php
 $servername = "localhost";
 $username = "amberage_root";
-$password = "Q2om%)?H.sAQV(r(MD";
+$pswd = "Q2om%)?H.sAQV(r(MD";
 $database = "amberage_madness";
 
 // Crear la conexión
-$conn = new mysqli($servername, $username, $password, $database);
+$conn = new mysqli($servername, $username, $pswd, $database);
 
 // Verificar la conexión
 if ($conn->connect_error) {
@@ -38,6 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['crear_usuario'])) {
     }
 }
 
+
 // Actualizar (Editar) un Registro
 if (isset($_GET['edit_id'])) {
     $edit_id = $_GET['edit_id'];
@@ -49,12 +50,15 @@ if (isset($_GET['edit_id'])) {
         $editedAPaterno = $_POST['editedAPaterno'];
         $editedAMaterno = $_POST['editedAMaterno'];
         $editedCorreo = $_POST['editedCorreo'];
-        $editedPassword = base64_encode($_POST['editedPassword']); // Codificar la contraseña en base64
+        $editedPassword = base64_encode($_POST['editedPassword']); // Codificar la nueva contraseña en base64
         $editedUserType = $_POST['editedUserType'];
-
+        
+        // Actualizar la fecha de edición
+        $fechaEdicion = date("Y-m-d H:i:s");
+        
         $updateQuery = "UPDATE usuarios 
                         SET username = '$editedUsername', nombre = '$editedNombre', aPaterno = '$editedAPaterno', aMaterno = '$editedAMaterno',
-                        correo = '$editedCorreo', password = '$editedPassword', userType = '$editedUserType'
+                        correo = '$editedCorreo', password = '$editedPassword', userType = '$editedUserType', fechaRegistro = '$fechaEdicion'
                         WHERE id = $edit_id";
 
         if ($conn->query($updateQuery) === TRUE) {
@@ -114,7 +118,7 @@ if (isset($_GET['delete_id'])) {
             echo "<td>" . $row['aPaterno'] . "</td>";
             echo "<td>" . $row['aMaterno'] . "</td>";
             echo "<td>" . $row['correo'] . "</td>";
-            echo "<td>" . base64_decode($row['password']) . "</td>"; // Decodificar la contraseña en base64
+            echo "<td>" . $row['password'] . "</td>"; // Mostrar contraseña sin codificar
             echo "<td>" . $row['userType'] . "</td>";
             echo "<td>" . $row['fechaRegistro'] . "</td>";
             echo "<td>" . $row['ip'] . "</td>";
@@ -140,7 +144,7 @@ if (isset($_GET['delete_id'])) {
             <label>Correo:</label>
             <input type="email" name="editedCorreo" value="<?php echo $editData['correo']; ?>" required><br>
             <label>Password:</label>
-            <input type="password" name="editedPassword" value="<?php echo base64_decode($editData['password']); ?>" required><br>
+            <input type="password" name="editedPassword" value="<?php echo $editData['password']; ?>" required><br>
             <label>Tipo de Usuario:</label>
             <select name="editedUserType">
                 <option value="alumno" <?php if ($editData['userType'] == 'alumno') echo 'selected'; ?>>Alumno</option>
