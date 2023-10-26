@@ -56,6 +56,7 @@ if ($result->num_rows > 0) {
     }
 } else {
     // Usuario no encontrado
+    setcookie("userData", "", time() - 3600, "/");
     echo json_encode(array("error" => true, "message" => "Usuario inexistente"));
 }
 
