@@ -1,8 +1,8 @@
 <?php
-$servername = "tu_servidor";
-$username = "tu_usuario";
-$password = "tu_contraseña";
-$database = "tu_base_de_datos";
+$servername = "localhost";
+$username = "amberage_root";
+$password = "Q2om%)?H.sAQV(r(MD";
+$dbname = "amberage_madness";
 
 // Crear la conexión
 $conn = new mysqli($servername, $username, $password, $database);
@@ -57,7 +57,7 @@ if (isset($_GET['edit_id'])) {
                         WHERE id = $edit_id";
 
         if ($conn->query($updateQuery) === TRUE) {
-            header("Location: nombre_de_esta_pagina.php"); // Redirigir a la página actual después de la actualización
+            header("Location: admin.php"); // Redirigir a la página actual después de la actualización
         } else {
             echo "Error al actualizar el registro: " . $conn->error;
         }
@@ -76,7 +76,7 @@ if (isset($_GET['delete_id'])) {
     $deleteQuery = "DELETE FROM usuarios WHERE id = $delete_id";
 
     if ($conn->query($deleteQuery) === TRUE) {
-        header("Location: nombre_de_esta_pagina.php"); // Redirigir a la página actual después de la eliminación
+        header("Location: admin.php"); // Redirigir a la página actual después de la eliminación
     } else {
         echo "Error al eliminar el registro: " . $conn->error;
     }
@@ -84,9 +84,16 @@ if (isset($_GET['delete_id'])) {
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Usuarios</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/assets/images/logo.png" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>MAD Learning: Administración</title>
 </head>
 <body>
     <h1>Lista de Usuarios</h1>
@@ -117,8 +124,8 @@ if (isset($_GET['delete_id'])) {
             echo "<td>" . $row['userType'] . "</td>";
             echo "<td>" . $row['fechaRegistro'] . "</td>";
             echo "<td>" . $row['ip'] . "</td>";
-            echo "<td><a href='nombre_de_esta_pagina.php?edit_id=" . $row['id'] . "'>Editar</a> | 
-                  <a href='nombre_de_esta_pagina.php?delete_id=" . $row['id'] . "'>Eliminar</a></td>";
+            echo "<td><a href='admin.php?edit_id=" . $row['id'] . "'>Editar</a> | 
+                  <a href='admin.php?delete_id=" . $row['id'] . "'>Eliminar</a></td>";
             echo "</tr>";
         }
         ?>
