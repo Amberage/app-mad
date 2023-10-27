@@ -52,7 +52,7 @@ if ($result->num_rows > 0) {
         echo json_encode(array("error" => false, "message" => "Inicio de sesión exitoso", "redirect" => "/views/admin/admin.php"));
     } else {
         // Contraseña incorrecta
-        echo json_encode(array("error" => true, "message" => "Contraseña Incorrecta"));
+        echo json_encode(array("error" => true, "message" => "Contraseña Incorrecta", "redirect" => "#"));
     }
 } else {
     // Usuario no encontrado
