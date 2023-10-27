@@ -194,5 +194,9 @@ if (isset($_GET['delete_id'])) {
                 <input style="margin-top: 50px;" type="submit" value="Crear Usuario">
             </form>
         <script src="js/tipoCuentaAdmin.js"></script>
+        <footer style="margin-top: 25px;">
+  <img width="100px" src="/assets/images/logo.png" />
+  <img width="200px" src="/assets/images/contacto.png" />
+</footer>
 </body>
 </html>
