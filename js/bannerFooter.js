@@ -81,7 +81,7 @@ var footerHTML = `
 </footer>
 `;
 
-footerHTML = ``;
+/* footerHTML = ``; */
 
 const footerContainer = document.getElementById('endFooter'); // Busca en el HTML el id endFooter para vacciar el menuHTML
 footerContainer.innerHTML = footerHTML;
