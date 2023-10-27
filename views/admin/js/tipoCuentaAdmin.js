@@ -12,7 +12,6 @@ function mostrarInformacionUsuario() {
     const userData = JSON.parse(userDataJSON);
     const tipoCuenta = `${userData.userType}`;;
     const nombreDocente = `${userData.nombre}`;
-    document.getElementById("nombreDocente").innerHTML = nombreDocente;
 
     if (tipoCuenta === "administrador") {
       window.location.href = "/views/admin/admin.php";
