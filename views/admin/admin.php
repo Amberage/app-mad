@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['crear_usuario'])) {
     $aPaterno = $_POST['aPaterno'];
     $aMaterno = $_POST['aMaterno'];
     $correo = $_POST['correo'];
-    $password = base64_encode($_POST['password']); // Codificar la contraseña en base64
+    $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
     $userType = $_POST['userType'];
     $ip = $_SERVER['REMOTE_ADDR']; // Obtener la dirección IP del cliente
     $fechaRegistro = date("Y-m-d H:i:s"); // Generar la fecha y hora automáticamente
@@ -32,10 +32,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['crear_usuario'])) {
                     VALUES ('$username', '$nombre', '$aPaterno', '$aMaterno', '$correo', '$password', '$userType', '$ip', '$fechaRegistro')";
 
     if ($conn->query($insertQuery) === TRUE) {
-        echo "Registro creado con éxito.";
+        echo "<script>alert('Registro creado con éxito.');</script>";
     } else {
-        echo "Error al crear el registro: " . $conn->error;
+        echo "<script>alert('Error al crear el registro: " . $conn->error . "');</script>";
     }
+
 }
 
 
@@ -50,7 +51,7 @@ if (isset($_GET['edit_id'])) {
         $editedAPaterno = $_POST['editedAPaterno'];
         $editedAMaterno = $_POST['editedAMaterno'];
         $editedCorreo = $_POST['editedCorreo'];
-        $editedPassword = base64_encode($_POST['editedPassword']); // Codificar la nueva contraseña en base64
+        $editedPassword = password_hash($_POST['editedPassword'], PASSWORD_BCRYPT);
         $editedUserType = $_POST['editedUserType'];
         
         // Actualizar la fecha de edición
