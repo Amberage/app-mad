@@ -11,10 +11,9 @@ function mostrarInformacionUsuario() {
     const userDataJSON = decodeURIComponent(atob(userDataCookie));
     const userData = JSON.parse(userDataJSON);
     const tipoCuenta = `${userData.userType}`;;
-    const nombreDocente = `${userData.nombre}`;
 
-    if (tipoCuenta === "administrador") {
-      window.location.href = "/views/admin/admin.php";
+    if (tipoCuenta === "docente") {
+      window.location.href = "/views/admin/docente.html";
     } else if (tipoCuenta === "alumno") {
       window.location.href = "/views/home.html";
     }
