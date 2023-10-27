@@ -545,3 +545,23 @@ code {
   text-align: center;
   height: 75px;
 }
+
+
+/*Clase admin*/
+.tablaAdmin {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+/* Estilos para las celdas de encabezado (th) */
+.tablaAdmin th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+/* Estilos para las celdas de datos (td) */
+.tablaAdmin td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
