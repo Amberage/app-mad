@@ -9,7 +9,7 @@ function revisarCuenta() {
       console.log(tipoCuenta);
   
       if (tipoCuenta === "administrador") {
-        window.location.href = "/views/admin/admin.html";
+        window.location.href = "/views/admin/admin.php";
       } else if (tipoCuenta === "docente") {
         window.location.href = "/views/admin/docente.html";
       }
