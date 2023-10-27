@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 }
 
 // Leer (Mostrar) Registros
-$query = "SELECT * FROM usuarios";
+$query = "SELECT * FROM usuarios WHERE userType != 'administrador'";
 $result = $conn->query($query);
 
 // Crear (Insertar) un Nuevo Registro
@@ -101,12 +101,13 @@ if (isset($_GET['delete_id'])) {
 <body>
     <div class="menu">
         <ul>
-          <li style="width: 50%" class="menu-destacado"><a href="#">Administración</a></li>
-          <li style="width: 50%"><a href="#" onclick="cerrarSesion()">Cerrar Sesión</a></li>
+          <li style="width: 33%"><a href="/views/admin/admin.php?edit_id=2">Editar Usuario</a></li>
+          <li style="width: 33%"><a href="/views/admin/admin.php">Crear Usuario</a></li>
+          <li style="width: 34%"><a href="#" onclick="cerrarSesion()">Cerrar Sesión</a></li>
         </ul>
     </div>
     <h1>Lista de Usuarios</h1>
-    <table border="1" class="tablaAdmin" style="margin: 0 auto; text-align: center;">
+    <table border="1" class="tablaAdmin" style="margin: 0 auto; text-align: center; max-width: 75%;">
         <tr>
             <th>ID</th>
             <th>Username</th>
