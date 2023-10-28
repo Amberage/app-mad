@@ -1,0 +1,6 @@
+"id"	"username"	"nombre"	"aPaterno"	"aMaterno"	"correo"	"password"	"userType"	"fechaRegistro"	"ip"
+"1"	"admin"	"Administrador"	"admin"	"admin"	"admin@alumno.uaemex.mx"	"$2y$10$IUW3T7T8lsdijFVQG0ha7O4Sv/IZKdQ83HZyej4zy/.SUMojrqva."	"administrador"	"23/10/2023 10:53:20"	"187.191.38.172"
+"2"	"AlejandroGV"	"Roberto Alejandro"	"Galicia"	"Vega"	"rgaliciav001@alumno.uaemex.mx"	"$2y$10$blpmVoAOUDRgkbfL2iPjpezwz.x//MOfMNQxLGCRpDiBT/imLq68C"	"docente"	"23/10/2023 10:54:35"	"187.191.38.172"
+"3"	"MarianaVS"	"Mariana"	"Vázquez"	"Silva"	"mvazquezs011@alumno.uaemex.mx"	"$2y$10$EVGE/TZrZNFQmCBp5OzeJehX40b1YQSITHjjocA3maqtzTlb1n//C"	"docente"	"23/10/2023 10:55:31"	"187.191.38.172"
+"4"	"DulceNA"	"Dulce Lucero"	"Navarrete"	"Arroyo"	"dnavarretea001@alumno.uaemex.mx"	"$2y$10$GMQmR47vzbNbnnB8SLKSFudwLxwvzJ9P5wSOtJYf03YDo6rIMk/sq"	"docente"	"26/10/2023 12:38:50"	"187.191.38.172"
+"5"	"AlumnoTest"	"Alumno"	"Testing"	"Tester"	"test@alumno.uaemex.mx"	"$2y$10$z2THW3Hffp6N5JPeqGcs2ei/Pfxe7XdOc.12Zqfc90JVnEWmvBI7C"	"alumno"	"26/10/2023 12:39:24"	"187.191.38.172"
