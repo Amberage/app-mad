@@ -143,12 +143,45 @@
     </div>
     <div class="navigateButtons">
       <button class="button-flechas" type="button" onclick="window.location.href='../actividad2/actividad.html'">Actividad Anterior</button>
-      <button class="button-flechas" type="button" id="abrirVentana">¡Califícanos!</button>
-        <div id="ventanaFlotante" class="ventana">
-          <h2>Ventana Flotante</h2>
-          <p>Contenido de la ventana flotante.</p>
-          <button id="cerrarVentana">Cerrar</button>
-        </div>
+        <dialog id="modal"> <!-- ventana popUp -->
+          <h2>¡Hola!</h2>
+          <p>Agradecemos que hayas visitado nuestro sitio web. Tu opinión es fundamental para mejorar nuestros servicios. 
+            Por favor, tómate un momento para completar esta encuesta.</p>
+            <form method="dialog">
+              <label>¿Cómo calificarías la facilidad de navegación en nuestro sitio?</label>
+              <input type="radio" name="satisfaccion" value="muy-satisfecho"> Muy satisfecho
+              <input type="radio" name="satisfaccion" value="satisfecho"> Satisfecho
+              <input type="radio" name="satisfaccion" value="neutral"> Neutral
+              <input type="radio" name="satisfaccion" value="insatisfecho"> Insatisfecho
+              <input type="radio" name="satisfaccion" value="muy-insatisfecho"> Muy 
+              
+              <label>¿Encuentras que nuestro sitio es visualmente atractivo?</label>
+              <input type="radio" name="satisfaccion" value="muy-satisfecho"> Muy satisfecho
+              <input type="radio" name="satisfaccion" value="satisfecho"> Satisfecho
+              <input type="radio" name="satisfaccion" value="neutral"> Neutral
+              <input type="radio" name="satisfaccion" value="insatisfecho"> Insatisfecho
+              <input type="radio" name="satisfaccion" value="muy-insatisfecho"> Muy insatisfecho
+
+              <label>¿Cómo calificarías la calidad del contenido educativo en nuestro sitio?</label>
+              <input type="radio" name="satisfaccion" value="muy-satisfecho"> Muy satisfecho
+              <input type="radio" name="satisfaccion" value="satisfecho"> Satisfecho
+              <input type="radio" name="satisfaccion" value="neutral"> Neutral
+              <input type="radio" name="satisfaccion" value="insatisfecho"> Insatisfecho
+              <input type="radio" name="satisfaccion" value="muy-insatisfecho"> Muy insatisfecho
+
+              <label>¿Consideras que ha sido útil nuestro sitio web?</label>
+              <input type="radio" name="satisfaccion" value="muy-satisfecho"> Muy satisfecho
+              <input type="radio" name="satisfaccion" value="satisfecho"> Satisfecho
+              <input type="radio" name="satisfaccion" value="neutral"> Neutral
+              <input type="radio" name="satisfaccion" value="insatisfecho"> Insatisfecho
+              <input type="radio" name="satisfaccion" value="muy-insatisfecho"> Muy insatisfecho
+
+              <label>Por favor, proporciona cualquier comentario adicional que tengas sobre nuestro sitio web. ¿Qué podemos hacer para mejorar tu experiencia?</label>
+              <textarea name="comentarios" rows="4" cols="50"></textarea>
+
+              <button type="submit">Enviar</button>
+            </form>
+        </dialog>
     </div>
     <div id="endFooter"><!-- Aquí se genera el footer proveniente del script getUserData --></div>
   </div>

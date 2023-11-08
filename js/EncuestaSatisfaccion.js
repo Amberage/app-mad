@@ -1,7 +1,12 @@
-document.getElementById("abrirVentana").addEventListener("click", function() {
-    document.getElementById("ventanaFlotante").style.display = "block";
-});
+const btnAbrirModal = document.querySelector("#btn-abrir-modal");
+const btnCerrarModal = document.querySelector("#btn-cerrar-modal");
 
-document.getElementById("cerrarVentana").addEventListener("click", function() {
-    document.getElementById("ventanaFlotante").style.display = "none";
-});
+const modal = document.querySelector("#modal");
+
+btnAbrirModal.addEventListener("click", ()=>{
+    modal.showModal();
+})
+
+btnCerrarModal.addEventListener("click",()=>{
+    modal.close()
+})
