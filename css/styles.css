@@ -264,17 +264,21 @@ button:hover {
 /* Modal */
 #modal::backdrop {
   background-color: rgba(0, 0, 0, 0.55);
+}
+
+dialog {
   border-radius: 15px;
   background: plum;
 }
 
 label {
+  text-align: center;
   font-size: 18px;
   color: #333;
-  padding-left: 40px;
-  margin-left: 40px;
-  margin-right: 40px;
-  text-align: justify;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 
