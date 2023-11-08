@@ -143,7 +143,12 @@
     </div>
     <div class="navigateButtons">
       <button class="button-flechas" type="button" onclick="window.location.href='../actividad2/actividad.html'">Actividad Anterior</button>
-      <button class="button-flechas" type="button" onclick="window.location.href='/views/home.html'">Volver al inicio</button>
+      <button class="button-flechas" type="button" id="abrirVentana">¡Califícanos!</button>
+        <div id="ventanaFlotante" class="ventana">
+          <h2>Ventana Flotante</h2>
+          <p>Contenido de la ventana flotante.</p>
+          <button id="cerrarVentana">Cerrar</button>
+        </div>
     </div>
     <div id="endFooter"><!-- Aquí se genera el footer proveniente del script getUserData --></div>
   </div>
@@ -151,6 +156,7 @@
   <script src="/js/getUserData.js"></script>
   <script src="/js/carrouselRespuestas.js"></script>
   <script src="/js/bannerFooter.js"></script>
+  <script src="/js/EncuestaSatisfaccion.js"></script>
   <script>
     var xhr = new XMLHttpRequest();
     var actividadRetro, aciertosRetro, fechaRetro;

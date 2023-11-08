@@ -469,7 +469,7 @@ code {
 .contenedorImagen {
   display: block; 
   margin: auto; 
-  border: 2px solid black; 
+  /*border: 2px solid black;*/
   margin-bottom: 20px;
 }
 
@@ -544,6 +544,36 @@ code {
 .menuInferior2 li {
   text-align: center;
   height: 75px;
+}
+
+/* Ventana Flotante */
+.ventana {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  text-align: center;
+}
+
+#abrirVentana {
+  display: block;
+  margin: 20px auto;
+}
+
+#cerrarVentana {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
 
