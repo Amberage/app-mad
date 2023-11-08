@@ -269,7 +269,7 @@ button:hover {
 dialog {
   border-radius: 15px;
   background: lavender;
-  max-width: 60ch;
+  max-width: 80ch;
 }
 
 label {
@@ -284,7 +284,8 @@ label {
 
 .h2-modal {
   color: #8152b8;
-  font-size: 30px;
+  font-size: 35px;
+  font-weight: bold;
 }
 
 
