@@ -261,6 +261,24 @@ button:hover {
   font-weight: bold;
 }
 
+/* Modal */
+#modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.55);
+  border-radius: 15px;
+  background: plum;
+}
+
+label {
+  font-size: 18px;
+  color: #333;
+  padding-left: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: justify;
+}
+
+
+
 /*Animaciones*/
 
 @keyframes bounce {
