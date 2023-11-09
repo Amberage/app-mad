@@ -55,11 +55,13 @@ CREATE TABLE actividades_Polimorfismo (
 CREATE TABLE encuesta_satisfaccion (
     id INT AUTO_INCREMENT PRIMARY KEY,
     idAlumno INT,
+    username VARCHAR(12),
     pregunta1 VARCHAR(20),
     pregunta2 VARCHAR(20),
     pregunta3 VARCHAR(20),
     pregunta4 VARCHAR(20),
-    comentarios VARCHAR(50),
+    comentarios VARCHAR(2048),
+    encuestaContestada ENUM('Si', 'No'),
     FOREIGN KEY (idAlumno) REFERENCES usuarios (id) ON UPDATE CASCADE ON DELETE CASCADE
 );
 
@@ -100,5 +102,8 @@ BEGIN
 
     INSERT INTO actividades_Polimorfismo (idAlumno, username, aciertos, actRealizada, actividadNumero, fechaEntrega)
     VALUES (NEW.id, NEW.username, NULL, 'No', 3, NULL);
+
+    /*Registros para la encuesta de satisfacción*/
+    INSERT INTO encuesta_satisfaccion (idAlumno, username, pregunta1, pregunta2, pregunta3, pregunta4, comentarios, encuestaContestada)
+    VALUES (NEW.id, NEW.username, NULL, NULL, NULL, NULL, NULL, 'No');
 END;
-//
