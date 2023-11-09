@@ -288,8 +288,13 @@ label {
   font-weight: bold;
 }
 
-.radio_btn {
-  color: #8BD450;
+.checkmark {
+  background-color: #8152b8;
+}
+
+/* Cambiar el color del marcador de verificación cuando se selecciona */
+input[type="radio"]:checked + .checkmark {
+  background-color:#8BD450;
 }
 
 /*Animaciones*/
