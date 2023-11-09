@@ -288,8 +288,26 @@ label {
   font-weight: bold;
 }
 
+/* Ocultar los radio buttons originales */
+input[type="radio"] {
+  display: none;
+}
+
+.radio-container {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
 .checkmark {
   background-color: #8152b8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
 }
 
 /* Cambiar el color del marcador de verificación cuando se selecciona */
