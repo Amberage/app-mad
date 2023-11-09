@@ -293,12 +293,6 @@ input[type="radio"] {
   display: none;
 }
 
-.radio-container {
-  position: relative;
-  padding-left: 30px;
-  cursor: pointer;
-}
-
 .checkmark {
   background-color: #8152b8;
   position: absolute;
