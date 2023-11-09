@@ -144,47 +144,44 @@
     <div class="navigateButtons">
       <button class="button-flechas" type="button" onclick="window.location.href='../actividad2/actividad.html'">Actividad Anterior</button>
       <button class="button-encuesta" style="background-color: palevioletred;" id="btn-abrir-modal">¡Califícanos!</button>
-      <dialog id="modal"> <!-- ventana popUp de la Encuesta de Satisfacción -->
+      <dialog id="modal"> <!-- ventana popUp de la Encuesta de Satisfacción-->
           <h2 class="h2-modal">¡Hola!</h2>
           <p>Agradecemos que hayas visitado nuestro sitio web. Tu opinión es fundamental para mejorar nuestros servicios. 
             Por favor, tómate un momento para completar esta encuesta.</p>
             <form method="dialog" method="post" action="encuesta.php">
-              <label>¿Cómo calificarías la facilidad de navegación en nuestro sitio?
+              <label>¿Cómo calificarías la facilidad de navegación en nuestro sitio?</label>
               <input type="radio" name="pregunta1" value="muy-satisfecho"> Muy satisfecho
-              <input type="radio" name="pregunta1" value="satisfecho"> Satisfecho
-              <input type="radio" name="pregunta1" value="neutral"> Neutral
-              <input type="radio" name="pregunta1" value="insatisfecho"> Insatisfecho
-              <input type="radio" name="pregunta1" value="muy-insatisfecho"> Muy insatisfecho
               <span class="checkmark"></span>
-              </label>
-
-              <label>¿Encuentras que nuestro sitio es visualmente atractivo?
+              <input type="radio" name="pregunta1" value="satisfecho"> Satisfecho
+              <span class="checkmark"></span>
+              <input type="radio" name="pregunta1" value="neutral"> Neutral
+              <span class="checkmark"></span>
+              <input type="radio" name="pregunta1" value="insatisfecho"> Insatisfecho
+              <span class="checkmark"></span>
+              <input type="radio" name="pregunta1" value="muy-insatisfecho"> Muy 
+              <span class="checkmark"></span>
+              
+              <label>¿Encuentras que nuestro sitio es visualmente atractivo?</label>
               <input type="radio" name="pregunta2" value="muy-satisfecho"> Muy satisfecho
               <input type="radio" name="pregunta2" value="satisfecho"> Satisfecho
               <input type="radio" name="pregunta2" value="neutral"> Neutral
               <input type="radio" name="pregunta2" value="insatisfecho"> Insatisfecho
               <input type="radio" name="pregunta2" value="muy-insatisfecho"> Muy insatisfecho
-              <span class="checkmark"></span>
-              </label>
 
-              <label>¿Cómo calificarías la calidad del contenido educativo en nuestro sitio?
+              <label>¿Cómo calificarías la calidad del contenido educativo en nuestro sitio?</label>
               <input type="radio" name="pregunta3" value="muy-satisfecho"> Muy satisfecho
               <input type="radio" name="pregunta3" value="satisfecho"> Satisfecho
               <input type="radio" name="pregunta3" value="neutral"> Neutral
               <input type="radio" name="pregunta3" value="insatisfecho"> Insatisfecho
               <input type="radio" name="pregunta3" value="muy-insatisfecho"> Muy insatisfecho
-              <span class="checkmark"></span>
-              </label>
 
-              <label>¿Consideras que ha sido útil nuestro sitio web?
+              <label>¿Consideras que ha sido útil nuestro sitio web?</label>
               <input type="radio" name="pregunta4" value="muy-satisfecho"> Muy satisfecho
               <input type="radio" name="pregunta4" value="satisfecho"> Satisfecho
               <input type="radio" name="pregunta4" value="neutral"> Neutral
               <input type="radio" name="pregunta4" value="insatisfecho"> Insatisfecho
               <input type="radio" name="pregunta4" value="muy-insatisfecho"> Muy insatisfecho
-              <span class="checkmark"></span>
-              </label>
-              
+
               <label>Por favor, proporciona cualquier comentario adicional que tengas sobre nuestro sitio web. ¿Qué podemos hacer para mejorar tu experiencia?</label>
               <textarea name="comentarios" rows="4" cols="50"></textarea>
               <br>
