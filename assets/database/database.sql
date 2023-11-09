@@ -51,6 +51,19 @@ CREATE TABLE actividades_Polimorfismo (
     FOREIGN KEY (idAlumno) REFERENCES usuarios (id) ON UPDATE CASCADE ON DELETE CASCADE
 );
 
+-- Encuesta de satisfacción
+CREATE TABLE encuesta_satisfaccion (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    idAlumno INT,
+    pregunta1 VARCHAR(20),
+    pregunta2 VARCHAR(20),
+    pregunta3 VARCHAR(20),
+    pregunta4 VARCHAR(20),
+    comentarios VARCHAR(50),
+    FOREIGN KEY (idAlumno) REFERENCES usuarios (id) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+
 -- Trigger
 DELIMITER //
 
