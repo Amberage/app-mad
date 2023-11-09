@@ -33,9 +33,10 @@ async function enviarDatosAlServidor(formData) {
 
     return await response.json();
   } catch (error) {
+    const errorMessage = `Hubo un error al comunicarse con el servidor: ${error.message}`;
     return {
       error: true,
-      message: "Hubo un error al comunicarse con el servidor.",
+      message: errorMessage,
     };
   }
 }
