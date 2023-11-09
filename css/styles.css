@@ -288,6 +288,10 @@ label {
   font-weight: bold;
 }
 
+.radio_btn {
+  color: #8BD450;
+}
+
 /*Animaciones*/
 
 @keyframes bounce {
