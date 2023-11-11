@@ -151,8 +151,8 @@
           <h2 class="h2-modal">¡Hola!</h2>
           <p>Agradecemos que hayas visitado nuestro sitio web. Tu opinión es fundamental para mejorar nuestros servicios. 
             Por favor, tómate un momento para completar esta encuesta.</p>
-            <form method="dialog" action="encuesta.php">
-              <form method="post" action="encuesta.php">
+            <form method="dialog">
+              <form action="encuesta.php" method="post">
                 <label>¿Cómo calificarías la facilidad de navegación en nuestro sitio?</label>
                 <input type="radio" name="pregunta1" value="muy-satisfecho"> Muy satisfecho      
                 <input type="radio" name="pregunta1" value="satisfecho"> Satisfecho
@@ -195,7 +195,7 @@
   <script src="/js/getUserData.js"></script>
   <script src="/js/carrouselRespuestas.js"></script>
   <script src="/js/bannerFooter.js"></script>
-  <script src="/js/EncuestaSatisfaccion.js"></script>
+  
   <script>
     var xhr = new XMLHttpRequest();
     var actividadRetro, aciertosRetro, fechaRetro;
@@ -220,5 +220,6 @@
     };
     xhr.send();
   </script>
+  <script src="/js/EncuestaSatisfaccion.js"></script>
 </body>
 </html>
