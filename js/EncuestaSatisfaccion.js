@@ -3,12 +3,10 @@ const btnCerrarModal = document.querySelector("#btn-cerrar-modal");
 
 const modal = document.querySelector("#modal");
 
-btnAbrirModal.addEventListener("click", ()=>{
+btnAbrirModal.addEventListener('click', ()=>{
     modal.showModal();
 })
 
-btnCerrarModal.addEventListener("click",()=>{
+btnCerrarModal.addEventListener('click',()=>{
     modal.close()
 })
-
-//
