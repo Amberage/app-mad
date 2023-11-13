@@ -44,13 +44,6 @@ h1 {
   margin-bottom: 50px;
 }
 
-.h1-enc {
-  text-align: center;
-  padding-top: 20px;
-  margin-bottom: 40px;
-  color: #2F2A41;
-}
-
 h2 {
   text-align: left;
   color: #8152b8;
@@ -230,15 +223,6 @@ button:hover {
 .navegacion {
   text-align: center;
   margin: 50px;
-}
-
-form {
-  background-color: #CFF5B2;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 /* Estilos para la barra de menú */
