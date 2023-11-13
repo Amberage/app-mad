@@ -12,12 +12,11 @@
   <div class="body">
     <div class="menu">
     </div>
-  <div class="contenedorForm">
     <h1>Formulario de satisfacción</h1>
     <p>Agradecemos que hayas visitado nuestro sitio web. Tu opinión es fundamental para mejorar nuestros servicios. 
         Por favor, tómate un momento para completar esta encuesta.</p>
 
-    <form action="encuesta.php" method="post">
+    <form class="contenedorForm" action="encuesta.php" method="post">
         <!--Pregunta 0-->
         <p style="text-align: center;">Nombre:</p>
         <label>
@@ -69,7 +68,6 @@
           <input type="submit" value="Enviar Encuesta"> <!--onclick="window.location.href='/views/home.html'""-->
         </div>
       </form>
-    </div>
   <div id="endFooter"><!-- Aqui se genera el footer proveniente del script getUserData --></div>
   <script src="/js/bannerFooter.js"></script>
 </body>
