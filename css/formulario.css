@@ -46,12 +46,12 @@ h1 {
     text-align: center;
     padding-top: 20px;
     margin-bottom: 40px;
-    color: #2F2A41;
+    color: #2b2052;
   }
 
   p {
     font-size: 20px;
-    color: #333;
+    color: black;
     text-decoration: wavy;
     padding-bottom: 10px;
     text-align: center;
@@ -79,12 +79,14 @@ h1 {
   input {
     padding: 5px;
     margin-bottom: 10px;
+    color: #333;
   }
 
   .contenedorForm {
     background-color: #CFF5B2;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 80px;
   }
 
 
