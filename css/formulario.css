@@ -52,6 +52,7 @@ h1 {
   p {
     font-size: 20px;
     color: #333;
+    text-decoration: wavy;
     padding-bottom: 10px;
     text-align: center;
   }
@@ -82,7 +83,6 @@ h1 {
 
   .contenedorForm {
     background-color: #CFF5B2;
-    height: max-content;
     padding-left: 20px;
     padding-right: 20px;
   }
