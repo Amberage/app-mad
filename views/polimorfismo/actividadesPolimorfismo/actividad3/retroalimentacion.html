@@ -146,7 +146,20 @@
       <button class="button-encuesta" style="background-color: palevioletred;" id="btn-abrir-modal">¡Califícanos!</button>
       
       <!-- E N C U E S T A  D E  S A T I S F A C C I Ó N c: -->
-
+      <script>
+        const btnAbrirModal = document.querySelector("btn-abrir-modal");
+        const btnCerrarModal = document.querySelector("btn-cerrar-modal");
+    
+        const modal = document.querySelector("modal");
+    
+        btnAbrirModal.addEventListener('click', ()=>{
+            modal.showModal();
+        })
+    
+        btnCerrarModal.addEventListener('click',()=>{
+            modal.close()
+        })
+      </script>
       <dialog id="modal"> <!-- ventana popUp de la Encuesta de Satisfacción-->
           <h2 class="h2-modal">¡Hola!</h2>
           <p>Agradecemos que hayas visitado nuestro sitio web. Tu opinión es fundamental para mejorar nuestros servicios. 
@@ -186,21 +199,7 @@
                 <br>
                 <button type="submit">Enviar</button>
               </form>
-            </form>
-            <script>
-              const btnAbrirModal = document.querySelector("btn-abrir-modal");
-              const btnCerrarModal = document.querySelector("btn-cerrar-modal");
-          
-              const modal = document.querySelector("modal");
-          
-              btnAbrirModal.addEventListener('click', ()=>{
-                  modal.showModal();
-              })
-          
-              btnCerrarModal.addEventListener('click',()=>{
-                  modal.close()
-              })
-            </script>          
+            </form>          
         </dialog>
     </div>
     <div id="endFooter"><!-- Aquí se genera el footer proveniente del script getUserData --></div>
