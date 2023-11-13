@@ -84,13 +84,12 @@ h1 {
 
   .contenedorForm {
     background-color: #CFF5B2;
-    margin-left: 20px;
+    margin-left: 20%;
     margin-right: 20px;
     width: 80%;
     text-align: center;
     align-items: center;
     align-content: center;
-    padding-left: 40px;
   }
 
 
