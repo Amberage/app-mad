@@ -1,6 +1,5 @@
 <?php
-include 'config.php';
-
+include($_SERVER['DOCUMENT_ROOT'] . '/php/config.php');
 session_start(); // Inicia la sesión si aún no está iniciada
 
 // Verifica si el usuario tiene la sesión iniciada

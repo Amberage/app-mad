@@ -70,15 +70,6 @@ p {
   text-align: justify;
 }
 
-.p-radio {
-  font-size: 30px;
-  color: #333;
-  padding-left: 40px;
-  margin-left: 40px;
-  margin-right: 40px;
-  text-align: center;
-}
-
 label {
   display: block;
   text-align: left;
