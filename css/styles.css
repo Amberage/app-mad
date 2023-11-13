@@ -44,6 +44,13 @@ h1 {
   margin-bottom: 50px;
 }
 
+.h1-enc {
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 40px;
+  color: #2F2A41;
+}
+
 h2 {
   text-align: left;
   color: #8152b8;
