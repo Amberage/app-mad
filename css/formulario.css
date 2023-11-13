@@ -46,11 +46,11 @@ h1 {
     text-align: center;
     padding-top: 20px;
     margin-bottom: 40px;
-    color: #2b2052;
+    color: rgb(192, 36, 231);
   }
 
   p {
-    font-size: 20px;
+    font-size: 23px;
     color: black;
     text-decoration: wavy;
     padding-bottom: 10px;
@@ -80,6 +80,7 @@ h1 {
     padding: 5px;
     margin-bottom: 10px;
     color: #333;
+    background-color: blueviolet;
   }
 
   .contenedorForm {
