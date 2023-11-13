@@ -232,6 +232,15 @@ button:hover {
   margin: 50px;
 }
 
+.div-formulario {
+  background-color: #CFF5B2;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 /* Estilos para la barra de menú */
 .menu {
   background-color: #333;

@@ -12,7 +12,7 @@
   <div class="body">
     <div class="menu">
     </div>
-    
+<div class="div-formulario">
     <h1 class=".h1-enc">Formulario de satisfacción</h1>
     <p>Agradecemos que hayas visitado nuestro sitio web. Tu opinión es fundamental para mejorar nuestros servicios. 
         Por favor, tómate un momento para completar esta encuesta.</p>
@@ -21,7 +21,7 @@
         <!--Pregunta 0-->
         <p style="text-align: center;">Nombre:</p>
         <label>
-        <input type="text" id="nombre" name="nombre" rows="1" cols="50" required></textarea>
+        <input type="text" id="nombre" name="nombre" rows="1" cols="10" required></textarea>
         </label>
         <!--Pregunta 1-->
         <p style="text-align: center;">¿Cómo calificarías la facilidad de navegación en nuestro sitio?</p>
@@ -62,14 +62,14 @@
         <!--Comentarios-->
         <p style="text-align: center;">Por favor, proporciona cualquier comentario adicional que tengas sobre nuestro sitio web. ¿Qué podemos hacer para mejorar tu experiencia?</p>
         <label>
-        <input type="text" id="comentarios" name="comentarios" rows="4" cols="50" required></textarea>
+        <input type="text" id="comentarios" name="comentarios" rows="4" cols="20" required></textarea>
         </label>
         <br>
         <div class="button-encuesta">
-          <input type="submit" value="Enviar Encuesta" onclick="window.location.href='/views/home.html'">
+          <input type="submit" value="Enviar Encuesta"> <!--onclick="window.location.href='/views/home.html'""-->
         </div>
       </form>
-
+  </div>
   <div id="endFooter"><!-- Aqui se genera el footer proveniente del script getUserData --></div>
   <script src="/js/bannerFooter.js"></script>
 </body>
