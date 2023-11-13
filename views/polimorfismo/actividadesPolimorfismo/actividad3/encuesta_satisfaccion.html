@@ -18,38 +18,50 @@
         Por favor, tómate un momento para completar esta encuesta.</p>
 
     <form action="encuesta.php" method="post">
-        <label>¿Cómo calificarías la facilidad de navegación en nuestro sitio?</label>
+
+        <!--Pregunta 1-->
+        <p>¿Cómo calificarías la facilidad de navegación en nuestro sitio?</p>
+        <label>
         <input type="radio" name="pregunta1" value="muy-satisfecho"> Muy satisfecho      
         <input type="radio" name="pregunta1" value="satisfecho"> Satisfecho
         <input type="radio" name="pregunta1" value="neutral"> Neutral
         <input type="radio" name="pregunta1" value="insatisfecho"> Insatisfecho
         <input type="radio" name="pregunta1" value="muy-insatisfecho"> Muy insatisfecho
-        
-        <label>¿Encuentras que nuestro sitio es visualmente atractivo?</label>
+        </label>
+        <!--Pregunta 2-->
+        <p>¿Encuentras que nuestro sitio es visualmente atractivo?</p>
+        <label>
         <input type="radio" name="pregunta2" value="muy-satisfecho"> Muy satisfecho
         <input type="radio" name="pregunta2" value="satisfecho"> Satisfecho
         <input type="radio" name="pregunta2" value="neutral"> Neutral
         <input type="radio" name="pregunta2" value="insatisfecho"> Insatisfecho
         <input type="radio" name="pregunta2" value="muy-insatisfecho"> Muy insatisfecho
-
-        <label>¿Cómo calificarías la calidad del contenido educativo en nuestro sitio?</label>
+        </label>
+        <!--Pregunta 3-->
+        <p>¿Cómo calificarías la calidad del contenido educativo en nuestro sitio?</p>
+        <label>
         <input type="radio" name="pregunta3" value="muy-satisfecho"> Muy satisfecho
         <input type="radio" name="pregunta3" value="satisfecho"> Satisfecho
         <input type="radio" name="pregunta3" value="neutral"> Neutral
         <input type="radio" name="pregunta3" value="insatisfecho"> Insatisfecho
         <input type="radio" name="pregunta3" value="muy-insatisfecho"> Muy insatisfecho
-
-        <label>¿Consideras que ha sido útil nuestro sitio web?</label>
+        </label>
+        <!--Pregunta 4-->
+        <p>¿Consideras que ha sido útil nuestro sitio web?</p>
+        <label>
         <input type="radio" name="pregunta4" value="muy-satisfecho"> Muy satisfecho
         <input type="radio" name="pregunta4" value="satisfecho"> Satisfecho
         <input type="radio" name="pregunta4" value="neutral"> Neutral
         <input type="radio" name="pregunta4" value="insatisfecho"> Insatisfecho
         <input type="radio" name="pregunta4" value="muy-insatisfecho"> Muy insatisfecho
-
-        <label>Por favor, proporciona cualquier comentario adicional que tengas sobre nuestro sitio web. ¿Qué podemos hacer para mejorar tu experiencia?</label>
-        <textarea name="comentarios" rows="4" cols="50"></textarea>
+        </label>
+        <!--Comentarios-->
+        <p>Por favor, proporciona cualquier comentario adicional que tengas sobre nuestro sitio web. ¿Qué podemos hacer para mejorar tu experiencia?</p>
+        <label>
+        <input type="text" name="comentarios" rows="4" cols="50" required></textarea>
         <br>
-        <button type="submit">Enviar</button>
+        <input type="submit" value="Enviar Encuesta">
+        </label>
       </form>
 
 
