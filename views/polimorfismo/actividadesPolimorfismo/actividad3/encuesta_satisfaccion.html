@@ -20,7 +20,7 @@
     <form action="encuesta.php" method="post">
 
         <!--Pregunta 1-->
-        <p>¿Cómo calificarías la facilidad de navegación en nuestro sitio?</p>
+        <p class="p-radio">¿Cómo calificarías la facilidad de navegación en nuestro sitio?</p>
         <label>
         <input type="radio" name="pregunta1" value="muy-satisfecho"> Muy satisfecho      
         <input type="radio" name="pregunta1" value="satisfecho"> Satisfecho
@@ -29,7 +29,7 @@
         <input type="radio" name="pregunta1" value="muy-insatisfecho"> Muy insatisfecho
         </label>
         <!--Pregunta 2-->
-        <p>¿Encuentras que nuestro sitio es visualmente atractivo?</p>
+        <p class="p-radio">¿Encuentras que nuestro sitio es visualmente atractivo?</p>
         <label>
         <input type="radio" name="pregunta2" value="muy-satisfecho"> Muy satisfecho
         <input type="radio" name="pregunta2" value="satisfecho"> Satisfecho
@@ -38,7 +38,7 @@
         <input type="radio" name="pregunta2" value="muy-insatisfecho"> Muy insatisfecho
         </label>
         <!--Pregunta 3-->
-        <p>¿Cómo calificarías la calidad del contenido educativo en nuestro sitio?</p>
+        <p class="p-radio">¿Cómo calificarías la calidad del contenido educativo en nuestro sitio?</p>
         <label>
         <input type="radio" name="pregunta3" value="muy-satisfecho"> Muy satisfecho
         <input type="radio" name="pregunta3" value="satisfecho"> Satisfecho
@@ -47,7 +47,7 @@
         <input type="radio" name="pregunta3" value="muy-insatisfecho"> Muy insatisfecho
         </label>
         <!--Pregunta 4-->
-        <p>¿Consideras que ha sido útil nuestro sitio web?</p>
+        <p class="p-radio">¿Consideras que ha sido útil nuestro sitio web?</p>
         <label>
         <input type="radio" name="pregunta4" value="muy-satisfecho"> Muy satisfecho
         <input type="radio" name="pregunta4" value="satisfecho"> Satisfecho
@@ -56,12 +56,14 @@
         <input type="radio" name="pregunta4" value="muy-insatisfecho"> Muy insatisfecho
         </label>
         <!--Comentarios-->
-        <p>Por favor, proporciona cualquier comentario adicional que tengas sobre nuestro sitio web. ¿Qué podemos hacer para mejorar tu experiencia?</p>
+        <p class="p-radio">Por favor, proporciona cualquier comentario adicional que tengas sobre nuestro sitio web. ¿Qué podemos hacer para mejorar tu experiencia?</p>
         <label>
         <input type="text" name="comentarios" rows="4" cols="50" required></textarea>
-        <br>
-        <input type="submit" value="Enviar Encuesta">
         </label>
+        <br>
+        <div class="button">
+          <input type="submit" value="Enviar Encuesta">
+        </div>
       </form>
 
 
